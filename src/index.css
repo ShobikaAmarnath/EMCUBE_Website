@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-gray-900;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative text-gray-700 hover:text-primary-600 transition-colors duration-200;
+  }
+  
+  .nav-link::after {
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300;
+    content: '';
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .dropdown-menu {
+    @apply absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible transform -translate-y-2 transition-all duration-200;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    @apply opacity-100 visible translate-y-0;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-primary-600 border border-primary-600 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:shadow-lg;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-8 transition-all duration-700;
+  }
+  
+  .animate-on-scroll.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.services-gradient {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.stats-gradient {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
