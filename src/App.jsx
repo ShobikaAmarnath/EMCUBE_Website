@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Stats from './components/Stats';
-import AboutServices from './components/AboutServices';
-import ServicesSection from './components/ServicesSection';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+// import Navbar from './components/Navbar';
+// import Hero from './components/Hero';
+// import Stats from './components/Stats';
+
+// import ServicesSection from './components/ServicesSection';
+// import Contact from './components/Contact';
+import Home from './components/Home';
+// import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -33,13 +34,14 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Stats />
-      <AboutServices />
-      <ServicesSection />
-      <Contact />
-      <Footer />
+    <Home/>
+      {/* <Navbar /> */}
+      {/* <Hero /> */}
+  
+      {/* <AboutServices /> */}
+      {/* <ServicesSection /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
