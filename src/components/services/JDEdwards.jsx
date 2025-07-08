@@ -1,15 +1,17 @@
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "./styles.css";
-import React from 'react';
-import { 
-  Server, 
-  Settings, 
-  RefreshCw, 
-  Database, 
-  Cloud, 
-  Cog, 
-  Link, 
+import { motion } from 'framer-motion';
+import ListBlock from "./ListBlock";
+
+import {
+  Server,
+  Settings,
+  RefreshCw,
+  Database,
+  Cloud,
+  Cog,
+  Link,
   HeadphonesIcon,
   CheckCircle,
   ArrowRight,
@@ -30,7 +32,7 @@ const JDEdwards = () => {
       description: "Oracle JD Edwards (JDE) is a robust and flexible ERP solution, but unlocking its full potential requires the right guidance. Our JD Edwards Consulting Services are designed to align your ERP system with your business goals through deep domain expertise, tailored strategies, and value-driven roadmaps.",
       offerings: [
         "ERP strategy planning & advisory",
-        "Business process alignment", 
+        "Business process alignment",
         "Technical & functional gap analysis",
         "Roadmapping for upgrades & enhancements",
         "Module-specific consulting (Finance, Distribution, Manufacturing, etc.)"
@@ -178,169 +180,180 @@ const JDEdwards = () => {
     { icon: <Clock className="w-6 h-6" />, value: "24/7", label: "Support Available" },
     { icon: <TrendingUp className="w-6 h-6" />, value: "99.9%", label: "Uptime Guarantee" }
   ];
+
+  const fadeSlide = {
+  hidden: (customX = 0) => ({
+    opacity: 0,
+    x: customX,
+  }),
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+
+
   return (
     <>
       <Navbar />
       <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent"></div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-sm">
-                <Server className="w-16 h-16 text-blue-300" />
+        {/* Hero Section */}
+        <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent"></div>
+
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div className="text-center">
+              <div className="flex justify-center mb-6">
+                <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-sm">
+                  <Server className="w-16 h-16 text-blue-300" />
+                </div>
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+                JD Edwards Services
+              </h1>
+              <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
+                Comprehensive JD Edwards solutions from implementation to innovation.
+                Unlock your ERP's full potential with our expert consulting services.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-xl hover:shadow-2xl">
+                  Get Started Today
+                </button>
+                <button className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
+                  View Case Studies
+                </button>
               </div>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-              JD Edwards Services
-            </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Comprehensive JD Edwards solutions from implementation to innovation. 
-              Unlock your ERP's full potential with our expert consulting services.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-xl hover:shadow-2xl">
-                Get Started Today
-              </button>
-              <button className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
-                View Case Studies
-              </button>
+          </div>
+
+          {/* Stats Section */}
+          <div className="relative border-t border-white/20 bg-white/5 backdrop-blur-sm">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {stats.map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="flex justify-center mb-3">
+                      <div className="p-3 bg-white/10 rounded-lg">
+                        {stat.icon}
+                      </div>
+                    </div>
+                    <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
+                    <div className="text-blue-200 text-sm">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="relative border-t border-white/20 bg-white/5 backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="flex justify-center mb-3">
-                    <div className="p-3 bg-white/10 rounded-lg">
-                      {stat.icon}
-                    </div>
-                  </div>
-                  <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-                  <div className="text-blue-200 text-sm">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Services Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our JD Edwards Service Portfolio
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From strategic consulting to hands-on implementation, we provide end-to-end JD Edwards services 
-            tailored to your business needs.
-          </p>
-        </div>
-
-        <div className="space-y-12">
-          {services.map((service, index) => (
-            <div 
-              key={service.id}
-              className={`relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 ${
-                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              } flex flex-col lg:flex`}
-            >
-              {/* Service Header */}
-              <div className={`lg:w-2/5 p-8 lg:p-12 bg-gradient-to-br ${service.gradient} text-white relative overflow-hidden`}>
-                <div className="absolute inset-0 bg-black/10"></div>
-                <div className="relative z-10">
-                  <div className="flex items-center mb-6">
-                    <div className="p-3 bg-white/20 rounded-xl mr-4 backdrop-blur-sm">
-                      {service.icon}
-                    </div>
-                    <div className="text-sm font-medium bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">
-                      Service #{service.id}
-                    </div>
-                  </div>
-                  <h3 className="text-3xl font-bold mb-4">{service.title}</h3>
-                  <p className="text-lg leading-relaxed opacity-95">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-
-              {/* Service Content */}
-              <div className="lg:w-3/5 p-8 lg:p-12">
-                <div className="grid md:grid-cols-2 gap-8">
-                  {/* What We Offer */}
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                      <Zap className="w-5 h-5 mr-2 text-blue-600" />
-                      What We Offer
-                    </h4>
-                    <ul className="space-y-3">
-                      {service.offerings.map((offering, idx) => (
-                        <li key={idx} className="flex items-start">
-                          <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-700">{offering}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Benefits */}
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                      <Shield className="w-5 h-5 mr-2 text-green-600" />
-                      Key Benefits
-                    </h4>
-                    <ul className="space-y-3">
-                      {service.benefits.map((benefit, idx) => (
-                        <li key={idx} className="flex items-start">
-                          <ArrowRight className="w-5 h-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-700">{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="mt-8 pt-6 border-t border-gray-200">
-                  <button className={`bg-gradient-to-r ${service.gradient} text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center`}>
-                    Learn More About {service.title}
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+        {/* Services Grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold mb-6">
-              Ready to Transform Your JD Edwards Experience?
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Our JD Edwards Service Portfolio
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Emcube Cloud Private Limited is your trusted partner for comprehensive JD Edwards services—from implementation to innovation.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From strategic consulting to hands-on implementation, we provide end-to-end JD Edwards services
+              tailored to your business needs.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-xl">
-                Schedule Consultation
-              </button>
-              <button className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all duration-300">
-                Download Service Brochure
-              </button>
+          </div>
+
+          <div className="space-y-12">
+            {services.map((service, index) => {
+              const isReversed = index % 2 !== 0;
+              const direction = isReversed ? 20 : -20;
+              return (
+                <motion.div
+                key={service.id}
+                variants={fadeSlide}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                custom={direction}
+                className={`relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                  } flex flex-col lg:flex`}
+              >
+                {/* Service Header */}
+                <div className={`lg:w-2/5 p-8 lg:p-12 bg-gradient-to-br ${service.gradient} text-white relative overflow-hidden`}>
+                  <div className="absolute inset-0 bg-black/10"></div>
+                  <div className="relative z-10">
+                    <div className="flex items-center mb-6">
+                      <div className="p-3 bg-white/20 rounded-xl mr-4 backdrop-blur-sm">
+                        {service.icon}
+                      </div>
+                      <div className="text-sm font-medium bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">
+                        {service.title}
+                      </div>
+                    </div>
+                    <h3 className="text-3xl font-bold mb-4">{service.title}</h3>
+                    <p className="text-lg leading-relaxed opacity-95">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Service Content */}
+                <div className="lg:w-3/5 p-8 lg:p-12">
+                  <div className="grid md:grid-cols-2 gap-8">
+                    {/* What We Offer */}
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <Zap className="w-5 h-5 mr-2 text-blue-600" />
+                        What We Offer
+                      </h4>
+                      <ListBlock items={service.offerings} />
+                    </div>
+
+                    {/* Benefits */}
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <Shield className="w-5 h-5 mr-2 text-green-600" />
+                        Key Benefits
+                      </h4>
+                      <ListBlock items={service.benefits} />
+                    </div>
+                  </div>
+
+                  <div className="mt-8 pt-6 border-t border-gray-200">
+                    <button className={`bg-gradient-to-r ${service.gradient} text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center`}>
+                      Learn More About {service.title}
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+              );
+})}
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div className="text-center">
+              <h2 className="text-4xl font-bold mb-6">
+                Ready to Transform Your JD Edwards Experience?
+              </h2>
+              <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Emcube Cloud Private Limited is your trusted partner for comprehensive JD Edwards services—from implementation to innovation.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-xl">
+                  Schedule Consultation
+                </button>
+                <button className="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all duration-300">
+                  Download Service Brochure
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
       <Footer />
     </>
   );

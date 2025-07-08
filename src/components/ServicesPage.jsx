@@ -3,10 +3,17 @@ import './ServicesPage.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Contact from './Contact';
+import { Link } from 'react-router-dom';
 
 const ServicesPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [isVisible, setIsVisible] = useState({});
+
+  const handleServiceClick = (link) => {
+    if (link) {
+      window.location.href = link;
+    }
+  };
 
   const services = [
     {
@@ -16,7 +23,8 @@ const ServicesPage = () => {
       description: "Complete end-to-end implementation of JD Edwards EnterpriseOne with customized modules tailored to your business needs.",
       features: ["Financial Management", "Supply Chain", "Manufacturing", "Project Management", "Human Capital Management"],
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "🚀"
+      icon: "🚀",
+      link: "/services/jd-edwards"
     },
     {
       id: 2,
@@ -25,7 +33,8 @@ const ServicesPage = () => {
       description: "Seamlessly migrate your JD Edwards systems to the cloud with zero downtime and enhanced security.",
       features: ["Oracle Cloud Infrastructure", "Hybrid Cloud Setup", "Security Enhancement", "Performance Optimization", "Cost Reduction"],
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "☁️"
+      icon: "☁️",
+      link: "/services/oracle-epm"
     },
     {
       id: 3,
@@ -34,7 +43,8 @@ const ServicesPage = () => {
       description: "Upgrade your existing JD Edwards systems to the latest version with minimal business disruption.",
       features: ["Version Upgrade", "Tools Release Update", "Application Update", "Platform Migration", "Testing & Validation"],
       image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "⬆️"
+      icon: "⬆️",
+      link: "#"
     },
     {
       id: 4,
@@ -43,7 +53,8 @@ const ServicesPage = () => {
       description: "24/7 comprehensive support and maintenance services to keep your JD Edwards systems running smoothly.",
       features: ["24/7 Technical Support", "System Monitoring", "Performance Tuning", "Issue Resolution", "Preventive Maintenance"],
       image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "🛠️"
+      icon: "🛠️",
+      link: "#"
     },
     {
       id: 5,
@@ -52,7 +63,8 @@ const ServicesPage = () => {
       description: "Integrate JD Edwards with third-party applications and modern technologies for enhanced functionality.",
       features: ["API Integration", "EDI Solutions", "Database Integration", "Legacy System Integration", "Real-time Data Sync"],
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "🔗"
+      icon: "🔗",
+      link: "#"
     },
     {
       id: 6,
@@ -61,7 +73,8 @@ const ServicesPage = () => {
       description: "Custom development and modifications to extend JD Edwards functionality according to your business requirements.",
       features: ["Custom Forms & Reports", "Business Function Development", "Workflow Automation", "Mobile Applications", "User Interface Enhancement"],
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "💻"
+      icon: "💻",
+      link: "#"
     },
     {
       id: 7,
@@ -70,7 +83,8 @@ const ServicesPage = () => {
       description: "Comprehensive training programs and expert consulting to maximize your JD Edwards investment.",
       features: ["End-user Training", "Administrator Training", "Best Practices Consulting", "Process Optimization", "Change Management"],
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "📚"
+      icon: "📚",
+      link: "#"
     },
     {
       id: 8,
@@ -79,7 +93,8 @@ const ServicesPage = () => {
       description: "Ensure your JD Edwards systems meet industry security standards and compliance requirements.",
       features: ["Security Assessment", "Role-based Access Control", "Data Encryption", "Audit Trail Management", "Compliance Reporting"],
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "🔒"
+      icon: "🔒",
+      link: "#"
     },
     {
       id: 9,
@@ -88,7 +103,8 @@ const ServicesPage = () => {
       description: "Transform your JD Edwards data into actionable insights with advanced analytics and reporting solutions.",
       features: ["Real-time Dashboards", "Custom Reports", "Data Visualization", "Predictive Analytics", "Performance Metrics"],
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "📊"
+      icon: "📊",
+      link: "#"
     },
     {
       id: 10,
@@ -97,7 +113,8 @@ const ServicesPage = () => {
       description: "Extend JD Edwards functionality to mobile devices with responsive applications and offline capabilities.",
       features: ["Mobile Applications", "Responsive Design", "Offline Functionality", "Push Notifications", "Cross-platform Support"],
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "📱"
+      icon: "📱",
+      link: "#"
     },
     {
       id: 11,
@@ -106,7 +123,8 @@ const ServicesPage = () => {
       description: "Optimize your JD Edwards systems for maximum performance, scalability, and efficiency.",
       features: ["Performance Tuning", "Database Optimization", "System Monitoring", "Capacity Planning", "Resource Management"],
       image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "⚡"
+      icon: "⚡",
+      link: "#"
     },
     {
       id: 12,
@@ -115,7 +133,8 @@ const ServicesPage = () => {
       description: "Comprehensive disaster recovery planning and implementation to ensure business continuity.",
       features: ["Backup Solutions", "Recovery Planning", "Business Continuity", "Risk Assessment", "Testing & Validation"],
       image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      icon: "🛡️"
+      icon: "🛡️",
+      link: "#"
     }
   ];
 
@@ -215,8 +234,8 @@ const ServicesPage = () => {
                 className={`service-card ${isVisible[`service-${service.id}`] ? 'visible' : ''}`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="service-image">
-                  <img src={service.image} alt={service.title} />
+                <div className="service-image" onClick={() => handleServiceClick(service.link)}>
+                  <img src={service.image} alt={service.title} onClick={() => handleServiceClick(service.link)}/>
                   <div className="service-overlay">
                     <div className="service-icon">{service.icon}</div>
                   </div>
@@ -236,7 +255,7 @@ const ServicesPage = () => {
                     </ul>
                   </div>
                   <div className="service-actions">
-                    <button className="btn btn-primary">Learn More</button>
+                    <button className="btn btn-primary" onClick={() => handleServiceClick(service.link)}>Learn More</button>
                     <button className="btn btn-secondary">Get Quote</button>
                   </div>
                 </div>

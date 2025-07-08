@@ -37,63 +37,156 @@ const Navbar = () => {
   ];
 
   const servicesItems = [
-    
-  { name: 'What is JD Edwards?', href: '#jd-edwards-what-is', category: 'Oracle JD Edwards' },
-  { name: 'Key Benefits', href: '#jd-edwards-benefits', category: 'Oracle JD Edwards' },
-  { name: 'JD Edwards Implementation', href: '#jde-implementation', category: 'Oracle JD Edwards' },
-  { name: 'Support & Managed Services', href: '#jde-support', category: 'Oracle JD Edwards' },
-  { name: 'Orchestrator & Automation', href: '#jde-orchestrator', category: 'Oracle JD Edwards' },
-  { name: 'JD Edwards Mobile Access', href: '#jde-mobile', category: 'Oracle JD Edwards' },
-  { name: 'Technical (CNC) Services', href: '#jde-cnc', category: 'Oracle JD Edwards' },
 
-  { name: 'What is Oracle EPM?', href: '#epm-what-is', category: 'Oracle EPM / CPM' },
-  { name: 'Key Benefits', href: '#epm-benefits', category: 'Oracle EPM / CPM' },
-  { name: 'Planning & Budgeting', href: '#epm-planning', category: 'Oracle EPM / CPM' },
-  { name: 'Financial Close & Consolidation', href: '#epm-consolidation', category: 'Oracle EPM / CPM' },
-  { name: 'Account Reconciliation', href: '#epm-reconciliation', category: 'Oracle EPM / CPM' },
-  { name: 'Narrative & Regulatory Reporting', href: '#epm-reporting', category: 'Oracle EPM / CPM' },
-  { name: 'Data Management & Integration', href: '#epm-data', category: 'Oracle EPM / CPM' },
+    { name: 'What is JD Edwards?', href: '/services/jd-edwards', category: 'Oracle JD Edwards' },
+    { name: 'Key Benefits', href: '/services/jd-edwards', category: 'Oracle JD Edwards' },
+    { name: 'JD Edwards Implementation', href: '/services/jd-edwards', category: 'Oracle JD Edwards' },
+    { name: 'Support & Managed Services', href: '/services/jd-edwards', category: 'Oracle JD Edwards' },
+    { name: 'Orchestrator & Automation', href: '/services/jd-edwards', category: 'Oracle JD Edwards' },
+    { name: 'JD Edwards Mobile Access', href: '/services/jd-edwards', category: 'Oracle JD Edwards' },
+    { name: 'Technical (CNC) Services', href: '/services/jd-edwards', category: 'Oracle JD Edwards' },
 
-  { name: 'What is NetSuite?', href: '#netsuite-what-is', category: 'NetSuite' },
-  { name: 'Key Benefits', href: '#netsuite-benefits', category: 'NetSuite' },
-  { name: 'NetSuite Implementation', href: '#netsuite-implementation', category: 'NetSuite' },
-  { name: 'Support & Customization', href: '#netsuite-support', category: 'NetSuite' },
-  { name: 'Industry-Specific Solutions', href: '#netsuite-industries', category: 'NetSuite' },
-  { name: 'NetSuite Mobile Access', href: '#netsuite-mobile', category: 'NetSuite' },
-  { name: 'Planning & Reconciliation', href: '#netsuite-planning', category: 'NetSuite' },
+    { name: 'What is Oracle EPM?', href: '#epm-what-is', category: 'Oracle EPM / CPM' },
+    { name: 'Key Benefits', href: '#epm-benefits', category: 'Oracle EPM / CPM' },
+    { name: 'Planning & Budgeting', href: '#epm-planning', category: 'Oracle EPM / CPM' },
+    { name: 'Financial Close & Consolidation', href: '#epm-consolidation', category: 'Oracle EPM / CPM' },
+    { name: 'Account Reconciliation', href: '#epm-reconciliation', category: 'Oracle EPM / CPM' },
+    { name: 'Narrative & Regulatory Reporting', href: '#epm-reporting', category: 'Oracle EPM / CPM' },
+    { name: 'Data Management & Integration', href: '#epm-data', category: 'Oracle EPM / CPM' },
 
-  { name: 'What is Cloud Infrastructure?', href: '#cloud-what-is', category: 'Cloud / Infrastructure' },
-  { name: 'Key Benefits', href: '#cloud-benefits', category: 'Cloud / Infrastructure' },
-  { name: 'Cloud Consulting & Strategy', href: '#cloud-consulting', category: 'Cloud / Infrastructure' },
-  { name: 'Migration to Oracle Cloud (OCI)', href: '#oci-migration', category: 'Cloud / Infrastructure' },
-  { name: 'Infrastructure Management', href: '#cloud-management', category: 'Cloud / Infrastructure' },
-  { name: 'DevOps & Automation', href: '#cloud-devops', category: 'Cloud / Infrastructure' },
-  { name: 'Multi-Cloud Environments', href: '#multi-cloud', category: 'Cloud / Infrastructure' },
+    { name: 'What is NetSuite?', href: '#netsuite-what-is', category: 'NetSuite' },
+    { name: 'Key Benefits', href: '#netsuite-benefits', category: 'NetSuite' },
+    { name: 'NetSuite Implementation', href: '#netsuite-implementation', category: 'NetSuite' },
+    { name: 'Support & Customization', href: '#netsuite-support', category: 'NetSuite' },
+    { name: 'Industry-Specific Solutions', href: '#netsuite-industries', category: 'NetSuite' },
+    { name: 'NetSuite Mobile Access', href: '#netsuite-mobile', category: 'NetSuite' },
+    { name: 'Planning & Reconciliation', href: '#netsuite-planning', category: 'NetSuite' },
 
-  { name: 'What is Enterprise Mobility?', href: '#mobility-what-is', category: 'Mobility Services' },
-  { name: 'Key Benefits', href: '#mobility-benefits', category: 'Mobility Services' },
-  { name: 'Mobile App Development', href: '#mobility-apps', category: 'Mobility Services' },
-  { name: 'JD Edwards & NetSuite Mobile Apps', href: '#mobility-jde-netsuite', category: 'Mobility Services' },
-  { name: 'Field Service Mobility', href: '#mobility-field', category: 'Mobility Services' },
-  { name: 'App Modernization & Integration', href: '#mobility-modernization', category: 'Mobility Services' },
+    { name: 'What is Cloud Infrastructure?', href: '#cloud-what-is', category: 'Cloud / Infrastructure' },
+    { name: 'Key Benefits', href: '#cloud-benefits', category: 'Cloud / Infrastructure' },
+    { name: 'Cloud Consulting & Strategy', href: '#cloud-consulting', category: 'Cloud / Infrastructure' },
+    { name: 'Migration to Oracle Cloud (OCI)', href: '#oci-migration', category: 'Cloud / Infrastructure' },
+    { name: 'Infrastructure Management', href: '#cloud-management', category: 'Cloud / Infrastructure' },
+    { name: 'DevOps & Automation', href: '#cloud-devops', category: 'Cloud / Infrastructure' },
+    { name: 'Multi-Cloud Environments', href: '#multi-cloud', category: 'Cloud / Infrastructure' },
 
-  { name: 'What is Oracle BI?', href: '#bi-what-is', category: 'Oracle BI' },
-  { name: 'Key Benefits', href: '#bi-benefits', category: 'Oracle BI' },
-  { name: 'Oracle Analytics Cloud (OAC)', href: '#bi-oac', category: 'Oracle BI' },
-  { name: 'BI Publisher & OBIEE Reports', href: '#bi-publisher', category: 'Oracle BI' },
-  { name: 'Data Visualization & Dashboards', href: '#bi-dashboards', category: 'Oracle BI' },
-  { name: 'Self-Service BI', href: '#bi-self-service', category: 'Oracle BI' },
+    { name: 'What is Enterprise Mobility?', href: '#mobility-what-is', category: 'Mobility Services' },
+    { name: 'Key Benefits', href: '#mobility-benefits', category: 'Mobility Services' },
+    { name: 'Mobile App Development', href: '#mobility-apps', category: 'Mobility Services' },
+    { name: 'JD Edwards & NetSuite Mobile Apps', href: '#mobility-jde-netsuite', category: 'Mobility Services' },
+    { name: 'Field Service Mobility', href: '#mobility-field', category: 'Mobility Services' },
+    { name: 'App Modernization & Integration', href: '#mobility-modernization', category: 'Mobility Services' },
 
-  { name: 'What is Oracle Database?', href: '#db-what-is', category: 'Oracle Database' },
-  { name: 'Key Benefits', href: '#db-benefits', category: 'Oracle Database' },
-  { name: 'Installation & Support', href: '#db-installation', category: 'Oracle Database' },
-  { name: 'Database Tuning', href: '#db-tuning', category: 'Oracle Database' },
-  { name: 'Backup & Recovery', href: '#db-backup', category: 'Oracle Database' },
-  { name: 'Oracle Autonomous DB', href: '#db-autonomous', category: 'Oracle Database' },
-  { name: 'Health Check & Optimization', href: '#db-health', category: 'Oracle Database' }
+    { name: 'What is Oracle BI?', href: '#bi-what-is', category: 'Oracle BI' },
+    { name: 'Key Benefits', href: '#bi-benefits', category: 'Oracle BI' },
+    { name: 'Oracle Analytics Cloud (OAC)', href: '#bi-oac', category: 'Oracle BI' },
+    { name: 'BI Publisher & OBIEE Reports', href: '#bi-publisher', category: 'Oracle BI' },
+    { name: 'Data Visualization & Dashboards', href: '#bi-dashboards', category: 'Oracle BI' },
+    { name: 'Self-Service BI', href: '#bi-self-service', category: 'Oracle BI' },
+
+    { name: 'What is Oracle Database?', href: '#db-what-is', category: 'Oracle Database' },
+    { name: 'Key Benefits', href: '#db-benefits', category: 'Oracle Database' },
+    { name: 'Installation & Support', href: '#db-installation', category: 'Oracle Database' },
+    { name: 'Database Tuning', href: '#db-tuning', category: 'Oracle Database' },
+    { name: 'Backup & Recovery', href: '#db-backup', category: 'Oracle Database' },
+    { name: 'Oracle Autonomous DB', href: '#db-autonomous', category: 'Oracle Database' },
+    { name: 'Health Check & Optimization', href: '#db-health', category: 'Oracle Database' }
 
 
   ];
+
+  const servicesByCategory = [
+    {
+      category: 'Oracle JD Edwards',
+      href: '/services/jd-edwards',
+      items: [
+        'What is JD Edwards?',
+        'Key Benefits',
+        'JD Edwards Implementation',
+        'Support & Managed Services',
+        'Orchestrator & Automation',
+        'JD Edwards Mobile Access',
+        'Technical (CNC) Services',
+      ],
+    },
+    {
+      category: 'Oracle EPM / CPM',
+      href: '/services/oracle-epm',
+      items: [
+        'What is Oracle EPM?',
+        'Key Benefits',
+        'Planning & Budgeting',
+        'Financial Close & Consolidation',
+        'Account Reconciliation',
+        'Narrative & Regulatory Reporting',
+        'Data Management & Integration',
+      ],
+    },
+    {
+      category: 'NetSuite',
+      href: '/services/netsuite',
+      items: [
+        'What is NetSuite?',
+        'Key Benefits',
+        'NetSuite Implementation',
+        'Support & Customization',
+        'Industry-Specific Solutions',
+        'NetSuite Mobile Access',
+        'Planning & Reconciliation',
+      ],
+    },
+    {
+      category: 'Cloud / Infrastructure',
+      href: '/services/cloud',
+      items: [
+        'What is Cloud Infrastructure?',
+        'Key Benefits',
+        'Cloud Consulting & Strategy',
+        'Migration to Oracle Cloud (OCI)',
+        'Infrastructure Management',
+        'DevOps & Automation',
+        'Multi-Cloud Environments',
+      ],
+    },
+    {
+      category: 'Mobility Services',
+      href: '/services/mobility',
+      items: [
+        'What is Enterprise Mobility?',
+        'Key Benefits',
+        'Mobile App Development',
+        'JD Edwards & NetSuite Mobile Apps',
+        'Field Service Mobility',
+        'App Modernization & Integration',
+      ],
+    },
+    {
+      category: 'Oracle BI',
+      href: '/services/oracle-bi',
+      items: [
+        'What is Oracle BI?',
+        'Key Benefits',
+        'Oracle Analytics Cloud (OAC)',
+        'BI Publisher & OBIEE Reports',
+        'Data Visualization & Dashboards',
+        'Self-Service BI',
+      ],
+    },
+    {
+      category: 'Oracle Database',
+      href: '/services/oracle-database',
+      items: [
+        'What is Oracle Database?',
+        'Key Benefits',
+        'Installation & Support',
+        'Database Tuning',
+        'Backup & Recovery',
+        'Oracle Autonomous DB',
+        'Health Check & Optimization',
+      ],
+    },
+  ];
+
 
   const groupedServices = servicesItems.reduce((acc, item) => {
     if (!acc[item.category]) {
@@ -197,36 +290,22 @@ const Navbar = () => {
                       gap: '30px',
                     }}
                   >
-                    {Object.entries(groupedServices).map(([category, items]) => (
+                    {servicesByCategory.map(({ category, href, items }) => (
                       <div key={category}>
-                        <h3
-                          style={{
-                            color: 'rgb(28 24 103)',
-                            fontSize: '16px',
-                            fontWeight: 'bold',
-                            marginBottom: '15px',
-                            textTransform: 'uppercase',
-                          }}
-                        >
-                          {category}
-                        </h3>
+                        <h3 className="text-indigo-800 font-semibold text-sm uppercase mb-3">{category}</h3>
                         {items.map((item) => (
-                          <Link
-                            to={item.href}
-                            key={item.name}
-                            style={{
-                              display: 'block',
-                              color: '#333',
-                              marginBottom: '10px',
-                              textDecoration: 'none',
-                            }}
-                            className="hover:text-primary-600 transition-colors"
+                          <a
+                            key={item}
+                            href={`${href}#${item.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}
+                            className="block text-gray-700 mb-2 hover:text-indigo-600 transition-colors"
+                            onClick={() => setIsMegaMenuOpen(false)}
                           >
-                            {item.name}
-                          </Link>
+                            {item}
+                          </a>
                         ))}
                       </div>
                     ))}
+
                   </div>
                 </div>
               )}
