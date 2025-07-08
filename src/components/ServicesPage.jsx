@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import './ServicesPage.css';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import Contact from './Contact';
 
 const ServicesPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -150,9 +153,11 @@ const ServicesPage = () => {
   }, []);
 
   return (
+    <>
+    <Navbar />
     <div className="services-page">
       {/* Header Section */}
-      <div className="services-header">
+      {/* <div className="services-header">
         <div className="header-content">
           <div className="header-text">
             <h1 className="main-title">
@@ -178,7 +183,7 @@ const ServicesPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Interactive Category Filter */}
       <div className="filter-section">
@@ -241,36 +246,10 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      {/* Why Choose EMcube Section */}
-      <div className="why-choose-section">
-        <div className="container">
-          <h2 className="section-title">Why Choose EMcube Cloud for JD Edwards?</h2>
-          <div className="benefits-grid">
-            <div className="benefit-card">
-              <div className="benefit-icon">🏆</div>
-              <h3>Certified Experts</h3>
-              <p>Our team consists of Oracle-certified JD Edwards professionals with extensive industry experience.</p>
-            </div>
-            <div className="benefit-card">
-              <div className="benefit-icon">🎯</div>
-              <h3>Proven Methodology</h3>
-              <p>We follow industry best practices and proven methodologies to ensure successful project delivery.</p>
-            </div>
-            <div className="benefit-card">
-              <div className="benefit-icon">🚀</div>
-              <h3>Rapid Implementation</h3>
-              <p>Our accelerated implementation approach reduces time-to-value and minimizes business disruption.</p>
-            </div>
-            <div className="benefit-card">
-              <div className="benefit-icon">💡</div>
-              <h3>Innovation Focus</h3>
-              <p>We leverage the latest technologies and innovations to modernize your JD Edwards environment.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <Contact/>
+      <Footer />
     </div>
+    </>
   );
 };
 

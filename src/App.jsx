@@ -1,12 +1,10 @@
 import { useEffect } from 'react';
-// import Navbar from './components/Navbar';
-// import Hero from './components/Hero';
-// import Stats from './components/Stats';
-
-// import ServicesSection from './components/ServicesSection';
-// import Contact from './components/Contact';
 import Home from './components/Home';
-// import Footer from './components/Footer';
+import ServicesPage from './components/ServicesPage';
+import JDEdwards from './components/services/JDEdwards';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
+
 
 function App() {
   useEffect(() => {
@@ -33,16 +31,18 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-    <Home/>
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
-  
-      {/* <AboutServices /> */}
-      {/* <ServicesSection /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+    <Router>
+      <ScrollToTop />
+      <div className="App">
+    <main>
+      <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/services" element={<ServicesPage />} />
+      <Route path="/services/jd-edwards" element={<JDEdwards />} />
+    </Routes>
+    </main>
     </div>
+    </Router>
   );
 }
 

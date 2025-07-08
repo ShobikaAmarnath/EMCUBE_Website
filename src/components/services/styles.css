@@ -1,0 +1,28 @@
+.list-block {
+    list-style: square;
+    padding-left: 40px;
+    margin: 0;
+}
+
+.list-block-item {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.list-block-content {
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.jde-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 4rem;
+}

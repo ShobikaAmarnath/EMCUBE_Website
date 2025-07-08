@@ -137,7 +137,7 @@ const Navbar = () => {
         }`}
     >
       <div className="container-custom">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 .px-8">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="text-2xl font-bold text-primary-600">
@@ -148,18 +148,18 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <DropdownMenu items={aboutUsItems} title="About Us" />
-            <li
+            <div
               style={{ position: 'relative', marker: 'none' }}
               onMouseEnter={() => !isMobile && setIsMegaMenuOpen(true)}
               onMouseLeave={() => !isMobile && setIsMegaMenuOpen(false)}
             >
               <Link
-                to="#"
+                to="/services"
                 style={{
                   alignItems: 'center',
                   gap: '5px',
                 }}
-                // className={location.pathname === '/services' ? 'active' : ''}
+                className={location.pathname === '/services' ? 'active' : ''}
                 onClick={toggleServicesDropdown}
               >
                 Our Services
@@ -176,7 +176,7 @@ const Navbar = () => {
                   className="mega-menu-desktop"
                   style={{
                     position: 'absolute',
-                    top: '100%',
+                    top: '110%',
                     left: '-1000px',
                     backgroundColor: 'white',
                     boxShadow: '0 8px 16px rgba(0,0,0,0.1)',
@@ -250,7 +250,7 @@ const Navbar = () => {
                   ))}
                 </div>
               )}
-            </li>
+            </div>
 
             <a href="#products" className="nav-link">
               Products
@@ -266,7 +266,7 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-700 hover:text-primary-600 transition-colors duration-200"
             >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMobileMenuOpen ? <X className="w-12 h-6" /> : <Menu className="w-12 h-6" />}
             </button>
           </div>
         </div>

@@ -78,7 +78,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,0 1000,100 1000,0"/></svg>');
+  background: url('data:image/svg+xml,<svg xml.ns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,0 1000,100 1000,0"/></svg>');
   background-size: cover;
 }
 
@@ -149,11 +149,12 @@ body {
 
 /* Filter Section */
 .filter-section {
+  margin-top: 4rem;
   background: white;
   padding: 60px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 
 .filter-title {
