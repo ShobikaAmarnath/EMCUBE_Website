@@ -1,20 +1,20 @@
 import "./Styles.css";
 import { motion } from 'framer-motion';
 
-const ListBlock = ({ items }) => {
+const ListBlock = (props) => {
 
   const fadeSlide = {
-    hidden: { opacity: 0, x: -20 },
+    hidden: { opacity: 0, x: props.direction },
     visible: (customDelay = 0) => ({
       opacity: 1,
       x: 0,
-      transition: { delay: customDelay, duration: 0.6 },
+      transition: { delay: customDelay, duration: 1.0 },
     }),
   }
 
   return (
     <ul className="list-block">
-      {items.map((item, index) => (
+      {props.items.map((item, index) => (
         <motion.li
           key={index} className="list-block-item"
           variants={fadeSlide}

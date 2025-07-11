@@ -28,7 +28,7 @@ const Contact = () => {
             Ready to transform your business? Contact our experts to discuss your requirements
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
@@ -48,7 +48,7 @@ const Contact = () => {
                 </div>
               ))}
             </div>
-            
+
             <div className="mt-8 p-6 bg-primary-50 rounded-lg">
               <h4 className="font-semibold text-gray-900 mb-2">Business Hours</h4>
               <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
@@ -56,7 +56,7 @@ const Contact = () => {
               <p className="text-gray-600">Sunday: Closed</p>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div>
             <form className="bg-white p-8 rounded-xl shadow-lg">
@@ -82,7 +82,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="mb-6">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Email
@@ -93,7 +93,7 @@ const Contact = () => {
                   placeholder="john.doe@example.com"
                 />
               </div>
-              
+
               <div className="mb-6">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Service Interest
@@ -107,7 +107,7 @@ const Contact = () => {
                   <option>Other</option>
                 </select>
               </div>
-              
+
               <div className="mb-6">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Message
@@ -118,7 +118,7 @@ const Contact = () => {
                   placeholder="Tell us about your project requirements..."
                 ></textarea>
               </div>
-              
+
               <button className="w-full btn-primary flex items-center justify-center space-x-2">
                 <span>Send Message</span>
                 <Send className="w-5 h-5" />

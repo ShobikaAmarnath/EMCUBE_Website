@@ -46,11 +46,11 @@ const AboutServices = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive enterprise solutions designed to accelerate your digital transformation 
+            Comprehensive enterprise solutions designed to accelerate your digital transformation
             and drive business growth through innovative technology
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div

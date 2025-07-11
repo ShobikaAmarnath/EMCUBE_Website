@@ -1,11 +1,11 @@
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import ContactForm from '../Contact'
+import ContactForm from '../Contact';
+import ListBlock from "./ListBlock";
 import "./styles.css";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import ListBlock from "./ListBlock";
 
 import {
   Server,
@@ -26,6 +26,9 @@ import {
   // Clock,
   // Award
 } from 'lucide-react';
+
+import { fadeSlide, titleVariants } from "../../animations/variants";
+import { time_div, time_h2, time_p } from "../../animations/positions";
 
 const JDEdwards = () => {
   const services = [
@@ -184,30 +187,15 @@ const JDEdwards = () => {
   }));
 
   const { hash } = useLocation();
-  
-    useEffect(() => {
-      if (hash) {
-        const el = document.querySelector(hash);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    }, [hash]);
 
-  const fadeSlide = {
-    hidden: (customX = 0) => ({
-      opacity: 0,
-      x: customX,
-    }),
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
+  useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [hash]);
 
   return (
     <>
@@ -246,15 +234,15 @@ const JDEdwards = () => {
 
         {/* Services Grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <motion.div className="text-center mb-16" {...time_div} variants={titleVariants}>
+            <motion.h2 className="text-4xl font-bold text-gray-900 mb-4" {...time_h2}>
               Our JD Edwards Service Portfolio
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            </motion.h2>
+            <motion.p className="text-xl text-gray-600 max-w-3xl mx-auto" {...time_p}>
               From strategic consulting to hands-on implementation, we provide end-to-end JD Edwards services
               tailored to your business needs.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
           <div className="space-y-12">
             {items.map((service, index) => {
@@ -263,78 +251,82 @@ const JDEdwards = () => {
               return (
                 <div id={service.src} className="scroll-mt-24">
                   <motion.div
-                  key={service.id}
-                  variants={fadeSlide}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.2 }}
-                  custom={direction}
-                  className={`relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 ${
-                    index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                  } flex flex-col lg:flex`}
-                >
-                  {/* Service Header with Image */}
-                  <div className={`lg:w-2/5 relative overflow-hidden`}>
-                    <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-90`}></div>
-                    <img 
-                      src={service.image} 
-                      alt={service.title}
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
-                    <div className="relative z-10 p-8 lg:p-12 h-full bg-gradient-to-br from-black/50 to-black/20 flex flex-col justify-center">
-                      <div className="flex items-center mb-6">
-                        <div className="p-4 bg-white/30 rounded-2xl mr-4 backdrop-blur-md shadow-lg">
-                          {service.icon}
+                    key={service.id}
+                    variants={fadeSlide}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.2 }}
+                    custom={direction}
+                    className={`relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                      } flex flex-col lg:flex`}
+                  >
+                    {/* Service Header with Image */}
+                    <div className={`lg:w-2/5 relative overflow-hidden`}>
+                      <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-50`}></div>
+                      <motion.img
+                        src={service.image}
+                        alt={service.title}
+                        variants={fadeSlide}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.8 }}
+                        custom={direction}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                      <div className="relative z-10 p-8 lg:p-12 h-full bg-gradient-to-br from-black/50 to-black/20 flex flex-col justify-center">
+                        <div className="flex items-center mb-6">
+                          <div className="p-4 bg-white/30 rounded-2xl mr-4 backdrop-blur-md shadow-lg">
+                            {service.icon}
+                          </div>
                         </div>
-                      </div>
-                      <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
-                        {service.title.split(' ').map((word, i) => (
-                          <span key={i} className="block">
-                            {word}
-                          </span>
-                        ))}
-                      </h3>
-                      <div className="mt-6 h-1 w-24 bg-white/50 rounded-full"></div>
-                    </div>
-                  </div>
-
-                  {/* Service Content */}
-                  <div className="lg:w-3/5 p-8 lg:p-12">
-                    <div className="grid md:grid-cols-2 gap-8">
-                      {/* What We Offer */}
-                      <div>
-                        <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                          <Zap className="w-5 h-5 mr-2 text-blue-600" />
-                          What We Offer
-                        </h4>
-                        <ListBlock items={service.offerings} />
-                      </div>
-
-                      {/* Benefits */}
-                      <div>
-                        <h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                          <Shield className="w-5 h-5 mr-2 text-green-600" />
-                          Key Benefits
-                        </h4>
-                        <ListBlock items={service.benefits} />
+                        <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+                          {service.title.split(' ').map((word, i) => (
+                            <span key={i} className="block">
+                              {word}
+                            </span>
+                          ))}
+                        </h3>
+                        <div className="mt-6 h-1 w-24 bg-white/50 rounded-full"></div>
                       </div>
                     </div>
 
-                    <div className="mt-8 pt-6 border-t border-gray-200">
-                      <button className={`bg-gradient-to-r ${service.gradient} text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center`}>
-                        Learn More About {service.title}
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </button>
+                    {/* Service Content */}
+                    <div className="lg:w-3/5 p-8 lg:p-12">
+                      <div className="grid md:grid-cols-2 gap-8">
+                        {/* What We Offer */}
+                        <motion.div {...time_div} variants={titleVariants}>
+                          <motion.h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center" {...time_h2}>
+                            <Zap className="w-5 h-5 mr-2 text-blue-600" />
+                            What We Offer
+                          </motion.h4>
+                          <ListBlock items={service.offerings} direction={direction} />
+                        </motion.div>
+
+                        {/* Benefits */}
+                        <motion.div {...time_div} variants={titleVariants}>
+                          <motion.h4 className="text-xl font-bold text-gray-900 mb-4 flex items-center" {...time_h2}>
+                            <Shield className="w-5 h-5 mr-2 text-green-600" />
+                            Key Benefits
+                          </motion.h4>
+                          <ListBlock items={service.benefits} direction={direction} />
+                        </motion.div>
+                      </div>
+
+                      <div className="mt-8 pt-6 border-t border-gray-200">
+                        <button className={`bg-gradient-to-r ${service.gradient} text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center`}>
+                          Learn More About {service.title}
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
+                  </motion.div>
                 </div>
               );
             })}
           </div>
         </div>
       </div>
-      <ContactForm/>
+      <ContactForm />
       <Footer />
     </>
   );

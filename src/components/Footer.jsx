@@ -3,16 +3,19 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
 const Footer = () => {
   const quickLinks = [
     { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
+    { name: 'Services', href: '/services' },
     { name: 'Products', href: '#products' },
     { name: 'Contact', href: '#contact' }
   ];
 
   const services = [
-    { name: 'Oracle JD Edwards', href: '#jd-edwards' },
+    { name: 'Oracle JD Edwards', href: '/services/jd-edwards' },
+    { name: 'Oracle EPM / CPM', href: '/services/oracle-epm' },
+    { name: 'Net Suite', href: '#managed-services' },
     { name: 'Cloud Services', href: '#cloud-services' },
-    { name: 'Managed Services', href: '#managed-services' },
-    { name: 'Business Intelligence', href: '#bi-services' }
+    { name: 'Mobility Services', href: '#bi-services' },
+    { name: 'Oracle BI', href: '#bi-services' },
+    { name: 'Oracle Database', href: '#bi-services' }
   ];
 
   const solutions = [
@@ -30,7 +33,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">EMcube Cloud</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Leading provider of Oracle JD Edwards solutions and enterprise cloud services. 
+              Leading provider of Oracle JD Edwards solutions and enterprise cloud services.
               Empowering businesses with innovative technology solutions.
             </p>
             <div className="flex space-x-4">
