@@ -1,5 +1,6 @@
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import ContactForm from '../Contact'
 import "./styles.css";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -19,6 +20,7 @@ import {
   ArrowRight,
   Shield,
   Zap,
+  Contact,
   // Users,
   // TrendingUp,
   // Clock,
@@ -332,6 +334,7 @@ const JDEdwards = () => {
           </div>
         </div>
       </div>
+      <ContactForm/>
       <Footer />
     </>
   );

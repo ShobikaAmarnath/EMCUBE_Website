@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import ContactForm from '../Contact'
+import ListBlock from './ListBlock';
 import { useVantaRings } from '../../hooks/useVantaRings';
 import { motion } from 'framer-motion';
 import {
@@ -148,7 +150,7 @@ const OracleEPM = () => {
       },
     },
   };
-  
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -438,14 +440,7 @@ const OracleEPM = () => {
                       <Zap className="w-5 h-5 mr-2 text-indigo-600" />
                       Key Features
                     </h4>
-                    <div className="grid gap-4">
-                      {item.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-start">
-                          <ArrowRight className="w-5 h-5 text-indigo-500 mr-3 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-700">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
+                    <ListBlock items={item.features}/>
                   </div>
 
                   <div className="mt-8 pt-6 border-t border-gray-200">
@@ -463,7 +458,7 @@ const OracleEPM = () => {
         </div>
 
         {/* Integration Section */}
-        <div className="bg-gradient-to-r from-gray-900 to-indigo-900 text-white py-20">
+        <div className="bg-gradient-to-r from-gray-900 to-indigo-900 text-white py-20 mb-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">
@@ -494,6 +489,7 @@ const OracleEPM = () => {
           </div>
         </div>
       </div>
+      <ContactForm/>
       <Footer />
     </>
   );
