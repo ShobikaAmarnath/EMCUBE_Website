@@ -1,6 +1,8 @@
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "./styles.css";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ListBlock from "./ListBlock";
 
@@ -174,6 +176,22 @@ const JDEdwards = () => {
     }
   ];
 
+  const items = services.map(item => ({
+    ...item,
+    src: item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
+  }));
+
+  const { hash } = useLocation();
+  
+    useEffect(() => {
+      if (hash) {
+        const el = document.querySelector(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, [hash]);
+
   const fadeSlide = {
     hidden: (customX = 0) => ({
       opacity: 0,
@@ -237,11 +255,12 @@ const JDEdwards = () => {
           </div>
 
           <div className="space-y-12">
-            {services.map((service, index) => {
+            {items.map((service, index) => {
               const isReversed = index % 2 !== 0;
               const direction = isReversed ? 20 : -20;
               return (
-                <motion.div
+                <div id={service.src} className="scroll-mt-24">
+                  <motion.div
                   key={service.id}
                   variants={fadeSlide}
                   initial="hidden"
@@ -307,6 +326,7 @@ const JDEdwards = () => {
                     </div>
                   </div>
                 </motion.div>
+                </div>
               );
             })}
           </div>

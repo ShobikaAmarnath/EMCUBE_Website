@@ -102,11 +102,14 @@ const Navbar = () => {
       items: [
         'What is JD Edwards?',
         'Key Benefits',
+        'JD Edwards Consulting',
+        'JD Edwards Managed Services',
+        'JD Edwards Upgrade',
         'JD Edwards Implementation',
-        'Support & Managed Services',
-        'Orchestrator & Automation',
-        'JD Edwards Mobile Access',
-        'Technical (CNC) Services',
+        'Lift, Shift & Manage',
+        'JD Edwards Orchestrator',
+        'JD Edwards Integrations',
+        'Smart Help'
       ],
     },
     {
@@ -253,7 +256,10 @@ const Navbar = () => {
                   gap: '5px',
                 }}
                 className={location.pathname === '/services' ? 'active' : ''}
-                onClick={toggleServicesDropdown}
+                onClick={() => {
+                  toggleServicesDropdown();
+                  setIsMegaMenuOpen(!isMegaMenuOpen);
+                }}
               >
                 Our Services
                 {!isMobile && (

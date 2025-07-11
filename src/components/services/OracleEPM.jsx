@@ -133,6 +133,22 @@ const OracleEPM = () => {
   }, [hash]);
 
   // Animation variants
+
+  const fadeSlide = {
+    hidden: (customX = 0) => ({
+      opacity: 0,
+      x: customX,
+    }),
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -229,7 +245,8 @@ const OracleEPM = () => {
         </div>
 
         {/* What is Oracle EPM Section */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 mt-32" id="what-is-oracle-epm">
+        <div id="what-is-oracle-epm" className='scroll-mt-16'>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 my-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -272,9 +289,11 @@ const OracleEPM = () => {
             </div>
           </div>
         </div>
+        </div>
 
         {/* Key Benefits Section with Animations */}
-        <div className="bg-white py-20 overflow-hidden" id="key-benefits">
+        <div className="scroll-mt-12" id="key-benefits">
+          <div className="bg-white py-20 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               className="text-center mb-16"
@@ -358,6 +377,7 @@ const OracleEPM = () => {
             </motion.div>
           </div>
         </div>
+        </div>
 
         {/* Services Section */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -371,12 +391,20 @@ const OracleEPM = () => {
           </div>
 
           <div className="space-y-12">
-            {items.map((item, index) => (
-              <div
+            {items.map((item, index) => {
+              const isReversed = index % 2 !== 0;
+              const direction = isReversed ? 20 : -20;
+              return (
+                <div id={item.src} className='scroll-mt-24'>
+                <motion.div
                 key={item.id}
+                variants={fadeSlide}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.2 }}
+                  custom={direction}
                 className={`relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
                   } flex flex-col lg:flex`}
-                id={item.src}
               >
                 {/* Service Header with Image */}
                 <div className={`lg:w-2/5 relative overflow-hidden`}>
@@ -427,8 +455,10 @@ const OracleEPM = () => {
                     </button>
                   </div>
                 </div>
+              </motion.div>
               </div>
-            ))}
+              );
+})}
           </div>
         </div>
 
