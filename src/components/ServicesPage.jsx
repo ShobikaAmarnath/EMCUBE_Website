@@ -8,12 +8,25 @@ import { updatedServices, categories } from '../data/services';
 const ServicesPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [isVisible, setIsVisible] = useState({});
+  const [isAtTop, setIsAtTop] = useState(true);
 
   const handleServiceClick = (link) => {
     if (link) {
       window.location.href = link;
     }
   };
+
+  const DownArrow = () => (
+    <svg width="24" height="24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M6 9l6 6 6-6" />
+    </svg>
+  );
+
+  const UpArrow = () => (
+    <svg width="24" height="24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  );
 
   const filteredServices = activeCategory === 'all'
     ? updatedServices
@@ -36,6 +49,14 @@ const ServicesPage = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+      const handleScroll = () => {
+        setIsAtTop(window.scrollY < 100);
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
   return (
     <>
@@ -82,17 +103,6 @@ const ServicesPage = () => {
                   <div className="service-content">
                     <h3 className="service-title">{service.title}</h3>
                     <p className="service-description">{service.description}</p>
-                    {/* <div className="service-features">
-                    <h4>Key Features:</h4>
-                    <ul>
-                      {service.features.map((feature, idx) => (
-                        <li key={idx}>
-                          <span className="feature-bullet">✓</span>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div> */}
                     <div className="service-actions justify-center">
                       <button className="btn btn-primary" onClick={() => handleServiceClick(service.link)}>Learn More</button>
                     </div>
@@ -106,6 +116,25 @@ const ServicesPage = () => {
         <Contact />
         <Footer />
       </div>
+
+      {/* Scroll Arrow Indicator */}
+      {isAtTop ? (
+        <button
+          className="fixed bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce bg-indigo-600 p-3 rounded-full shadow-lg z-50"
+          onClick={() =>
+            document.querySelector(".services-grid-section")?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          <DownArrow />
+        </button>
+      ) : (
+        <button
+          className="fixed bottom-8 right-8 bg-indigo-600 p-3 rounded-full shadow-lg z-50 hover:scale-110 transition-transform animate-bounce"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <UpArrow />
+        </button>
+      )}
     </>
   );
 };
