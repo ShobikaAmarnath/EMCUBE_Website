@@ -75,8 +75,7 @@ const ServicesPage = () => {
                   className={`filter-tab ${activeCategory === category.id ? 'active' : ''}`}
                   onClick={() => setActiveCategory(category.id)}
                 >
-                  <span className="tab-icon">{category.icon}</span>
-                  <span className="tab-text">{category.name}</span>
+               <span className="tab-text">{category.name}</span>
                 </button>
               ))}
             </div>

@@ -150,7 +150,7 @@ body {
 /* Filter Section */
 .filter-section {
   margin-top: 4rem;
-  background: white;
+  background: rgb(30, 55, 112);
   padding: 60px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -161,7 +161,7 @@ body {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #2d3748;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -175,7 +175,7 @@ body {
 }
 
 .filter-tab {
-  background: #f7fafc;
+  background: #b7cfde;
   border: 2px solid #e2e8f0;
   padding: 15px 25px;
   border-radius: 50px;
@@ -195,18 +195,16 @@ body {
 }
 
 .filter-tab.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #687f99 0%, #a5c8f4 100%);
   color: white;
   border-color: #667eea;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.482);
 }
 
-.tab-icon {
-  font-size: 1.2rem;
-}
 
 .tab-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: black;
 }
 
 /* Services Grid Section */
@@ -232,10 +230,6 @@ body {
   position: relative;
 }
 
-.service-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .service-card:hover {
   transform: translateY(-10px);
@@ -244,20 +238,20 @@ body {
 
 .service-image {
   position: relative;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
 }
 
-.service-image img {
+/* .service-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
-}
+} */
 
-.service-card:hover .service-image img {
+/* .service-card:hover .service-image img {
   transform: scale(1.1);
-}
+} */
 
 .service-overlay {
   position: absolute;
@@ -274,19 +268,9 @@ body {
 }
 
 .service-card:hover .service-overlay {
-  opacity: 1;
+  opacity: 0.5;
 }
 
-.service-icon {
-  font-size: 3rem;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
-}
 
 .service-content {
   padding: 30px;
