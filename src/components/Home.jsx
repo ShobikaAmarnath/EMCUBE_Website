@@ -1,9 +1,7 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import AboutServices from './AboutServices';
 
 import './HomePage.css';
-// import Stats from './Stats';
 import './ServicesPage';
 import Footer from './Footer';
 
@@ -63,6 +61,14 @@ const HomePage = () => {
   const handleCardMouseLeave = () => {
     setHoveredCard(null);
   };
+
+  const handleClick = (id) => {
+    const el = document.querySelector(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <div className="homepage">
 
@@ -158,16 +164,10 @@ const HomePage = () => {
               enterprise resource planning platform designed for modern businesses.
             </p>
             <div className="hero-buttons">
-              <button className="btn btn-primary">Get Started</button>
-              <button className="btn btn-secondary">Learn More</button>
+              <button className="btn btn-primary" onClick={() => handleClick("#about")}>Get Started</button>
             </div>
           </div>
-          {/* <div className="hero-image">
-          <img 
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-            alt="Business Technology" 
-          />
-        </div> */}
+
         </div>
       </section>
 
@@ -210,10 +210,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* <section>
-        <Stats/>
-      </section> */}
-      {/* <ServicesPage/> */}
       <AboutServices />
 
 

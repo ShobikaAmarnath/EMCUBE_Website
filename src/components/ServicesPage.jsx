@@ -90,7 +90,7 @@ const ServicesPage = () => {
                 <div
                   key={service.id}
                   id={`service-${service.id}`}
-                  className={`service-card ${isVisible[`service-${service.id}`] ? 'visible' : ''}`}
+                  className={`service-card animate-on-scroll ${isVisible[`service-${service.id}`] ? 'visible' : ''}`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="service-image" onClick={() => handleServiceClick(service.link)}>
