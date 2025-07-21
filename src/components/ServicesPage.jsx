@@ -3,10 +3,11 @@ import './ServicesPage.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Contact from './Contact';
+import ServicesGrid from './ServicesGrid';
 import { updatedServices, categories } from '../data/services';
 
 const ServicesPage = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeCategory, setActiveCategory] = useState('jd');
   const [isVisible, setIsVisible] = useState({});
   const [isAtTop, setIsAtTop] = useState(true);
 
@@ -51,12 +52,12 @@ const ServicesPage = () => {
   }, []);
 
   useEffect(() => {
-      const handleScroll = () => {
-        setIsAtTop(window.scrollY < 100);
-      };
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    const handleScroll = () => {
+      setIsAtTop(window.scrollY < 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -75,7 +76,7 @@ const ServicesPage = () => {
                   className={`filter-tab ${activeCategory === category.id ? 'active' : ''}`}
                   onClick={() => setActiveCategory(category.id)}
                 >
-               <span className="tab-text">{category.name}</span>
+                  <span className="tab-text">{category.name}</span>
                 </button>
               ))}
             </div>
@@ -83,34 +84,10 @@ const ServicesPage = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="services-grid-section">
-          <div className="container">
-            <div className="services-grid">
-              {filteredServices.map((service, index) => (
-                <div
-                  key={service.id}
-                  id={`service-${service.id}`}
-                  className={`service-card animate-on-scroll ${isVisible[`service-${service.id}`] ? 'visible' : ''}`}
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="service-image" onClick={() => handleServiceClick(service.link)}>
-                    <img src={service.image} alt={service.title} onClick={() => handleServiceClick(service.link)} />
-                    <div className="service-overlay">
-                      <div className="service-icon">{service.icon}</div>
-                    </div>
-                  </div>
-                  <div className="service-content">
-                    <h3 className="service-title">{service.title}</h3>
-                    <p className="service-description">{service.description}</p>
-                    <div className="service-actions justify-center">
-                      <button className="btn btn-primary" onClick={() => handleServiceClick(service.link)}>Learn More</button>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <ServicesGrid
+          services={filteredServices}
+          onCardClick={handleServiceClick}
+        />
 
         <Contact />
         <Footer />
@@ -118,14 +95,7 @@ const ServicesPage = () => {
 
       {/* Scroll Arrow Indicator */}
       {isAtTop ? (
-        <button
-          className="fixed bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce bg-indigo-600 p-3 rounded-full shadow-lg z-50"
-          onClick={() =>
-            document.querySelector(".services-grid-section")?.scrollIntoView({ behavior: "smooth" })
-          }
-        >
-          <DownArrow />
-        </button>
+        ""
       ) : (
         <button
           className="fixed bottom-8 right-8 bg-indigo-600 p-3 rounded-full shadow-lg z-50 hover:scale-110 transition-transform animate-bounce"

@@ -1,19 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
-import AboutServices from './AboutServices';
-
+import AboutServices from './ServicesGrid';
 import './HomePage.css';
 import './ServicesPage';
 import Footer from './Footer';
-
-import './Navbar';
 import Navbar from './Navbar';
-
-
-//   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-//   const toggleMobileMenu = () => {
-//     setIsMobileMenuOpen(!isMobileMenuOpen);
-//   };
+import ContactSection from './Contact';
+import ServicesGrid from './ServicesGrid';
+import { updatedServices } from '../data/services';
+import { motion } from 'framer-motion';
+import { waveItem, titleVariants, fadeSlide } from '../animations/variants';
+import { time_div, time_h2, time_p } from '../animations/positions';
 
 const HomePage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -68,6 +64,12 @@ const HomePage = () => {
       el.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  const handleCardClick = (link) => {
+    if (link) {
+      window.location.href = link;
+    }
+  };
 
   return (
     <div className="homepage">
@@ -173,88 +175,73 @@ const HomePage = () => {
 
 
       {/* About Section */}
-      <section id="about" className="about">
+      <section id="about" className="about section-padding bg-gray-50 scroll-mt-16">
         <div className="container">
           <div className="about-content">
-            <div className="about-text">
-              <h2>About EMcube</h2>
-              <p>
-                With over two decades of experience in enterprise software solutions, TechFlow ERP
-                has been at the forefront of digital transformation, helping businesses of all sizes
-                optimize their operations and achieve sustainable growth.
-              </p>
-              <p>
-                Our platform combines the power of artificial intelligence, cloud computing, and
-                intuitive design to deliver a comprehensive ERP solution that adapts to your unique
-                business needs.
-              </p>
+            <motion.div {...time_div} variants={titleVariants} className="about-text">
+              <motion.h2 className='text-4xl font-medium text-gray-950 mb-4' {...time_h2} >About EMCube</motion.h2>
+              <motion.p {...time_p}>
+                EMCube was founded with a single purpose — to simplify enterprise software for modern businesses.
+                Though still in our early phase, we are driven by a long-term vision to deliver smart, scalable,
+                and user-focused solutions that empower companies to operate more efficiently.
+              </motion.p>
+              <motion.p {...time_p}>
+                Our focus is on building tools that are clean in design, powerful in capability, and adaptable
+                to the evolving needs of small and mid-sized enterprises. Backed by years of conceptual work and
+                a passion for technology, we’re laying the foundation for a product ecosystem built on integrity,
+                transparency, and real-world usability.
+              </motion.p>
               <div className="stats">
-                <div className="stat">
-                  <h3>500+</h3>
-                  <p>Happy Clients</p>
-                </div>
-                <div className="stat">
-                  <h3>50+</h3>
-                  <p>Countries</p>
-                </div>
-                <div className="stat">
-                  <h3>99.9%</h3>
-                  <p>Uptime</p>
-                </div>
+                {[
+                  { title: "Bootstrapped", description: "Independently Built" },
+                  { title: "Future-Ready", description: "Vision-Driven" },
+                ].map((item, index) => (
+                  <motion.div
+                    key={item.title}
+                    className="stat"
+                    variants={waveItem}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ amount: 0.2 }}
+                    custom={index}
+                  >
+                    <h3 className='text-4xl text-blue-900 mb-4'>{item.title}</h3>
+                    <p className='text-xl text-gray-600 max-w-2xl mx-auto'>{item.description}</p>
+                  </motion.div>
+                ))}
               </div>
-            </div>
-            <div className="about-image">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" alt="Analytics Dashboard" />
+
+            </motion.div>
+            <div
+              className="about-image"
+            >
+              <motion.img
+                variants={fadeSlide}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.2 }}
+                custom={20}
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
+                alt="Visionary tech workspace"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <AboutServices />
+
+      <section className="home-services-section text-center mb-16">
+        <div className="container px-10 mt-10">
+          <ServicesGrid
+            services={updatedServices.slice(0, 6)}
+            onCardClick={handleCardClick}
+          />
+        </div>
+      </section>
 
 
       {/* Contact Section */}
-      <section id="contact" className="contact">
-        <div className="container">
-          <div className="contact-content">
-            <div className="contact-info">
-              <h2>Get In Touch</h2>
-              <p>Ready to transform your business? Contact us today to schedule a demo and see how TechFlow ERP can revolutionize your operations.</p>
-              <div className="contact-details">
-                <div className="contact-item">
-                  <h4>Email</h4>
-                  <p>info@techflowerp.com</p>
-                </div>
-                <div className="contact-item">
-                  <h4>Phone</h4>
-                  <p>+1 (55      5) 123-4567</p>
-                </div>
-                <div className="contact-item">
-                  <h4>Address</h4>
-                  <p>123 Business District, Tech City, TC 12345</p>
-                </div>
-              </div>
-            </div>
-            <div className="contact-form">
-              <div className="form-container">
-                <div className="form-group">
-                  <input type="text" placeholder="Your Name" />
-                </div>
-                <div className="form-group">
-                  <input type="email" placeholder="Your Email" />
-                </div>
-                <div className="form-group">
-                  <input type="text" placeholder="Subject" />
-                </div>
-                <div className="form-group">
-                  <textarea placeholder="Your Message" rows="5"></textarea>
-                </div>
-                <button className="btn btn-primary">Send Message</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactSection />
 
       {/* Footer */}
       <Footer />

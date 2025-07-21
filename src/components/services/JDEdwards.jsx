@@ -313,7 +313,15 @@ const JDEdwards = () => {
                       </div>
 
                       <div className="mt-8 pt-6 border-t border-gray-200">
-                        <button className={`bg-gradient-to-r ${service.gradient} text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center`}>
+                        <button
+                          onClick={() => {
+                            const contactSection = document.getElementById('contact');
+                            if (contactSection) {
+                              contactSection.scrollIntoView({ behavior: 'smooth' });
+                            }
+                          }}
+                          className={`bg-gradient-to-r ${service.gradient} text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center`}
+                        >
                           Learn More About {service.title}
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </button>
@@ -326,7 +334,9 @@ const JDEdwards = () => {
           </div>
         </div>
       </div>
-      <ContactForm />
+      <div id="contact" className="scroll-mt-12">
+        <ContactForm />
+      </div>
       <Footer />
     </>
   );

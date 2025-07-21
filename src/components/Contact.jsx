@@ -5,12 +5,12 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      details: ['+1 (555) 123-4567', '+1 (555) 987-6543']
+      details: ['+91 98190 26861']
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      details: ['info@emcubecloud.com', 'support@emcubecloud.com']
+      details: ['ekanath@gmail.com']
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -20,7 +20,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-gray-50">
+    <section id="contact" className="section-padding bg-gray-50 scroll-mt-16">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
@@ -49,12 +49,12 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="mt-8 p-6 bg-primary-50 rounded-lg">
+            {/* <div className="mt-8 p-6 bg-primary-50 rounded-lg">
               <h4 className="font-semibold text-gray-900 mb-2">Business Hours</h4>
               <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
               <p className="text-gray-600">Saturday: 10:00 AM - 4:00 PM EST</p>
               <p className="text-gray-600">Sunday: Closed</p>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}

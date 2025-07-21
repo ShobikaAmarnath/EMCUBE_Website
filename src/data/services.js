@@ -433,14 +433,14 @@ const services = [
 ];
 
 const categories = [
-    { id: 'all', name: 'All Services' },
     { id: 'jd', name: 'Oracle JD Edwards'},
     { id: 'epm', name: 'Oracle EPM / CPM'},
     { id: 'net', name: 'Net Suite' },
     { id: 'cloud', name: 'Cloud / Infrastructure'},
     { id: 'mobility', name: 'Mobility Services'},
     { id: 'bi', name: 'Oracle BI' },
-    { id: 'database', name: 'Oracle Database' }
+    { id: 'database', name: 'Oracle Database' },
+    { id: 'all', name: 'All Services' },
 ];
 
 const categoryToBaseLink = {};

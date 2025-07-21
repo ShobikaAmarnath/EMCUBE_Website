@@ -1,27 +1,39 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import { servicesByCategory, servicesItems } from '../data/services'
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { servicesByCategory, servicesItems } from '../data/services';
+import logo from '../assets/figma.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
-  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Scroll to stored hash after navigation
+    const storedHash = sessionStorage.getItem('scrollToHash');
+    if (location.pathname === '/' && storedHash) {
+      const el = document.querySelector(storedHash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+          sessionStorage.removeItem('scrollToHash');
+        }, 100); // wait a bit for DOM to render
+      }
+    }
+  }, [location]);
+
+
+  useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
-
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
@@ -39,19 +51,19 @@ const Navbar = () => {
     { name: 'Strategic Partnerships', href: '#partnerships' },
   ];
 
-  const groupedServices = servicesItems.reduce((acc, item) => {
-    if (!acc[item.category]) {
-      acc[item.category] = [];
+  const handleAnchorClick = (hash) => {
+    if (location.pathname !== '/') {
+      sessionStorage.setItem('scrollToHash', hash);
+      navigate('/');
+    } else {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-    acc[item.category].push(item);
-    return acc;
-  }, {});
-
-  const toggleServicesDropdown = () => {
-    if (isMobile) {
-      setIsServicesDropdownOpen(!isServicesDropdownOpen);
-    }
+    setIsMobileMenuOpen(false);
   };
+
 
   const DropdownMenu = ({ items, title }) => (
     <div className="dropdown relative">
@@ -62,13 +74,13 @@ const Navbar = () => {
       <div className="dropdown-menu">
         <div className="py-2">
           {items.map((item, index) => (
-            <a
+            <button
               key={index}
-              href={item.href}
+              onClick={() => handleAnchorClick(item.href)}
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary-600 transition-colors duration-200"
             >
               {item.name}
-            </a>
+            </button>
           ))}
         </div>
       </div>
@@ -77,48 +89,35 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'}`}
     >
-      <div className="container-custom">
-        <div className="flex justify-between items-center h-16 .px-8">
+      <div className="mx-[30px] lg:mx-auto container-custom">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="text-2xl font-bold text-primary-600">
-              EMcube Cloud
+              <img src={logo} alt="EMcube Logo" className="h-16 w-14" />
             </a>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <DropdownMenu items={aboutUsItems} title="About Us" />
+
             <div
-              style={{ position: 'relative', marker: 'none' }}
-              onMouseEnter={() => !isMobile && setIsMegaMenuOpen(true)}
-              onMouseLeave={() => !isMobile && setIsMegaMenuOpen(false)}
+              className="relative"
+              onMouseEnter={() => setIsMegaMenuOpen(true)}
+              onMouseLeave={() => setIsMegaMenuOpen(false)}
             >
               <Link
                 to="/services"
-                style={{
-                  alignItems: 'center',
-                  gap: '5px',
-                }}
-                className={location.pathname === '/services' ? 'active' : ''}
-                onClick={() => {
-                  toggleServicesDropdown();
-                  setIsMegaMenuOpen(!isMegaMenuOpen);
-                }}
+                className={`nav-link flex items-center gap-1 ${location.pathname === '/services' ? 'active' : ''}`}
               >
                 Our Services
-                {!isMobile && (
-                  <span className="dropdown-arrow" style={{ fontSize: '12px' }}>
-                    ▼
-                  </span>
-                )}
+                <ChevronDown className="w-4 h-4" />
               </Link>
 
-              {/* Desktop Mega Menu */}
-              {!isMobile && isMegaMenuOpen && (
+              {isMegaMenuOpen && (
                 <div
                   className="mega-menu-desktop"
                   style={{
@@ -146,7 +145,12 @@ const Navbar = () => {
                   >
                     {servicesByCategory.map(({ category, href, items }) => (
                       <div key={category}>
-                        <h3 className="text-indigo-800 font-bold text-md uppercase mb-3 cursor-pointer" onClick={() => navigate(`${href}`)}>{category}</h3>
+                        <h3
+                          className="text-indigo-800 font-bold text-md uppercase mb-3 cursor-pointer"
+                          onClick={() => navigate(href)}
+                        >
+                          {category}
+                        </h3>
                         {items.map((item) => (
                           <a
                             key={item}
@@ -159,38 +163,17 @@ const Navbar = () => {
                         ))}
                       </div>
                     ))}
-
                   </div>
-                </div>
-              )}
-
-              {/* Mobile Services Menu */}
-              {isMobile && isServicesDropdownOpen && (
-                <div className="mobile-services-menu px-4 py-2">
-                  {Object.entries(groupedServices).map(([category, items]) => (
-                    <div key={category} className="mb-4">
-                      <h4 className="font-semibold text-primary-600 mb-2">{category}</h4>
-                      <ul className="space-y-1">
-                        {items.map((item) => (
-                          <li key={item.name}>
-                            <Link to={item.href} className="text-gray-700 hover:text-primary-600">
-                              {item.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
                 </div>
               )}
             </div>
 
-            <a href="#products" className="nav-link">
+            <button onClick={() => handleAnchorClick('#products')} className="nav-link">
               Products
-            </a>
-            <a href="#contact" className="nav-link">
+            </button>
+            <button onClick={() => handleAnchorClick('#contact')} className="nav-link">
               Contact
-            </a>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -208,21 +191,36 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600">
-                About Us
-              </a>
               <button
-                onClick={toggleServicesDropdown}
-                className="w-full text-left block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600"
+                onClick={() => handleAnchorClick('#about')}
+                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600"
+              >
+                About Us
+              </button>
+
+              <button
+                onClick={() => {
+                  navigate('/services');
+                  setIsMobileMenuOpen(false);
+                }}
+                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600"
               >
                 Services
               </button>
-              <a href="#products" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600">
+
+              <button
+                onClick={() => handleAnchorClick('#products')}
+                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600"
+              >
                 Products
-              </a>
-              <a href="#contact" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600">
+              </button>
+
+              <button
+                onClick={() => handleAnchorClick('#contact')}
+                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600"
+              >
                 Contact
-              </a>
+              </button>
             </div>
           </div>
         )}

@@ -7,7 +7,7 @@ import ListBlock from './ListBlock';
 import { useVantaRings } from '../../hooks/useVantaRings';
 import { motion } from 'framer-motion';
 import {
-  BarChart3,
+    BarChart3,
   TrendingUp,
   Shield,
   Database,
@@ -28,13 +28,23 @@ import {
   BookOpen,
   Lock,
   RefreshCw,
-  LineChart
+  LineChart,
+  Box,
+  LifeBuoy,
+  Wrench,
+  ShieldCheck,
+  Undo2,
+  LayoutGrid,
+  Repeat,
+  ShoppingBag,
+  Utensils,
+  HeartPulse,
 } from 'lucide-react';
 
 import { waveItem, fadeSlide, containerVariants, itemVariants, titleVariants, checkIconVariants, fadeInUpVariants } from '../../animations/variants';
 import { time_div, time_h2, time_p } from '../../animations/positions';
 
-const OracleEPM = () => {
+const NetSuite = () => {
 
   const vantaRef = useVantaRings();
 
@@ -47,80 +57,150 @@ const OracleEPM = () => {
     "Integration with ERP systems like Oracle JD Edwards, NetSuite, and SAP"
   ];
 
-  const services = [
-    {
-      id: 1,
-      title: "Planning & Budgeting",
-      icon: <Target className="w-8 h-8" />,
-      features: [
-        "Assumption-driven planning models",
-        "Workforce, capital, and financial planning modules",
-        "Built-in approval workflows and audit trails",
-        "Excel Smart View and web-based input interfaces"
-      ],
-      gradient: "from-blue-500 to-blue-700",
-      bgPattern: "bg-blue-50",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80" // Financial planning
-    },
-    {
-      id: 2,
-      title: "Financial Close & Consolidation",
-      icon: <Calculator className="w-8 h-8" />,
-      features: [
-        "Automated data validation and intercompany eliminations",
-        "Consolidation across multiple currencies and subsidiaries",
-        "Standardized close templates and checklists",
-        "Integration with Oracle and non-Oracle ERPs"
-      ],
-      gradient: "from-indigo-500 to-indigo-700",
-      bgPattern: "bg-indigo-50",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" // Financial data
-    },
-    {
-      id: 3,
-      title: "Account Reconciliation",
-      icon: <Shield className="w-8 h-8" />,
-      features: [
-        "Automated matching rules and workflows",
-        "Dashboard for tracking reconciliation status",
-        "Compliance features for audit and control",
-        "Risk-based classification of accounts"
-      ],
-      gradient: "from-purple-500 to-purple-700",
-      bgPattern: "bg-purple-50",
-      image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80" // Accounting
-    },
-    {
-      id: 4,
-      title: "Narrative & Regulatory Reporting",
-      icon: <FileText className="w-8 h-8" />,
-      features: [
-        "Collaborative report creation with version control",
-        "Integration of real-time data from EPM/ERP",
-        "Report bursting, audit trail, and role-based access",
-        "Ideal for board books, investor reports, and regulatory filings"
-      ],
-      gradient: "from-green-500 to-green-700",
-      bgPattern: "bg-green-50",
-      image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80" // Business reports
-    },
-    {
-      id: 5,
-      title: "Data Management & Integration",
-      icon: <Database className="w-8 h-8" />,
-      features: [
-        "Data loading from ERP, HCM, CRM, and external sources",
-        "Mapping, transformation, and validation rules",
-        "Integration with Oracle Data Management and Data Integration tools",
-        "Supports REST APIs and flat file uploads"
-      ],
-      gradient: "from-teal-500 to-teal-700",
-      bgPattern: "bg-teal-50",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" // Data integration
-    }
-  ];
+  const netsuiteItems = [
+  {
+    id: 1,
+    title: "What is NetSuite ERP?",
+    icon: <Box className="w-8 h-8" />,
+    description:
+      "Oracle NetSuite is a unified cloud ERP solution combining financials, CRM, eCommerce, and more. It helps businesses streamline operations and gain real-time visibility.",
+    features: [
+      "Financial, Inventory, CRM & HR modules",
+      "Unified cloud platform",
+      "Real-time dashboards and reporting",
+    ],
+    gradient: "from-yellow-400 to-orange-500",
+    bgPattern: "bg-yellow-50",
+  },
+  {
+    id: 2,
+    title: "NetSuite Support",
+    icon: <LifeBuoy className="w-8 h-8" />,
+    description:
+      "We provide reliable NetSuite support to resolve issues, enhance functionality, and ensure smooth operation tailored to your business.",
+    features: [
+      "Issue resolution and admin support",
+      "Custom scripts, workflows, and dashboards",
+      "Release management and testing",
+    ],
+    gradient: "from-green-400 to-green-600",
+    bgPattern: "bg-green-50",
+  },
+  {
+    id: 3,
+    title: "Implementation & Consulting",
+    icon: <Wrench className="w-8 h-8" />,
+    description:
+      "Emcube offers full-cycle NetSuite implementation and consulting to deliver a risk-free ERP transformation experience.",
+    features: [
+      "Business analysis & configuration",
+      "Workflow automation & scripting",
+      "Go-live & post-implementation support",
+    ],
+    gradient: "from-purple-500 to-indigo-600",
+    bgPattern: "bg-purple-50",
+  },
+  {
+    id: 4,
+    title: "NetSuite Health Check",
+    icon: <ShieldCheck className="w-8 h-8" />,
+    description:
+      "Optimize your NetSuite environment with our detailed audit and improvement roadmap, ensuring performance and security.",
+    features: [
+      "System & script performance review",
+      "Roles, permissions, and data integrity",
+      "Comprehensive audit reports",
+    ],
+    gradient: "from-rose-500 to-pink-600",
+    bgPattern: "bg-rose-50",
+  },
+  {
+    id: 5,
+    title: "Rescue Project Recovery",
+    icon: <Undo2 className="w-8 h-8" />,
+    description:
+      "If your NetSuite project is underperforming, we assess, re-align, and recover your ERP system for faster ROI.",
+    features: [
+      "Root cause & solution re-architecture",
+      "Data reconciliation and retraining",
+      "Transparent recovery roadmap",
+    ],
+    gradient: "from-gray-500 to-slate-700",
+    bgPattern: "bg-gray-50",
+  },
+  {
+    id: 6,
+    title: "Planning and Budgeting",
+    icon: <LayoutGrid className="w-8 h-8" />,
+    description:
+      "Plan, model, and forecast with confidence using NetSuite’s planning tools tailored for collaborative financial management.",
+    features: [
+      "Driver-based forecasting",
+      "Scenario and what-if modeling",
+      "ERP data integration",
+    ],
+    gradient: "from-blue-400 to-cyan-600",
+    bgPattern: "bg-cyan-50",
+  },
+  {
+    id: 7,
+    title: "Account Reconciliation",
+    icon: <Repeat className="w-8 h-8" />,
+    description:
+      "Speed up your month-end close with NetSuite’s reconciliation automation for faster, error-free finance reporting.",
+    features: [
+      "Auto-match and reconciliation rules",
+      "Exception tracking and approval flow",
+      "Audit-ready logs and traceability",
+    ],
+    gradient: "from-pink-400 to-red-500",
+    bgPattern: "bg-pink-50",
+  },
+  {
+    id: 8,
+    title: "NetSuite for Retail",
+    icon: <ShoppingBag className="w-8 h-8" />,
+    description:
+      "Enable unified commerce across in-store, eCommerce, and back-office with NetSuite’s retail-specific capabilities.",
+    features: [
+      "Omnichannel order management",
+      "CRM and loyalty integration",
+      "Inventory visibility and POS",
+    ],
+    gradient: "from-fuchsia-500 to-violet-600",
+    bgPattern: "bg-violet-50",
+  },
+  {
+    id: 9,
+    title: "NetSuite for Food & Beverage",
+    icon: <Utensils className="w-8 h-8" />,
+    description:
+      "Support compliance, reduce waste, and streamline production for food & beverage businesses with NetSuite.",
+    features: [
+      "Lot tracking & batch control",
+      "Shelf life & expiry tracking",
+      "FDA compliance & forecasting",
+    ],
+    gradient: "from-lime-400 to-green-500",
+    bgPattern: "bg-lime-50",
+  },
+  {
+    id: 10,
+    title: "NetSuite for Healthcare & Life Sciences",
+    icon: <HeartPulse className="w-8 h-8" />,
+    description:
+      "We provide NetSuite implementations tailored for healthcare and life sciences companies focusing on compliance, financial control, and visibility.",
+    features: [
+      "Clinical trial expense tracking",
+      "Inventory & procurement control",
+      "Regulatory compliance reports",
+    ],
+    gradient: "from-sky-500 to-indigo-500",
+    bgPattern: "bg-sky-50",
+  },
+];
 
-  const items = services.map(item => ({
+  const items = netsuiteItems.map(item => ({
     ...item,
     src: item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
   }));
@@ -473,4 +553,4 @@ const OracleEPM = () => {
   );
 };
 
-export default OracleEPM;
+export default NetSuite;

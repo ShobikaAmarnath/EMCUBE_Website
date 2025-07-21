@@ -3,6 +3,7 @@ import Home from './components/Home';
 import ServicesPage from './components/ServicesPage';
 import JDEdwards from './components/services/JDEdwards';
 import OracleEPM from './components/services/OracleEPM';
+import NetSuite from './components/services/NetSuite';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -41,6 +42,7 @@ function App() {
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/services/jd-edwards" element={<JDEdwards />} />
       <Route path="/services/oracle-epm" element={<OracleEPM />} />
+      <Route path="/services/netsuite" element={<NetSuite />} />
     </Routes>
     </main>
     </div>
