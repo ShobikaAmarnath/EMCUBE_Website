@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { servicesByCategory, servicesItems } from '../data/services';
-import logo from '../assets/figma.png';
+import logo from '../assets/logo 2.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -96,7 +96,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="text-2xl font-bold text-primary-600">
-              <img src={logo} alt="EMcube Logo" className="h-16 w-14" />
+              <img src={logo} alt="EMcube Logo" className="h-14 w-auto" />
             </a>
           </div>
 

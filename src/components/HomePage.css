@@ -34,6 +34,9 @@ body {
 .btn-primary {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
+    /* background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%); */
+  color: white;
+  box-shadow: 0 8px 32px rgba(79, 172, 254, 0.3);
 }
 
 .btn-primary:hover {
@@ -446,16 +449,7 @@ body {
   left: 100%;
 }
 
-.btn-primary {
-  background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
-  color: white;
-  box-shadow: 0 8px 32px rgba(79, 172, 254, 0.3);
-}
 
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(79, 172, 254, 0.4);
-}
 
 .btn-secondary {
   background: rgba(255, 255, 255, 0.1);

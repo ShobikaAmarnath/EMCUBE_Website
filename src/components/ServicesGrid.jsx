@@ -30,14 +30,11 @@ const ServicesGrid = ({ services, onCardClick }) => {
           <div
             key={service.id}
             id={`service-${service.id}`}
-            className={`service-card animate-on-scroll ${isVisible[`service-${service.id}`] ? 'visible' : ''}`}
+            className={`benefit-card animate-on-scroll `}
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="service-image" onClick={() => onCardClick(service.link)}>
               <img src={service.image} alt={service.title} />
-              <div className="service-overlay">
-                <div className="service-icon">{service.icon}</div>
-              </div>
             </div>
             <div className="service-content">
               <h3 className="service-title">{service.title}</h3>
