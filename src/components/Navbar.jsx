@@ -92,11 +92,11 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : ' backdrop-blur-sm'}`}
     >
       <div className="mx-[30px] lg:max-w-full container-custom">
-        <div className="flex justify-between items-center h-20">
+        <div className={`flex justify-between items-center ${isScrolled ? 'h-20' : 'h-28'}`}>
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold text-primary-600">
-              <img src={logo} alt="EMcube Logo" className="h-14 w-auto" />
+            <a href="/">
+              <img src={logo} alt="EMcube Logo" className="h-16 w-auto" />
             </a>
           </div>
 

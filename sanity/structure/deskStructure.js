@@ -10,9 +10,15 @@ const deskStructure = (S) =>
                         .schemaType('contactDetails')
                         .documentId('contactDetailsSingleton')
                 ),
+
+            S.listItem()
+                .title('Services')
+                .schemaType('service')
+                .child(S.documentTypeList('service').title('All Services')),
+
             ...S.documentTypeListItems().filter(
-                (item) => !['contactDetails'].includes(item.getId())
-            ),
+                    (item) => !['contactDetails', 'service'].includes(item.getId())
+                ),
         ]);
 
 export default deskStructure;
