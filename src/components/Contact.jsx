@@ -1,23 +1,50 @@
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { client } from '../sanityClient';
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: <Phone className="w-6 h-6" />,
-      title: 'Phone',
-      details: ['+91 98190 26861']
-    },
-    {
-      icon: <Mail className="w-6 h-6" />,
-      title: 'Email',
-      details: ['ekanath@gmail.com']
-    },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: 'Address',
-      details: ['123 Technology Drive', 'Suite 100, Tech City, TC 12345']
-    }
-  ];
+  const [contactInfo, setContactInfo] = useState(null);
+
+  useEffect(() => {
+    const fetchContactDetails = async () => {
+      const query = `*[_type == "contactDetails"][0]{
+        emails,
+        phoneNumbers,
+        address
+      }`;
+      try {
+        const data = await client.fetch(query);
+        if (data) {
+          const structuredInfo = [
+            {
+              icon: <Phone className="w-6 h-6" />,
+              title: 'Phone',
+              details: data.phoneNumbers,
+            },
+            {
+              icon: <Mail className="w-6 h-6" />,
+              title: 'Email',
+              details: data.emails,
+            },
+            {
+              icon: <MapPin className="w-6 h-6" />,
+              title: 'Address',
+              details: data.address.split('\n'), // split if multi-line string
+            },
+          ];
+          setContactInfo(structuredInfo);
+        }
+      } catch (error) {
+        console.error('Failed to fetch contact details from Sanity:', error);
+      }
+    };
+
+    fetchContactDetails();
+  }, []);
+
+  if (!contactInfo) {
+    return <p>Loading contact information...</p>;
+  }
 
   return (
     <section id="contact" className="section-padding bg-gray-50 scroll-mt-16">

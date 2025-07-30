@@ -1,4 +1,6 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { client } from '../sanityClient';
 
 const Footer = () => {
   const quickLinks = [
@@ -24,6 +26,33 @@ const Footer = () => {
     { name: 'Cybersecurity', href: '#cybersecurity' },
     { name: 'Cloud Migration', href: '#cloud-migration' }
   ];
+
+  
+  const [contact, setContact] = useState(null);
+
+  useEffect(() => {
+    const fetchContactDetails = async () => {
+      try {
+        const query = `
+          *[_type == "contactDetails"][0]{
+            emails,
+            phoneNumbers,
+            address
+          }
+        `;
+        const data = await client.fetch(query);
+        setContact(data);
+      } catch (err) {
+        console.error('Failed to fetch contact details:', err);
+      }
+    };
+
+    fetchContactDetails();
+  }, []);
+
+  if (!contact) return null;
+  
+  const addressLines = contact.address?.split('\n') || [];
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -79,25 +108,35 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Contact Info</h4>
-            <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-gray-400 mt-1" />
-                <div className="text-gray-300">
-                  <p>123 Technology Drive</p>
-                  <p>Suite 100, Tech City, TC 12345</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-gray-400" />
-                <span className="text-gray-300">+91 98190 26861</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-gray-400" />
-                <span className="text-gray-300">info@emcubecloud.com</span>
-              </div>
-            </div>
+      <h4 className="text-lg font-semibold text-white mb-4">Contact Info</h4>
+      <div className="space-y-3">
+        {/* Address */}
+        <div className="flex items-start space-x-3">
+          <MapPin className="w-5 h-5 text-gray-400 mt-1" />
+          <div className="text-gray-300">
+            {addressLines.map((line, i) => (
+              <p key={i}>{line}</p>
+            ))}
           </div>
+        </div>
+
+        {/* Phone(s) */}
+        {contact.phoneNumbers?.map((phone, i) => (
+          <div key={i} className="flex items-center space-x-3">
+            <Phone className="w-5 h-5 text-gray-400" />
+            <span className="text-gray-300">{phone}</span>
+          </div>
+        ))}
+
+        {/* Email(s) */}
+        {contact.emails?.map((email, i) => (
+          <div key={i} className="flex items-center space-x-3">
+            <Mail className="w-5 h-5 text-gray-400" />
+            <span className="text-gray-300">{email}</span>
+          </div>
+        ))}
+      </div>
+    </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8">
