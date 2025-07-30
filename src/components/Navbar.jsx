@@ -89,7 +89,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : ' backdrop-blur-sm'}`}
     >
       <div className="mx-[30px] lg:max-w-full container-custom">
         <div className="flex justify-between items-center h-20">
@@ -101,7 +101,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center font-bond text-xl space-x-8">
             <DropdownMenu items={aboutUsItems} title="About Us" />
 
             <div

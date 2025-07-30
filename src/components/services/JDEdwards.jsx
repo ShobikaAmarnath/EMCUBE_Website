@@ -20,7 +20,7 @@ import {
   ArrowRight,
   Shield,
   Zap,
-  Contact,
+  // Contact,
   // Users,
   // TrendingUp,
   // Clock,
@@ -249,9 +249,9 @@ const JDEdwards = () => {
               const isReversed = index % 2 !== 0;
               const direction = isReversed ? 20 : -20;
               return (
-                <div id={service.src} className="scroll-mt-24">
+                <div id={service.src}    key={service.id} className="scroll-mt-24">
                   <motion.div
-                    key={service.id}
+                 
                     variants={fadeSlide}
                     initial="hidden"
                     whileInView="visible"

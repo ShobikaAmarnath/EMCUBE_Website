@@ -24,7 +24,7 @@ const ServicesGrid = ({ services, onCardClick }) => {
 
   return (
     <>
-      <h2 className="text-4xl font-bold text-gray-900 my-10 text-center">Our Services</h2>
+      <h2 className="text-4xl font-bold text-[#e737ac] my-10 text-center">Our Services</h2>
       <div className="services-grid lg:px-14 mt-10">
         {services.map((service, index) => (
           <div
@@ -50,7 +50,7 @@ const ServicesGrid = ({ services, onCardClick }) => {
       {/* Why Choose EMcube Section */}
       <div className="why-choose-section">
         <div className="container">
-          <h2 className="section-title">Why Choose EMcube Cloud for JD Edwards?</h2>
+          <h2 className="section-title text-[#e737ac]">Why Choose EMcube Cloud for JD Edwards?</h2>
           <div className="benefits-grid">
             <div className="benefit-card">
               <div className="benefit-icon">🏆</div>

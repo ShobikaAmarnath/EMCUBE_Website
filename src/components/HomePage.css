@@ -30,52 +30,36 @@ body {
   transition: all 0.3s ease;
   text-align: center;
 }
-
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ff6b9d 0%, #f7951ec4 100%);
   color: white;
-    /* background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%); */
-  color: white;
-  box-shadow: 0 8px 32px rgba(79, 172, 254, 0.3);
+  box-shadow: 0 8px 32px rgba(255, 107, 157, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 25px rgba(247, 151, 30, 0.3);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #667eea;
-  border: 2px solid #667eea;
+  color: #ff6b9d;
+  border: 2px solid #ff6b9d;
 }
 
 .btn-secondary:hover {
-  background: #667eea;
-  color: rgb(201, 140, 140);
+  background: #ff6b9d;
+  color: white;
 }
 
-
 /* Hero Section */
-
 .hero {
   min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d2d5f 100%);
+  background: linear-gradient(135deg, #3b1c48 0%, #2d1b3d 50%, #3d2447 100%);
   overflow: hidden;
-}
-
-/* Animated Background Video Effect */
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.6;
 }
 
 /* Circuit Board Pattern */
@@ -86,8 +70,8 @@ body {
   width: 100%;
   height: 100%;
   background-image:
-    linear-gradient(90deg, rgba(79, 172, 254, 0.1) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(79, 172, 254, 0.1) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(255, 107, 157, 0.1) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(247, 151, 30, 0.1) 1px, transparent 1px);
   background-size: 80px 80px;
   animation: circuitMove 20s linear infinite;
 }
@@ -96,7 +80,6 @@ body {
   0% {
     transform: translate(0, 0);
   }
-
   100% {
     transform: translate(80px, 80px);
   }
@@ -119,7 +102,7 @@ body {
   height: 160px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 107, 157, 0.2);
   border-radius: 16px;
   padding: 20px;
   animation: dashboardFloat 12s ease-in-out infinite;
@@ -132,19 +115,21 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, transparent, rgba(79, 172, 254, 0.1), transparent);
+  background: linear-gradient(45deg, transparent, rgba(255, 107, 157, 0.1), rgba(247, 151, 30, 0.1), transparent);
   border-radius: 16px;
   animation: shimmer 3s ease-in-out infinite;
 }
 
-@keyframes dashboardFloat {
+.dashboard-card.hovered {
+  border-color: rgba(247, 151, 30, 0.4);
+  box-shadow: 0 10px 40px rgba(255, 107, 157, 0.2);
+}
 
-  0%,
-  100% {
+@keyframes dashboardFloat {
+  0%, 100% {
     transform: translateY(0) rotate(0deg);
     opacity: 0.3;
   }
-
   50% {
     transform: translateY(-30px) rotate(2deg);
     opacity: 0.8;
@@ -155,7 +140,6 @@ body {
   0% {
     transform: translateX(-100%);
   }
-
   100% {
     transform: translateX(100%);
   }
@@ -174,7 +158,7 @@ body {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  background: linear-gradient(90deg, #ff6b9d, #f7971e);
   border-radius: 1px;
   animation: chartGrow 4s ease-in-out infinite;
 }
@@ -182,31 +166,32 @@ body {
 .chart-line:nth-child(1) {
   top: 20px;
   animation-delay: 0s;
+  background: linear-gradient(90deg, #ff6b9d, #ff8bb3);
 }
 
 .chart-line:nth-child(2) {
   top: 40px;
   animation-delay: 0.5s;
+  background: linear-gradient(90deg, #ff8bb3, #ffab7a);
 }
 
 .chart-line:nth-child(3) {
   top: 60px;
   animation-delay: 1s;
+  background: linear-gradient(90deg, #ffab7a, #f7971e);
 }
 
 .chart-line:nth-child(4) {
   top: 80px;
   animation-delay: 1.5s;
+  background: linear-gradient(90deg, #f7971e, #ff6b9d);
 }
 
 @keyframes chartGrow {
-
-  0%,
-  100% {
+  0%, 100% {
     width: 50px;
     opacity: 0.3;
   }
-
   50% {
     width: 180px;
     opacity: 1;
@@ -220,7 +205,10 @@ body {
   right: 20px;
   font-size: 24px;
   font-weight: 700;
-  color: #4facfe;
+  background: linear-gradient(135deg, #ff6b9d, #f7971e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   animation: numberCount 6s ease-in-out infinite;
 }
 
@@ -228,12 +216,10 @@ body {
   0% {
     opacity: 0.3;
   }
-
   50% {
     opacity: 1;
     transform: scale(1.1);
   }
-
   100% {
     opacity: 0.3;
   }
@@ -244,7 +230,7 @@ body {
   position: absolute;
   width: 150px;
   height: 150px;
-  border: 2px solid rgba(79, 172, 254, 0.3);
+  border: 2px solid rgba(255, 107, 157, 0.3);
   border-radius: 50%;
   animation: hologramSpin 15s linear infinite;
 }
@@ -256,7 +242,7 @@ body {
   left: 50%;
   width: 80%;
   height: 80%;
-  border: 1px solid rgba(0, 242, 254, 0.5);
+  border: 1px solid rgba(247, 151, 30, 0.5);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: hologramPulse 3s ease-in-out infinite;
@@ -266,20 +252,16 @@ body {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
 
 @keyframes hologramPulse {
-
-  0%,
-  100% {
+  0%, 100% {
     opacity: 0.3;
     transform: translate(-50%, -50%) scale(1);
   }
-
   50% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.2);
@@ -301,40 +283,35 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: radial-gradient(circle, #4facfe 0%, #00f2fe 100%);
-  box-shadow: 0 0 20px rgba(79, 172, 254, 0.6);
+  background: radial-gradient(circle, #ff6b9d 0%, #f7971e 100%);
+  box-shadow: 0 0 20px rgba(255, 107, 157, 0.6);
   animation: nodeFlicker 4s ease-in-out infinite;
 }
 
 @keyframes nodeFlicker {
-
-  0%,
-  100% {
+  0%, 100% {
     opacity: 0.4;
     transform: scale(1);
   }
-
   50% {
     opacity: 1;
     transform: scale(1.5);
+    box-shadow: 0 0 30px rgba(247, 151, 30, 0.8);
   }
 }
 
 .connection-beam {
   position: absolute;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(79, 172, 254, 0.8), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 107, 157, 0.8), rgba(247, 151, 30, 0.6), transparent);
   animation: beamPulse 5s ease-in-out infinite;
 }
 
 @keyframes beamPulse {
-
-  0%,
-  100% {
+  0%, 100% {
     opacity: 0;
     transform: scaleX(0);
   }
-
   50% {
     opacity: 1;
     transform: scaleX(1);
@@ -356,7 +333,7 @@ body {
   position: absolute;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, rgba(79, 172, 254, 0.3), transparent);
+  background: linear-gradient(180deg, transparent, rgba(255, 107, 157, 0.3), rgba(247, 151, 30, 0.2), transparent);
   animation: matrixFall 8s linear infinite;
 }
 
@@ -365,15 +342,12 @@ body {
     transform: translateY(-100vh);
     opacity: 0;
   }
-
   10% {
     opacity: 1;
   }
-
   90% {
     opacity: 1;
   }
-
   100% {
     transform: translateY(100vh);
     opacity: 0;
@@ -403,7 +377,7 @@ body {
   line-height: 1.2;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, #ffffff 0%, #4facfe 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ff6b9d 50%, #f7971e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -449,19 +423,17 @@ body {
   left: 100%;
 }
 
-
-
 .btn-secondary {
   background: rgba(255, 255, 255, 0.1);
   color: white;
-  border: 2px solid rgba(79, 172, 254, 0.5);
+  border: 2px solid rgba(255, 107, 157, 0.5);
   backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-  background: rgba(79, 172, 254, 0.2);
+  background: rgba(255, 107, 157, 0.2);
   transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(79, 172, 254, 0.2);
+  box-shadow: 0 12px 40px rgba(247, 151, 30, 0.2);
 }
 
 .hero-image {
@@ -477,16 +449,13 @@ body {
   border-radius: 20px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   animation: imageFloat 6s ease-in-out infinite;
-  border: 1px solid rgba(79, 172, 254, 0.3);
+  border: 1px solid rgba(255, 107, 157, 0.3);
 }
 
 @keyframes imageFloat {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0) rotateY(0deg);
   }
-
   50% {
     transform: translateY(-20px) rotateY(5deg);
   }
@@ -541,7 +510,6 @@ body {
     height: 100px;
   }
 }
-
 /* About Section */
 .about {
   padding: 100px 0;
