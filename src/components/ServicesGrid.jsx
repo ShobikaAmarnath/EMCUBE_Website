@@ -30,7 +30,7 @@ const ServicesGrid = ({ services, onCardClick }) => {
           <div
             key={service.id}
             id={`service-${service.id}`}
-            className={`benefit-card animate-on-scroll `}
+            className={`service-card benefit-card animate-on-scroll `}
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="service-image" onClick={() => onCardClick(service.link)}>
