@@ -13,11 +13,11 @@ const deskStructure = (S) =>
 
             S.listItem()
                 .title('Services')
-                .schemaType('service')
-                .child(S.documentTypeList('service').title('All Services')),
+                .schemaType('services')
+                .child(S.documentTypeList('services').title('All Services')),
 
             ...S.documentTypeListItems().filter(
-                    (item) => !['contactDetails', 'service'].includes(item.getId())
+                    (item) => !['contactDetails', 'services'].includes(item.getId())
                 ),
         ]);
 

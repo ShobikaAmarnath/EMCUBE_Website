@@ -1,9 +1,10 @@
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { client } from '../sanityClient';
+import { client, fetchServices } from '../sanityClient';
 
 const Contact = () => {
   const [contactInfo, setContactInfo] = useState(null);
+  const [services, setServices] = useState([]);
 
   useEffect(() => {
     const fetchContactDetails = async () => {
@@ -33,6 +34,8 @@ const Contact = () => {
             },
           ];
           setContactInfo(structuredInfo);
+          const servicesData = await fetchServices();
+          setServices(servicesData);
         }
       } catch (error) {
         console.error('Failed to fetch contact details from Sanity:', error);
@@ -75,13 +78,6 @@ const Contact = () => {
                 </div>
               ))}
             </div>
-
-            {/* <div className="mt-8 p-6 bg-primary-50 rounded-lg">
-              <h4 className="font-semibold text-gray-900 mb-2">Business Hours</h4>
-              <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
-              <p className="text-gray-600">Saturday: 10:00 AM - 4:00 PM EST</p>
-              <p className="text-gray-600">Sunday: Closed</p>
-            </div> */}
           </div>
 
           {/* Contact Form */}
@@ -94,7 +90,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-black"
                     placeholder="John"
                   />
                 </div>
@@ -104,7 +100,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-black"
                     placeholder="Doe"
                   />
                 </div>
@@ -116,7 +112,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-black"
                   placeholder="john.doe@example.com"
                 />
               </div>
@@ -125,12 +121,13 @@ const Contact = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Service Interest
                 </label>
-                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-black">
                   <option>Select a service</option>
-                  <option>Oracle JD Edwards</option>
-                  <option>Cloud Services</option>
-                  <option>Managed Services</option>
-                  <option>Business Intelligence</option>
+                  {services.map((service, index) => (
+                    <option key={index} value={service.slug.current}>
+                      {service.title}
+                    </option>
+                  ))}
                   <option>Other</option>
                 </select>
               </div>
@@ -141,7 +138,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   rows="4"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-black"
                   placeholder="Tell us about your project requirements..."
                 ></textarea>
               </div>

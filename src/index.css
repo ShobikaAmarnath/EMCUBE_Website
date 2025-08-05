@@ -12,7 +12,79 @@
     @apply text-white;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     min-height: 100vh;
-  }
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Animated Grid Overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-image: 
+        linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: gridMove 20s linear infinite;
+}
+
+/* Subtle floating particles */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(168, 85, 247, 0.15) 1px, transparent 1px),
+        radial-gradient(circle at 80% 20%, rgba(192, 132, 252, 0.1) 1px, transparent 1px),
+        radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.08) 1px, transparent 1px);
+    background-size: 100px 100px, 150px 150px, 200px 200px;
+    animation: particlesFloat 30s ease-in-out infinite;
+}
+
+@keyframes gridMove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+@keyframes particlesFloat {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0.8;
+    }
+    33% {
+        transform: translate(30px, -30px) rotate(120deg);
+        opacity: 0.4;
+    }
+    66% {
+        transform: translate(-20px, 20px) rotate(240deg);
+        opacity: 0.6;
+    }
+}
+
+/* Optional: Add a subtle vignette effect for more depth */
+body {
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure content appears above the background */
+.content, main, section, div {
+    position: relative;
+    z-index: 1;
+}
 
 }
 

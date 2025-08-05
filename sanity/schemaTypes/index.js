@@ -1,4 +1,5 @@
 import contactDetails from "./contactDetails";
-import service from "./service";
+import services from "./services";
+import serviceCard from "./objects/serviceCard";
 
-export const schemaTypes = [contactDetails, service]
+export const schemaTypes = [contactDetails, services, serviceCard];

@@ -1,32 +1,31 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { servicesByCategory, servicesItems } from '../data/services';
 import logo from '../assets/logo 2.png';
+import { fetchServices } from '../sanityClient';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [sanityServices, setSanityServices] = useState(null);
 
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Scroll to stored hash after navigation
-    const storedHash = sessionStorage.getItem('scrollToHash');
-    if (location.pathname === '/' && storedHash) {
-      const el = document.querySelector(storedHash);
-      if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: 'smooth' });
-          sessionStorage.removeItem('scrollToHash');
-        }, 100); // wait a bit for DOM to render
-      }
+    const hash = location.hash;
+    if (hash) {
+      // Wait for DOM to render
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 200); 
     }
   }, [location]);
-
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -45,11 +44,19 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const aboutUsItems = [
-    { name: 'Why Choose Us', href: '#why-choose-us' },
-    { name: 'Executive Leadership', href: '#leadership' },
-    { name: 'Strategic Partnerships', href: '#partnerships' },
-  ];
+  useEffect(() => {
+    const fetchSanityServices = async () => {
+      try {
+        const services = await fetchServices();
+        setSanityServices(services);
+      } catch (error) {
+        console.error('Failed to fetch services:', error);
+      }
+    };
+    fetchSanityServices();
+  })
+
+  if (!sanityServices) return <p className="text-center p-10"></p>;
 
   const handleAnchorClick = (hash) => {
     if (location.pathname !== '/') {
@@ -63,29 +70,6 @@ const Navbar = () => {
     }
     setIsMobileMenuOpen(false);
   };
-
-
-  const DropdownMenu = ({ items, title }) => (
-    <div className="dropdown relative">
-      <button className="nav-link flex items-center space-x-1">
-        <span>{title}</span>
-        <ChevronDown className="w-4 h-4" />
-      </button>
-      <div className="dropdown-menu">
-        <div className="py-2">
-          {items.map((item, index) => (
-            <button
-              key={index}
-              onClick={() => handleAnchorClick(item.href)}
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary-600 transition-colors duration-200"
-            >
-              {item.name}
-            </button>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
 
   return (
     <nav
@@ -102,7 +86,10 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center font-bond text-xl space-x-8">
-            <DropdownMenu items={aboutUsItems} title="About Us" />
+
+            <a href='/#about' className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>
+              About Us
+            </a>
 
             <div
               className="relative"
@@ -123,13 +110,13 @@ const Navbar = () => {
                   style={{
                     position: 'absolute',
                     top: '110%',
-                    left: '-1000px',
+                    // left: '-1000px',
                     backgroundColor: 'white',
                     boxShadow: '0 8px 16px rgba(0,0,0,0.1)',
                     borderRadius: '8px',
                     padding: '30px',
                     zIndex: 1001,
-                    width: '1500px',
+                    // width: '1500px',
                     maxWidth: '90vw',
                     maxHeight: '80vh',
                     overflowY: 'auto',
@@ -143,24 +130,55 @@ const Navbar = () => {
                       gap: '30px',
                     }}
                   >
-                    {servicesByCategory.map(({ category, href, items }) => (
-                      <div key={category}>
+                    {sanityServices.map(service => (
+                      <div key={service.slug.current}>
                         <h3
-                          className="text-indigo-800 font-bold text-md uppercase mb-3 cursor-pointer"
-                          onClick={() => navigate(href)}
+                          className="text-indigo-800 font-bold text-md uppercase mb-3 cursor-pointer hover:text-indigo-600 transition-colors"
+                          onClick={() => {
+                            navigate(`/services/${service.slug.current}`);
+                            setIsMegaMenuOpen(false);
+                          }}
+                          role="button"
+                          tabIndex={0}
                         >
-                          {category}
+                          {service.title}
                         </h3>
-                        {items.map((item) => (
-                          <a
-                            key={item}
-                            href={`${href}#${item.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}
-                            className="block text-gray-700 mb-2 hover:text-indigo-600 transition-colors"
-                            onClick={() => setIsMegaMenuOpen(false)}
-                          >
-                            {item}
-                          </a>
-                        ))}
+                        <ul>
+                          {/* What is / Key Benefits */}
+                          {service.sections?.map(sec => (
+                            <li key={sec.slug?.current || sec.title}>
+                              <a
+                                className="block text-gray-700 mb-2 hover:text-indigo-600 transition-colors"
+                                href={
+                                  service.slug?.current && sec.slug?.current
+                                    ? `/services/${service.slug.current}#${sec.slug.current}`
+                                    : "#"
+                                }
+                                onClick={() => setIsMegaMenuOpen(false)}
+                              >
+                                {sec.title}
+                              </a>
+                            </li>
+                          ))}
+                          {/* Sub services */}
+                          {service.service?.flatMap(section =>
+                            section.cards?.map(card => (
+                              <li key={card.slug?.current || card.title}>
+                                <a
+                                  className="block text-gray-700 mb-2 hover:text-indigo-600 transition-colors"
+                                  href={
+                                    service.slug?.current && card.title
+                                      ? `/services/${service.slug.current}#${card.title.toLowerCase().replace(/\s+/g, '-')}`
+                                      : "#"
+                                  }
+                                  onClick={() => setIsMegaMenuOpen(false)}
+                                >
+                                  {card.title}
+                                </a>
+                              </li>
+                            ))
+                          )}
+                        </ul>
                       </div>
                     ))}
                   </div>
@@ -171,9 +189,11 @@ const Navbar = () => {
             <button onClick={() => handleAnchorClick('#products')} className="nav-link">
               Products
             </button>
+
             <button onClick={() => handleAnchorClick('#contact')} className="nav-link">
               Contact
             </button>
+            
           </div>
 
           {/* Mobile menu button */}

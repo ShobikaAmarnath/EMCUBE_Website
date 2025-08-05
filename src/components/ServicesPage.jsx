@@ -4,12 +4,53 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Contact from './Contact';
 import ServicesGrid from './ServicesGrid';
-import { updatedServices, categories } from '../data/services';
+import { fetchServices } from '../sanityClient';
 
 const ServicesPage = () => {
-  const [activeCategory, setActiveCategory] = useState('jd');
+  const [activeCategory, setActiveCategory] = useState('jd-edwards');
   const [isVisible, setIsVisible] = useState({});
   const [isAtTop, setIsAtTop] = useState(true);
+  const [services, setServices] = useState([]);
+  const [flatServices, setFlatServices] = useState([]);
+
+  useEffect(() => {
+    const getServices = async () => {
+      const data = await fetchServices();
+      setServices(data);
+      setFlatServices(flattenServices(data));
+    };
+    getServices();
+  }, []);
+
+  const flattenServices = (services) => {
+    const allCards = [];
+    services.forEach(service => {
+      // Main service card
+      allCards.push({
+        type: 'main',
+        title: service.title,
+        slug: service.slug?.current,
+        overview: service.overview,
+        image: service.image,
+        parent: null,
+      });
+      // Sub topic cards
+      service.service?.forEach(section => {
+        section.cards?.forEach(card => {
+          allCards.push({
+            type: 'sub',
+            title: card.title,
+            slug: card.slug?.current || `${card.title?.toLowerCase().replace(/\s+/g, '-')}`,
+            overview: card.description,
+            image: card.image,
+            parent: service.slug?.current,
+            parentTitle: service.title,
+          });
+        });
+      });
+    });
+    return allCards;
+  };
 
   const handleServiceClick = (link) => {
     if (link) {
@@ -17,21 +58,19 @@ const ServicesPage = () => {
     }
   };
 
-  const DownArrow = () => (
-    <svg width="24" height="24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M6 9l6 6 6-6" />
-    </svg>
-  );
-
   const UpArrow = () => (
     <svg width="24" height="24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M18 15l-6-6-6 6" />
     </svg>
   );
 
-  const filteredServices = activeCategory === 'all'
-    ? updatedServices
-    : updatedServices.filter(service => service.category === activeCategory);
+  const filteredServices =
+    activeCategory === 'all'
+      ? flatServices
+      : flatServices.filter(item =>
+        item.slug === activeCategory ||
+        item.parent === activeCategory
+      );
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -63,22 +102,27 @@ const ServicesPage = () => {
     <>
       <Navbar />
       <div className="services-page">
-        {/* Header Section */}
 
         {/* Interactive Category Filter */}
         <div className="filter-section">
           <div className="container">
             <h2 className="filter-title">Explore Our Services</h2>
             <div className="filter-tabs">
-              {categories.map(category => (
+              {services.map((service, index) => (
                 <button
-                  key={category.id}
-                  className={`filter-tab ${activeCategory === category.id ? 'active' : ''}`}
-                  onClick={() => setActiveCategory(category.id)}
+                  key={index}
+                  className={`filter-tab ${activeCategory === service.slug.current ? 'active' : ''}`}
+                  onClick={() => setActiveCategory(service.slug.current)}
                 >
-                  <span className="tab-text">{category.name}</span>
+                  <span className="tab-text">{service.title}</span>
                 </button>
               ))}
+              <button
+                className={`filter-tab ${activeCategory === 'all' ? 'active' : ''}`}
+                onClick={() => setActiveCategory('all')}
+              >
+                <span className="tab-text">All Services</span>
+              </button>
             </div>
           </div>
         </div>
