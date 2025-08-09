@@ -1,0 +1,538 @@
+[
+  {
+    "image": null,
+    "overview": [
+      {
+        "_key": "58dcf7797ec8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7214195367c3",
+            "_type": "span",
+            "marks": [],
+            "text": "Comprehensive JD Edwards solutions from implementation to innovation. Unlock your ERP’s full potential with our expert consulting, integration, and support services."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "jd-edwards-824621a3-a47a-4156-81b0-40a05ad98217"
+        },
+        "title": "What is JD Edwards"
+      },
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "jd-edwards-drafts824621a3-a47a-4156-81b0-40a05ad98217"
+        },
+        "title": "Key Benefits"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "description": "Expert guidance to align JD Edwards with your business strategy. We help you assess, plan, and optimize your ERP environment to ensure it supports your operational goals and future growth.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/599ce5ec1aa4f25211e658fb3ab838064a03e86b-1046x550.png"
+              }
+            },
+            "title": "JD Edwards Consulting"
+          },
+          {
+            "description": "End-to-end operational management of your JD Edwards environment. Our proactive approach keeps your systems secure, stable, and performing at their best—24/7.",
+            "image": null,
+            "title": "JD Edwards Managed Services"
+          },
+          {
+            "description": "Stay ahead with the latest JD Edwards features, performance improvements, and security updates. We make the upgrade process smooth, predictable, and disruption-free.",
+            "image": null,
+            "title": "JD Edwards Upgrade"
+          },
+          {
+            "description": "Seamless deployment of JD Edwards tailored to your industry and processes. We manage the entire project from requirements gathering to post-go-live support.",
+            "image": null,
+            "title": "JD Edwards Implementation"
+          },
+          {
+            "description": "Migrate your JD Edwards environment to the cloud with minimal risk. We help you plan, execute, and manage the transition to Oracle Cloud Infrastructure or hybrid models.",
+            "image": null,
+            "title": "Lift, Shift and Manage"
+          },
+          {
+            "description": "Automate and integrate business processes using JD Edwards Orchestrator. From routine tasks to complex workflows, we help you build smart, data-driven automations.",
+            "image": null,
+            "title": "JD Edwards Orchestrator"
+          },
+          {
+            "description": "Connect JD Edwards with other enterprise applications for seamless operations. We design and deploy integrations that eliminate silos and improve collaboration.",
+            "image": null,
+            "title": "JD Edwards Integrations"
+          },
+          {
+            "description": "Flexible, on-demand JD Edwards support when you need it. From quick fixes to process improvements, our experts are just a call away.",
+            "image": null,
+            "title": "Smart Help"
+          }
+        ],
+        "description": "End-to-end JD Edwards services from strategy and implementation to upgrades, integrations, and automation—maximizing value and minimizing risk at every stage of your ERP journey.",
+        "title": "Complete JD Edwards Solution Partner"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "oracle-jd-edwards"
+    },
+    "title": "Oracle JD Edwards"
+  },
+  {
+    "image": {
+      "asset": {
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/caf20c26d81e243a93482a93c5bff7bf8c62b1cd-947x863.png"
+      }
+    },
+    "overview": [
+      {
+        "_key": "4375cb204b45",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6046b0b523ff",
+            "_type": "span",
+            "marks": [],
+            "text": "End-to-end Enterprise Performance Management solutions that streamline planning, budgeting, consolidation, reporting, and analytics—empowering your organization to make smarter, faster decisions."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-epmcpm-draftsbb9ae540-793c-4236-928e-1c2683e94c33"
+        },
+        "title": "What is Oracle EPM?"
+      },
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-epmcpm-draftsbb9ae540-793c-4236-928e-1c2683e94c33"
+        },
+        "title": "Key Benefits"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "description": "Design, implement, and optimize Oracle Planning & Budgeting solutions for more accurate forecasts and agile resource allocation.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/4815b313e29754cf2d3db3ad8b2a165f569d4ec8-1143x743.png"
+              }
+            },
+            "title": "Planning and Budgeting"
+          },
+          {
+            "description": "Streamline your period-end close process and deliver timely, accurate consolidated financial statements with Oracle’s Financial Close solutions.",
+            "image": null,
+            "title": "Financial Close and Consolidation"
+          },
+          {
+            "description": "Automate and streamline reconciliation processes to improve accuracy, reduce risk, and accelerate financial close.",
+            "image": null,
+            "title": "Account Reconciliation"
+          },
+          {
+            "description": "Combine financial data with narrative context for transparent, compliant, and insightful reporting.",
+            "image": null,
+            "title": "Narrative and Regulatory Reporting"
+          },
+          {
+            "description": "Centralize, validate, and integrate financial and operational data to power accurate planning, reporting, and analytics.",
+            "image": null,
+            "title": "Data Management and Integration"
+          }
+        ],
+        "description": "From strategic planning to automated financial close, we deliver Oracle EPM solutions that help you align resources, manage performance, and report with confidence.",
+        "title": "Performance Management Solutions for the Modern Enterprise"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "oracle-epm-cpm"
+    },
+    "title": "Oracle EPM/CPM"
+  },
+  {
+    "image": {
+      "asset": {
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/c0701338c783fb63b33e1a2d418486b5b0c39f64-1590x932.png"
+      }
+    },
+    "overview": [
+      {
+        "_key": "c5ef366feb87",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "24866c6cc1b0",
+            "_type": "span",
+            "marks": [],
+            "text": "Comprehensive cloud ERP solutions with NetSuite, helping businesses streamline operations, improve financial visibility, and scale with confidence."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "netsuite-drafts9ab13f1f-a697-424d-90bb-f6b72f43c9bb"
+        },
+        "title": "What is NetSuite?"
+      },
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "netsuite-drafts9ab13f1f-a697-424d-90bb-f6b72f43c9bb"
+        },
+        "title": "Key Benefits"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "description": "End-to-end NetSuite deployment services to ensure your ERP is implemented on time, within budget, and aligned with your business goals.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/4c28c4ed1f8936364c0aba2f3bc9ce210701747b-493x466.png"
+              }
+            },
+            "title": "NetSuite Implementation"
+          },
+          {
+            "description": "Ongoing NetSuite support and tailored customization to meet your evolving business needs.",
+            "image": null,
+            "title": "Support and Customization"
+          },
+          {
+            "description": "Custom-built NetSuite solutions designed to address the unique challenges of your industry.",
+            "image": null,
+            "title": "Industry-Specific Solutions"
+          },
+          {
+            "description": "Enable your team to manage business processes and access critical data from any device, anywhere.",
+            "image": null,
+            "title": "NetSuite Mobile Access"
+          },
+          {
+            "description": "Enhance financial planning accuracy and streamline reconciliation processes with NetSuite’s integrated tools.",
+            "image": null,
+            "title": "Planning and Reconciliation"
+          }
+        ],
+        "description": "From implementation to industry-specific customization, our NetSuite services help you maximize your investment and drive sustainable business growth.",
+        "title": "Cloud ERP Solutions That Grow With You"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "netsuite"
+    },
+    "title": "NetSuite"
+  },
+  {
+    "image": null,
+    "overview": [
+      {
+        "_key": "2fba93b41455",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e426b8fe5c11",
+            "_type": "span",
+            "marks": [],
+            "text": "End-to-end cloud and infrastructure solutions that help you modernize IT, optimize performance, and scale securely across on-premise, hybrid, and multi-cloud environments."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "cloud--infrastructure-drafts8b7a45fa-f92d-4d48-8781-3a801a4d59bf"
+        },
+        "title": "What is Cloud Infrastructure?"
+      },
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "cloud--infrastructure-drafts8b7a45fa-f92d-4d48-8781-3a801a4d59bf"
+        },
+        "title": "Key Benefits"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "description": "Expert guidance to design the right cloud roadmap tailored to your business requirements and long-term growth plans.",
+            "image": null,
+            "title": "Cloud Consulting and Strategy"
+          },
+          {
+            "description": "Seamless, secure migration of workloads, applications, and data to Oracle Cloud Infrastructure with minimal disruption.",
+            "image": null,
+            "title": "Migration to Oracle Cloud (OCI)"
+          },
+          {
+            "description": "Proactive management and optimization of your on-premise, hybrid, or cloud infrastructure to ensure peak performance.",
+            "image": null,
+            "title": "Infrastructure Management"
+          },
+          {
+            "description": "Accelerate application delivery and improve operational efficiency through modern DevOps practices and automation tools.",
+            "image": null,
+            "title": "DevOps and Automation"
+          },
+          {
+            "description": "Design, implement, and manage multi-cloud strategies for flexibility, resilience, and vendor independence.",
+            "image": null,
+            "title": "Multi-Cloud Environments"
+          }
+        ],
+        "description": "From cloud strategy and migration to ongoing management, we deliver infrastructure solutions that align technology with your business goals.",
+        "title": "Cloud Solutions Built for Agility and Performance"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "cloud-infrastructure"
+    },
+    "title": "Cloud / Infrastructure"
+  },
+  {
+    "image": null,
+    "overview": [
+      {
+        "_key": "3fa536adaaf7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "58c01c825172",
+            "_type": "span",
+            "marks": [],
+            "text": "Comprehensive Oracle Database solutions from installation and optimization to backup, recovery, and autonomous database management, ensuring performance, reliability, and security."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-database-drafts422b842b-22b6-44a3-8b54-5a8c099e986a"
+        },
+        "title": "What is Oracle Database?"
+      },
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-database-drafts422b842b-22b6-44a3-8b54-5a8c099e986a"
+        },
+        "title": "Key Benefits"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "description": "End-to-end Oracle Database installation and ongoing technical support to ensure smooth operations.",
+            "image": null,
+            "title": "Installation and Support"
+          },
+          {
+            "description": "Optimize database performance with tuning and fine-tuning techniques for queries, indexes, and configurations.",
+            "image": null,
+            "title": "Database Tuning"
+          },
+          {
+            "description": "Reliable backup and disaster recovery solutions to protect your critical data and ensure business continuity.",
+            "image": null,
+            "title": "Backup and Recovery"
+          },
+          {
+            "description": "Deploy Oracle’s self-driving, self-securing, and self-repairing Autonomous Database for reduced administration effort and enhanced performance.",
+            "image": null,
+            "title": "Oracle Autonomous DB"
+          },
+          {
+            "description": "Comprehensive database health checks to identify and fix performance, security, and stability issues.",
+            "image": null,
+            "title": "Health Check and Optimization"
+          }
+        ],
+        "description": "From setup to optimization and autonomous management, we deliver Oracle Database services that keep your data environment running at peak performance.\n\n",
+        "title": "Secure, Optimized, and Always Available"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "oracle-database"
+    },
+    "title": "Oracle Database"
+  },
+  {
+    "image": null,
+    "overview": [
+      {
+        "_key": "19df1ad72b7c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "262df39a8c75",
+            "_type": "span",
+            "marks": [],
+            "text": "Empower your workforce and customers with secure, scalable, and high-performance mobile solutions that connect business processes and data anywhere, anytime."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "mobility-services-7036ed26-4f7b-4712-9e9f-cf99c568e3bc"
+        },
+        "title": "What is Enterprise Mobility?"
+      },
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "mobility-services-drafts7036ed26-4f7b-4712-9e9f-cf99c568e3bc"
+        },
+        "title": "Key Benefits"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "description": "Custom mobile applications designed to meet your unique business needs and deliver seamless user experiences.",
+            "image": null,
+            "title": "Mobile App Development"
+          },
+          {
+            "description": "Extend ERP capabilities to mobile devices for on-the-go access to JD Edwards and NetSuite functions.",
+            "image": null,
+            "title": "JD Edwards and NetSuite Mobile Apps"
+          },
+          {
+            "description": "Empower field teams with mobile tools for service delivery, work order management, and real-time updates.",
+            "image": null,
+            "title": "Field Service Mobility"
+          },
+          {
+            "description": "Upgrade and integrate legacy mobile applications with modern technologies and business systems.",
+            "image": null,
+            "title": "App Modernization and Integration"
+          }
+        ],
+        "description": "From developing custom mobile apps to integrating ERP capabilities on the go, we deliver solutions that extend your business beyond the desktop.",
+        "title": "Mobile Solutions Designed for Business Impact"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "mobility-services"
+    },
+    "title": "Mobility Services"
+  },
+  {
+    "image": null,
+    "overview": [
+      {
+        "_key": "a72e6b2ba449",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2b26e4e85c0b",
+            "_type": "span",
+            "marks": [],
+            "text": "Unlock the power of your data with Oracle Business Intelligence solutions that deliver actionable insights through advanced analytics, visualization, and reporting."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-bi-draftsf553f3e1-0ec5-4014-b784-fb4349001a7c"
+        },
+        "title": "What is Oracle BI?"
+      },
+      {
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-bi-draftsf553f3e1-0ec5-4014-b784-fb4349001a7c"
+        },
+        "title": "Key Benefits"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "description": "Leverage the power of Oracle’s cloud-based analytics platform for advanced data analysis and visualization.",
+            "image": null,
+            "title": "Oracle Analytics Cloud (OAC)"
+          },
+          {
+            "description": "Design, deploy, and manage pixel-perfect reports and enterprise dashboards using BI Publisher and OBIEE.",
+            "image": null,
+            "title": "BI Publisher and OBIEE Reports"
+          },
+          {
+            "description": "Create interactive dashboards and visual analytics to make complex data easy to understand and act on.",
+            "image": null,
+            "title": "Data Visualization and Dashboards"
+          },
+          {
+            "description": "Empower business users to access, analyze, and visualize data without relying on IT.",
+            "image": null,
+            "title": "Self-Service BI"
+          }
+        ],
+        "description": "From analytics cloud setup to interactive dashboards, we deliver Oracle BI solutions that help you see, understand, and act on your data.",
+        "title": "Data-Driven Insights for Smarter Decisions"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "oracle-bi"
+    },
+    "title": "Oracle BI"
+  }
+]

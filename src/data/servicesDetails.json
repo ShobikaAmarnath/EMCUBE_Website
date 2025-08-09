@@ -1,0 +1,5452 @@
+[
+  {
+    "image": null,
+    "overview": [
+      {
+        "_key": "3fa536adaaf7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "58c01c825172",
+            "_type": "span",
+            "marks": [],
+            "text": "Comprehensive Oracle Database solutions from installation and optimization to backup, recovery, and autonomous database management, ensuring performance, reliability, and security."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "content": [
+          {
+            "_key": "76d755746430",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Oracle Database is a powerful, enterprise-grade relational database management system designed to store, manage, and secure mission-critical data. It offers high performance, scalability, and advanced features for analytics, transaction processing, and data warehousing."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": null,
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-database-drafts422b842b-22b6-44a3-8b54-5a8c099e986a"
+        },
+        "title": "What is Oracle Database?",
+        "type": "text"
+      },
+      {
+        "content": [
+          {
+            "_key": "89499bff5a75",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Improve database performance and reliability"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "9c2fbb43dc40",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enhance data security and compliance"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "62a7b0e0f8c0",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enable scalability to handle growing data volumes"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "22215e4ba437",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Reduce downtime with robust backup and recovery"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "db9564daf438",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Optimize resource utilization and costs"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "88edd4874e36",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Gain real-time insights with advanced database features"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": "Ensure your business-critical data is secure, accessible, and optimized for performance with Oracle Database solutions.",
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-database-drafts422b842b-22b6-44a3-8b54-5a8c099e986a"
+        },
+        "title": "Key Benefits",
+        "type": "list"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "benefits": [
+              {
+                "_key": "73fb2bebc960",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6e6204757f17",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure proper setup for long-term stability"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "cd3d7a5e07d2",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c1ac33813cfa",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Minimize downtime with expert support"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "06d9867c51a0",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1a22f1f916cd",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve system security from day one"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "6e77dae6b9f9",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c892e470ee60",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce operational issues through proactive assistance"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "End-to-end Oracle Database installation and ongoing technical support to ensure smooth operations.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "7eb54a61de5b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "896e5caae55b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Database architecture design and planning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "cfb5a8fc094a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "fd8b59372194",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Installation and configuration of Oracle Database"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "da07735b5d4f",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "72b6b8bc0b92",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "User and security setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "533661917cf0",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "72eb8f3ffd04",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "24/7 technical support"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Installation and Support"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "1399f7f2fe02",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "61711a159ac8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve application and query response times"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "df20ee456c5c",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "bf16a46644c1",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Maximize hardware and resource efficiency"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "62e5ce625f9d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "89922ed755a7",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce performance bottlenecks"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7a13446b9169",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ab36afb3af3d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure scalability for future demands"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Optimize database performance with tuning and fine-tuning techniques for queries, indexes, and configurations.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "f4d06cec4364",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b162676aaa61",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Performance assessment and analysis"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "40bff1908925",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "5f04accdf4b0",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "SQL query optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "185a7f5ed952",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "5df58f64845a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Indexing strategy design"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "f206c8f6dc3a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b539b76cc1cb",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Resource allocation and configuration tuning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Database Tuning"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "f076aa37021a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6fb1b2331d0b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Minimize data loss risk"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4ad722815ca3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1bb39c3780bd",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce downtime after incidents"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "647090a95a21",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f69c694d76cb",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure compliance with data retention policies"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "71064c1b1511",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "782dc75e35bb",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Maintain business continuity under any scenario"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Reliable backup and disaster recovery solutions to protect your critical data and ensure business continuity.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "ff79b615f20f",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "9408ddaadf5f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Automated and scheduled backups"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "9c35ced101d4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "fb8cad20aa25",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Recovery strategy planning and testing"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "42aead00ea83",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "453490c16493",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Point-in-time recovery setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "c77ee34c0a2e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6645fe4c0b78",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Disaster recovery implementation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Backup and Recovery"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "4feee5758420",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c8727fc11e1d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce administrative overhead with automation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "9d586efb296f",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "02a664f378d8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve performance with AI-driven tuning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3deaa2012f23",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b27436e9cb1d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhance security with autonomous patching"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "0b69195ce11f",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "589b62d439cb",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Lower operational costs with optimized usage"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Deploy Oracle’s self-driving, self-securing, and self-repairing Autonomous Database for reduced administration effort and enhanced performance.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "1245d016e7c7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "9a104d9b1614",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Autonomous DB setup and migration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3c8997b9a374",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "5967a5d65668",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Data model design and deployment"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "48faa2926343",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "93a2e28f53ee",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with existing applications"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "553c2c1febdb",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e22eea3c160e",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Performance and cost optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Oracle Autonomous DB"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "79a86b3a09c4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6e11e5725135",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Detect and resolve issues proactively"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d5e4e156dc42",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "9ae8c2c8ffcc",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve database speed and stability"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3245eb849d0c",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "23a120ad89f8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Strengthen security posture"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "da6e25bcff81",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "21db572a06e9",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Extend the life and efficiency of database systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Comprehensive database health checks to identify and fix performance, security, and stability issues.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "6805be216bc7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d8dc91a2953a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Database health assessment"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "5ba0b6118639",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "af3ce2504c2a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Security vulnerability scans"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "c389329fdd18",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "59519356f3cc",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Performance optimization recommendations"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "e3f047aeada6",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "847544f08e23",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Implementation of best practices"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Health Check and Optimization"
+          }
+        ],
+        "description": "From setup to optimization and autonomous management, we deliver Oracle Database services that keep your data environment running at peak performance.\n\n",
+        "title": "Secure, Optimized, and Always Available"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "oracle-database"
+    },
+    "title": "Oracle Database"
+  },
+  {
+    "image": null,
+    "overview": [
+      {
+        "_key": "19df1ad72b7c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "262df39a8c75",
+            "_type": "span",
+            "marks": [],
+            "text": "Empower your workforce and customers with secure, scalable, and high-performance mobile solutions that connect business processes and data anywhere, anytime."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "content": [
+          {
+            "_key": "49e6f2e51354",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enterprise Mobility is the use of mobile devices, applications, and cloud technologies to enable secure access to business systems and processes from anywhere. It boosts productivity, streamlines workflows, and enhances collaboration for employees in the office, on the road, or in the field."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": null,
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "mobility-services-7036ed26-4f7b-4712-9e9f-cf99c568e3bc"
+        },
+        "title": "What is Enterprise Mobility?",
+        "type": "text"
+      },
+      {
+        "content": [
+          {
+            "_key": "e76e115ccd1e",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Increase workforce productivity with anytime, anywhere access"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "22c79e98be11",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enhance customer engagement through mobile experiences"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "62550492ec6e",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Improve decision-making with real-time data access"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "387cf5075c12",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Streamline field operations with mobile-enabled workflows"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "ee4b96d04f21",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Reduce operational delays and inefficiencies"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "beca1e2c2066",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Ensure data security with enterprise-grade protections"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": "Enable your business to operate with greater agility, connectivity, and responsiveness through tailored mobility solutions.",
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "mobility-services-drafts7036ed26-4f7b-4712-9e9f-cf99c568e3bc"
+        },
+        "title": "Key Benefits",
+        "type": "list"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "benefits": [
+              {
+                "_key": "136b734ab8c2",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "02ce03b70a3a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Deliver intuitive and engaging mobile experiences"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "020137e42526",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f6ef0c30689f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure compatibility across iOS and Android platforms"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "fb995c91ac22",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "59b3fee33571",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integrate seamlessly with existing business systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "70f5a82e1ffd",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "34f78eeac830",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve productivity through tailored mobile solutions"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Custom mobile applications designed to meet your unique business needs and deliver seamless user experiences.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "938a78a822fd",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "947371931b7b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Native and cross-platform app development"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "03ae7de33e67",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "70a6d319496f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "User experience (UX) and interface (UI) design"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "bb6db2be5c4a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "81ef90c4cea0",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "API and backend integration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7e6a29db6c9e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "7927419105c6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "App security and compliance features"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Mobile App Development"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "8a0f5624373a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "35e05465f01e",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enable remote access to critical ERP data and processes"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7dc60c7f6e50",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6cf594a7bb3f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Speed up approvals and decision-making"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "440338f51638",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "874924a0180b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve user convenience and adoption of ERP systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "c04705330ff8",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "92e1a3860114",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Maintain security through controlled mobile access"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Extend ERP capabilities to mobile devices for on-the-go access to JD Edwards and NetSuite functions.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "ed96478b1f97",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ea99e67227ca",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Mobile ERP configuration and deployment"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "99cd00e5563c",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2e03648640aa",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Custom mobile dashboards and reports"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "8dccb73acc83",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c42208db30de",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Workflow approvals and task management"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3cd3e5106375",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e4461e421d4f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Role-based mobile access controls"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards and NetSuite Mobile Apps"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "b595ac1229a8",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d512bed26f42",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve service efficiency and response times"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "f423c88858b3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2d96ba913130",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhance communication between field and office teams"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "87f19f9b7908",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d78f77d97316",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce errors with real-time data capture"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "e99fc4e22116",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a88992e887a2",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Increase customer satisfaction with timely updates"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Empower field teams with mobile tools for service delivery, work order management, and real-time updates.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "8572c34d5d1a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "31f72680cfdd",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Field service app development and deployment"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "20b7c106b087",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "cd3fb8ea24a8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "GPS and location-based service tracking"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "5b73aaeb8523",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "dabcb69b7237",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Real-time job updates and status reporting"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "35899f13efd8",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2ca231493b6c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Offline functionality for remote areas"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Field Service Mobility"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "f01ff48ce1ed",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c19dd236f8ec",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Extend the lifespan of existing mobile investments"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "72a46630a829",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "22785e997f4e",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve app performance and user experience"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "baf10a9da822",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "8acaa4017935",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enable new capabilities through modern integrations"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "226d3a0858f2",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ce8ceb31ceb3",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhance security to meet current standards"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Upgrade and integrate legacy mobile applications with modern technologies and business systems.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "925859353a9d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "798a806ea83c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Legacy app assessment and redesign"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "fdaa2bed628a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "43d8cd9747a6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Cloud migration for mobile applications"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4ef4516405a3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "0d84975cb6c3",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with ERP, CRM, and other systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ecb9cf41876d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "762fc9d106c4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Performance optimization and security upgrades"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "App Modernization and Integration"
+          }
+        ],
+        "description": "From developing custom mobile apps to integrating ERP capabilities on the go, we deliver solutions that extend your business beyond the desktop.",
+        "title": "Mobile Solutions Designed for Business Impact"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "mobility-services"
+    },
+    "title": "Mobility Services"
+  },
+  {
+    "image": null,
+    "overview": [
+      {
+        "_key": "58dcf7797ec8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7214195367c3",
+            "_type": "span",
+            "marks": [],
+            "text": "Comprehensive JD Edwards solutions from implementation to innovation. Unlock your ERP’s full potential with our expert consulting, integration, and support services."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "content": [
+          {
+            "_key": "04459d90ac08",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Oracle JD Edwards is a robust Enterprise Resource Planning (ERP) suite designed to streamline and automate core business functions—from finance and supply chain to manufacturing and asset management. It empowers organizations with flexible, scalable solutions that adapt to diverse industries and operational needs."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": null,
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "jd-edwards-824621a3-a47a-4156-81b0-40a05ad98217"
+        },
+        "title": "What is JD Edwards",
+        "type": "text"
+      },
+      {
+        "content": [
+          {
+            "_key": "aeb1d26fbc31",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Drive operational excellence with integrated, real-time business processes."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "03120dba3762",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Transform financial processes with comprehensive performance management capabilities."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "5def85b2588d",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Improve productivity through automated workflows and simplified user experiences."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "885451d025b2",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enable scalability to meet evolving business demands."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "6f66fba423ea",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enhance decision-making with accurate, timely insights."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": "Transform your financial processes with comprehensive performance management capabilities",
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "jd-edwards-drafts824621a3-a47a-4156-81b0-40a05ad98217"
+        },
+        "title": "Key Benefits",
+        "type": "list"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "benefits": [
+              {
+                "_key": "bd47c8660794",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "26dfc00932bf",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduced risk and cost during implementation or upgrades"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "1cbaded640da",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "35cae5054e21",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhanced ERP usability and adoption"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "6bfaab26d064",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "464b30f7c3bf",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Optimized performance of existing JD Edwards systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Expert guidance to align JD Edwards with your business strategy. We help you assess, plan, and optimize your ERP environment to ensure it supports your operational goals and future growth.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/599ce5ec1aa4f25211e658fb3ab838064a03e86b-1046x550.png"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "44a48c9dcfdd",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "664025605a07",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "ERP strategy planning & advisory"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "cab2c123074a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "adf0bec42439",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Business process alignment"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "12be9c710f12",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "034ab9d0b1f8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Technical & functional gap analysis"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "dd41432a3b0c",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b98ed09b1e62",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Roadmapping for upgrades & enhancements"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4a3e6455b44d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e8d59f07a916",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Module-specific consulting (Finance, Distribution, Manufacturing, etc.)"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Consulting"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "39e513d9bd8a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b39c1c4755c7",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Minimized downtime with proactive issue resolution"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "dd1380c0c342",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "bb0e15ded51f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduced total cost of ERP ownership"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "05177aa6c440",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "66d5e34b0bad",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved system reliability and performance"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "End-to-end operational management of your JD Edwards environment. Our proactive approach keeps your systems secure, stable, and performing at their best—24/7.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "86d844ee5dc5",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e40a42f39d2c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Proactive system monitoring & administration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "1e9f7644a2b0",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "7851489dda0a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Performance optimization and tuning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "c81298b49dc8",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c6e3b4ac9899",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Security management & compliance support"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "1a371d9a317e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1bdeb768d7ba",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Continuous improvements and patch updates"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d656174a15b0",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "35d379fde85a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "24/7 functional & technical support"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Managed Services"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "0ffff611716b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "fb758d12e976",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Access to latest JD Edwards features and enhancements"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "04f767197945",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "fd8d661b4ee1",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved system security and compliance"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "2f44fabd1560",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "29ee17ed797f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Streamlined performance with modernized architecture"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Stay ahead with the latest JD Edwards features, performance improvements, and security updates. We make the upgrade process smooth, predictable, and disruption-free.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "b0cfcd7f6326",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "0c6feea039a3",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Upgrade assessments & readiness checks"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "b4c48abf8425",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f48a45053a98",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Data migration planning & execution"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "20b0124361e1",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "485b417753c1",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Environment modernization & platform updates"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "fcba95b4d648",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "01c03b40c379",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Upgrade testing & validation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "b47f408f805d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "5f6b37c56f74",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "End-user training & change management"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Upgrade"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "4c8be2580ff6",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "fee1db6b0d1d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Faster time-to-value with structured implementation methodology"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ec7287fb99ee",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "73891ac0c743",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Systems aligned with specific business needs"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "5fedd82d253f",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "99019c32a2a3",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved user adoption and process efficiency"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Seamless deployment of JD Edwards tailored to your industry and processes. We manage the entire project from requirements gathering to post-go-live support.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "6690ef3ef01b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "403e55d2e932",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "End-to-end implementation planning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "e90835b343ed",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c0172a407dcb",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Business process mapping & configuration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "60e84272afb9",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6847a8c5f42b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Customization & extensions development"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7d1f65a968f4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c976fd8d5cc3",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Data migration and validation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "e35c0071bd36",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e97a19a7cff3",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "User training & go-live support"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Implementation"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "787fa2f1f00e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f4737ab7fd71",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Lower infrastructure and maintenance costs"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "0b92acf1cb7a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "9f49425ff17e",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhanced scalability and flexibility"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "507f410b1bd4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2ba5f03ac839",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Seamless transition with minimal disruption"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Migrate your JD Edwards environment to the cloud with minimal risk. We help you plan, execute, and manage the transition to Oracle Cloud Infrastructure or hybrid models.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "04655b4454ec",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "80d9b909552c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Cloud migration assessment & planning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "66f801fa9495",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a6e8464d66e2",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "On-premise to Oracle Cloud Infrastructure (OCI) transition"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "243f126d991b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "7d973301e573",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Hybrid ERP environment setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "a116c65e5807",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ca2612c8620f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Post-migration optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "2efa147fdf56",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3a530369baed",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Managed cloud ERP services"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Lift, Shift and Manage"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "d810232353f1",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "4005a50ccaad",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduced manual effort through automation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "b367a26daa1a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "448d5c8f59c8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved data accuracy and real-time visibility"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "62fef8b2d158",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e1590d19e84c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhanced operational efficiency"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Automate and integrate business processes using JD Edwards Orchestrator. From routine tasks to complex workflows, we help you build smart, data-driven automations.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "7358786855b0",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1618ff309a75",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Orchestration design & development"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "198c3391aa77",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b5b8be8f6958",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Automation of routine processes"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "f91cbd79872c",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "336196631131",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with external systems & APIs"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "54c32dbea500",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "cbb756b54461",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Real-time data processing & alerts"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d3e1206b2564",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "66b4f65e78ef",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Orchestration performance monitoring"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Orchestrator"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "6deb18142644",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "9ec99c532610",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Unified, seamless business processes across systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "8dc25749b2a1",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3ef853dd72c9",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduced data silos and duplication"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "f8db014d69d9",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f84366f7302d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved cross-department collaboration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Connect JD Edwards with other enterprise applications for seamless operations. We design and deploy integrations that eliminate silos and improve collaboration.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "90373efb5df1",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c3ca5687e3f5",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration strategy & design"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "c39c578d3166",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b3d4102722f6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "API development & middleware configuration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ecc9314428e7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "cfbc48b3c87f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Third-party system connectivity (CRM, SCM, HR, etc.)"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "cda10f40faa3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "31be4961589d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Real-time and batch data integration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "aacf3f7c2243",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3004b17ec307",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ongoing integration monitoring & optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Integrations"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "22692de20946",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "262d29d7a4ba",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Faster resolution of ERP issues"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "eebe5f7b12c3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "df5e7dfe1061",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Flexible support tailored to your needs"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "553a184a64a6",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f2961e1ccb7e",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved system knowledge and self-sufficiency"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Flexible, on-demand JD Edwards support when you need it. From quick fixes to process improvements, our experts are just a call away.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "65270fa8cabc",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2fb9d11a38ed",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "On-demand functional & technical assistance"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "13feae81f968",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "84bb7ae1f4ec",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Issue diagnosis and troubleshooting"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7de728c04be1",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "9447f957c943",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Small enhancements and quick fixes"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d9e913d872f8",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b1cda644bf5d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Performance optimization tipsKnowledge transfer and mentoring"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Smart Help"
+          }
+        ],
+        "description": "End-to-end JD Edwards services from strategy and implementation to upgrades, integrations, and automation—maximizing value and minimizing risk at every stage of your ERP journey.",
+        "title": "Complete JD Edwards Solution Partner"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "oracle-jd-edwards"
+    },
+    "title": "Oracle JD Edwards"
+  },
+  {
+    "image": null,
+    "overview": [
+      {
+        "_key": "2fba93b41455",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e426b8fe5c11",
+            "_type": "span",
+            "marks": [],
+            "text": "End-to-end cloud and infrastructure solutions that help you modernize IT, optimize performance, and scale securely across on-premise, hybrid, and multi-cloud environments."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "content": [
+          {
+            "_key": "c0b058f051e7",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Cloud infrastructure is the combination of hardware, software, networking, and storage resources delivered as a service over the internet. It enables businesses to run applications, store data, and operate IT services on scalable, flexible platforms without the need for traditional on-premise infrastructure."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": null,
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "cloud--infrastructure-drafts8b7a45fa-f92d-4d48-8781-3a801a4d59bf"
+        },
+        "title": "What is Cloud Infrastructure?",
+        "type": "text"
+      },
+      {
+        "content": [
+          {
+            "_key": "322bb69894f6",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Scale resources up or down based on demand"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "09caeda688c4",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Reduce capital expenditure with pay-as-you-go models"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "e56d9414073a",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Improve performance with modern, optimized environments"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "1f82bcac8b42",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enhance security with advanced cloud protection measures"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "2f33d5f028ae",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Increase agility for faster innovation and deployment"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "1f8ecf3d4887",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enable global accessibility and collaboration"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": "Accelerate innovation and reduce costs with secure, scalable, and high-performance cloud infrastructure.",
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "cloud--infrastructure-drafts8b7a45fa-f92d-4d48-8781-3a801a4d59bf"
+        },
+        "title": "Key Benefits",
+        "type": "list"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "benefits": [
+              {
+                "_key": "3b58c0d3111a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "8470ca4706bc",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce risk with a clear migration strategy"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "db782d84298d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d2c34d8e3a70",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Optimize cloud costs and resource usage"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "088abfc9551b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "af6bbdfecc1d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Align infrastructure with business objectives"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ebb048f74260",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f81dc075d6f2",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Strengthen security and compliance posture"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Expert guidance to design the right cloud roadmap tailored to your business requirements and long-term growth plans.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "915472d42cf1",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b8cc0c92b1b1",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Cloud readiness assessments"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "94c6252b4fc2",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "468c1fed3cb3",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Architecture and design planning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "e3c41c859026",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "0ef3b4f96cd4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Cost optimization strategies"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "92cd483d1046",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e5167fb9df8c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Security and compliance advisory"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "8cfeb0afc4c3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "79d1b1c8722b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Cloud adoption and governance frameworks"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Cloud Consulting and Strategy"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "df21a9a995ba",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "df0e26a108c4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Minimize downtime during migration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ebe339ff5798",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2d5daa14d7c9",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve performance with OCI’s optimized infrastructure"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "36e3f10ebd21",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "9e573ef4cb84",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce costs with flexible OCI pricing"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "beeb990c6a0b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b916c9269b14",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Strengthen data security and compliance"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Seamless, secure migration of workloads, applications, and data to Oracle Cloud Infrastructure with minimal disruption.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "3e545e2af769",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b616a591c70a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Migration planning and roadmap creation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "9d36ce73a3e8",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "74c97b5af111",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Application and database migration services"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "455b94efab1a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1223c4a6c3f4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Data migration and validation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3fa0df6e9842",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "62c284cb7fc4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Replatforming and re-architecture support"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Migration to Oracle Cloud (OCI)"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "610d39bb3b84",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1f591873697a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve system reliability and uptime"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "b3bba9e369cd",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "357ba0921187",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhance performance with proactive optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "97a2a0e5f508",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d036e0fd6524",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Protect critical data with backup and recovery plans"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "282d35f784f3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c6dad09b2c43",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Strengthen security through constant monitoring"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "146e9fa8f798",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b3e0959a4ed6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure predictable service levels with SLAs"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Proactive management and optimization of your on-premise, hybrid, or cloud infrastructure to ensure peak performance.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "21bb21dc9817",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "14c1000e9983",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "24/7 monitoring and performance tuning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "bdde4da05eeb",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c198192d68ab",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Patch management and system updates"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "2f1346adfb83",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "034a3bda83b5",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Backup and disaster recovery solutions"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Infrastructure Management"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "38dd13703967",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1a1abf0c7a81",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Shorten development and release cycles"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d6f23570351e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ef218f31caf8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve collaboration between development and operations"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "a2861fc164cf",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "4951aa95a275",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce human error with automation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Accelerate application delivery and improve operational efficiency through modern DevOps practices and automation tools.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "0b96076a7a1d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3611f1c3d9c8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "CI/CD pipeline setup and optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "702a9dddb181",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "fc3c942bd813",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Infrastructure as Code (IaC) implementation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "56fdf15d7e0a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a3becef54430",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Automated testing and deployment"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "f775d81b5fd5",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c12f2f149219",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Containerization and orchestration (Docker, Kubernetes)"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "DevOps and Automation"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "2c05928b27d9",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6cc967af9541",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Avoid vendor lock-in with flexible deployment options"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "8ae65761af12",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e0c72f3e73c5",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve resilience through redundancy across providers"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "1d7ab1105417",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "aa93692fc6ea",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Optimize costs by leveraging multiple pricing models"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "69c389c6e7e3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ed853c6116de",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhance performance with region-specific deployments"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "b63651b660e9",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e20c147eca6c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Simplify management with unified monitoring tools"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Design, implement, and manage multi-cloud strategies for flexibility, resilience, and vendor independence.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "c5fcb7b69d65",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d47a113b7765",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Multi-cloud strategy development"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "9ed2a8f8d0b4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d46f267c5f1f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Cross-cloud integration and data synchronization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "bc138df69db3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2876dd4b9fb5",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Workload distribution and optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "8e49c06e3a6a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "940b2ddc783b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Security and compliance across cloud providers"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "0f2bebd66d64",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "0ada94581120",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Centralized monitoring and management"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Multi-Cloud Environments"
+          }
+        ],
+        "description": "From cloud strategy and migration to ongoing management, we deliver infrastructure solutions that align technology with your business goals.",
+        "title": "Cloud Solutions Built for Agility and Performance"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "cloud-infrastructure"
+    },
+    "title": "Cloud / Infrastructure"
+  },
+  {
+    "image": {
+      "asset": {
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/c0701338c783fb63b33e1a2d418486b5b0c39f64-1590x932.png"
+      }
+    },
+    "overview": [
+      {
+        "_key": "c5ef366feb87",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "24866c6cc1b0",
+            "_type": "span",
+            "marks": [],
+            "text": "Comprehensive cloud ERP solutions with NetSuite, helping businesses streamline operations, improve financial visibility, and scale with confidence."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "content": [
+          {
+            "_key": "828e9af2df01",
+            "_type": "block",
+            "children": [
+              {
+                "text": "NetSuite is a leading cloud-based Enterprise Resource Planning (ERP) platform that integrates core business processes—such as finance, inventory, CRM, e-commerce, and analytics—into a single, unified system. It offers real-time insights, automation, and scalability to meet the needs of growing businesses across industries."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": null,
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "netsuite-drafts9ab13f1f-a697-424d-90bb-f6b72f43c9bb"
+        },
+        "title": "What is NetSuite?",
+        "type": "text"
+      },
+      {
+        "content": [
+          {
+            "_key": "2006c7f26635",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Access real-time insights across your entire organization"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "dd943c3a7e15",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Reduce operational costs through automation"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "595d39d3281c",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Improve decision-making with accurate, up-to-date data"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "24ace05dfaae",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Scale easily as your business grows"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "ea22febd5fb0",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Streamline workflows across departments"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "80e51469e025",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Increase productivity with anytime, anywhere access"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": "Empower your business with a unified cloud ERP that delivers agility, transparency, and efficiency across all operations.",
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "netsuite-drafts9ab13f1f-a697-424d-90bb-f6b72f43c9bb"
+        },
+        "title": "Key Benefits",
+        "type": "list"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "benefits": [
+              {
+                "_key": "1e0a59730980",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "39143404bb5a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce implementation risk with expert guidance"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "029b4d309c43",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b293ee207c6d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure system alignment with business objectives"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "fdab1e74f0f4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e2ecdefdcfe9",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve time-to-value for your ERP investment"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "185d55185d3a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a0ed168a45ca",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Minimize disruptions during deployment"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "End-to-end NetSuite deployment services to ensure your ERP is implemented on time, within budget, and aligned with your business goals.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/4c28c4ed1f8936364c0aba2f3bc9ce210701747b-493x466.png"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "51bf2489fcc6",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a76bf1c0d303",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Business process assessment and mapping"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7ca099e21c06",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6d9bd6e4f9af",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "NetSuite configuration and setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "5725c7f60690",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3e83e1cbcdd4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Data migration planning and execution"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "86863e5575a4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "daa0a3ee808b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": ""
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "NetSuite Implementation"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "572cc59b46d6",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "66e61726a230",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure peak system performance at all times"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "29b7d2d6aca0",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f8ee2fda795f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Adapt NetSuite to changing business processes"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "f57db445e874",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "9c37c3448fe8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve productivity with tailored solutions"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "882bedac598f",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d977dd313743",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Resolve issues quickly to minimize downtime"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Ongoing NetSuite support and tailored customization to meet your evolving business needs.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "6892e84a1f99",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "64f47680eaaa",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Functional and technical support"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "1f8be5bc5cd4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d0901a6af58a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Custom workflows and scripts development"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "77bf444d92a5",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6fffa1e77850",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Dashboard and report customization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "bbcfbc8d082c",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "60c8eef3a685",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Performance tuning and optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "a488811e8e92",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3cee25bcd2ef",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Troubleshooting and issue resolution"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "c27f728f2a34",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "02c87680d580",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Continuous improvements and enhancements"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Support and Customization"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "b00b6773cfd9",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "8be195acbf40",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Accelerate deployment with industry-ready templates"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3f39fa5cb41e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "db96d7f36523",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure compliance with sector regulations"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "fd8d94602301",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "471b9b8c5b20",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Gain insights through industry-focused analytics"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "c1db7d8ce41d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "47fd74bc22fd",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve operational efficiency with tailored workflows"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "1780c8075838",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "0555d9e626c9",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce customization costs with prebuilt solutions"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Custom-built NetSuite solutions designed to address the unique challenges of your industry.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "292c7ca61e90",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2d31dcc0cd7c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Industry process analysis and solution design"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "267f7033e6a3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a7c9b9ff23fb",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Preconfigured templates and modules for specific sectors"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "17ea42402494",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "eba1db994de8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Compliance and regulatory feature setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "9999f6e73b54",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "26dac9aa6c7a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Custom reporting for industry KPIs"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Industry-Specific Solutions"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "fc7fbdbbe3c6",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f42dd9d04c9f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Empower teams with on-the-go access to ERP data"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "73b699c96cc7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f26aa839a89b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Increase productivity for remote and field teams"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "e68553bf4638",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "21e2c347472d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure secure access with role-based controls"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "aae29dad66f9",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3f3503f1c32b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Make faster decisions with real-time mobile insights"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "bae8ddc71130",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a2c821edc454",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce delays by approving tasks and transactions anywhere"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Enable your team to manage business processes and access critical data from any device, anywhere.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "56888054a6c3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "8fee2c2c140e",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Mobile access setup and configuration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "626c76cecda7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "81c0d67d5507",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Custom mobile dashboards and reports"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "e00a08802ab0",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a69a8518e1b4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Role-based access controls for mobile users"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d4e1bc657224",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "557b995b75c8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with mobile applications"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "91bbfaf5af8c",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "bbc17e251316",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Mobile performance optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "NetSuite Mobile Access"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "3a3922321441",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "318da443f8d9",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve accuracy and agility in financial planning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "00daccba6de2",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "dd38b453904c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce reconciliation time and effort"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "52c0576ef447",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "565bc0d53ecb",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Identify and resolve discrepancies faster"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ae2fa2dd7014",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "95ac9321dfff",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhance transparency in financial reporting"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Enhance financial planning accuracy and streamline reconciliation processes with NetSuite’s integrated tools.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "1840adc6d2f9",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "67857a167e88",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Budgeting and forecasting module setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "97ec1b31e321",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c35aef4cc265",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Scenario and what-if analysis"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "5c9907a570c4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "076dd896de16",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Automated account reconciliation processes"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Planning and Reconciliation"
+          }
+        ],
+        "description": "From implementation to industry-specific customization, our NetSuite services help you maximize your investment and drive sustainable business growth.",
+        "title": "Cloud ERP Solutions That Grow With You"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "netsuite"
+    },
+    "title": "NetSuite"
+  },
+  {
+    "image": {
+      "asset": {
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/caf20c26d81e243a93482a93c5bff7bf8c62b1cd-947x863.png"
+      }
+    },
+    "overview": [
+      {
+        "_key": "4375cb204b45",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6046b0b523ff",
+            "_type": "span",
+            "marks": [],
+            "text": "End-to-end Enterprise Performance Management solutions that streamline planning, budgeting, consolidation, reporting, and analytics—empowering your organization to make smarter, faster decisions."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "content": [
+          {
+            "_key": "262fb9e287e2",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Oracle Enterprise Performance Management (EPM), also known as Corporate Performance Management (CPM), is a comprehensive suite of cloud-based applications that help organizations link their strategy to execution. It enables seamless planning, budgeting, forecasting, financial close, and reporting, while integrating data from across the enterprise for accurate and actionable insights."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": null,
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-epmcpm-draftsbb9ae540-793c-4236-928e-1c2683e94c33"
+        },
+        "title": "What is Oracle EPM?",
+        "type": "text"
+      },
+      {
+        "content": [
+          {
+            "_key": "a2b315450ee5",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Improve accuracy and speed of financial and operational planning"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "ed6c1e55daf0",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Streamline financial close and reporting processes"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "7c8fe7b02321",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Ensure compliance with evolving regulatory requirements"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "e151468cb2e8",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Unify financial and operational data for better insights"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "08a4337ddbda",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enable scenario modeling and agile decision-making"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "87fc3a1cef0e",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Reduce manual effort through automation and integration"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": "Drive better business outcomes with an integrated performance management platform that enhances visibility, accuracy, and agility across your enterprise.",
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-epmcpm-draftsbb9ae540-793c-4236-928e-1c2683e94c33"
+        },
+        "title": "Key Benefits",
+        "type": null
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "benefits": [
+              {
+                "_key": "be5e166cd164",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6c1df0745d41",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Align financial plans with business objectives"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3d86cf4e325e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ab3caff91d0a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce cycle times for budget preparation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "e6dcb71f454f",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d78e4de906f6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve forecast accuracy and agility"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "45b450049318",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "cd4adb473bd8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enable collaborative planning across departments"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Design, implement, and optimize Oracle Planning & Budgeting solutions for more accurate forecasts and agile resource allocation.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/4815b313e29754cf2d3db3ad8b2a165f569d4ec8-1143x743.png"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "a93d62557f18",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d265d99a1dc4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "End-to-end planning and budgeting implementation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "49dd32b55c5b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "0c20be2efbbb",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Forecasting models tailored to your industry"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "461ca1d8dbd5",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f73c2bd071b9",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Scenario and sensitivity analysis setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3dad00f8eeb6",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "4b6d5b5d3002",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Workforce, capital, and project planning modules"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d0598136c531",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "5455f069040b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with ERP and other data sources"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Planning and Budgeting"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "a02ca4dff6c1",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e1ed25bebae8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Shorten close cycles and reduce manual effort"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "bc427d31b3b7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "eabbb805fba1",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure compliance with accounting standards"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7ce923de4e37",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "440de43e4bed",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve accuracy of consolidated financials"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "120674a7a0ab",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3958f0b851b2",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Gain real-time visibility into close progress"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Streamline your period-end close process and deliver timely, accurate consolidated financial statements with Oracle’s Financial Close solutions.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "94a3a96a3269",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2748e3305660",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Consolidation model design and configuration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7942435cbc2f",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e8332c8a7904",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Intercompany eliminations and adjustments"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "292233afe315",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "dfdc8265bfec",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Automated journal entries and allocations"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "6f486dc1fae6",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "277d1b6f0f16",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Close process workflow setup and optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4654b1a23b89",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "78afaaaae010",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Compliance and audit trail management"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Financial Close and Consolidation"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "070e6a17b1dd",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "44a063810071",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce time and effort spent on reconciliations"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "744d2cf3db2a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e925ee857dee",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve compliance and risk management"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "83252e47632a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2f64e9623faf",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Increase efficiency through automation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7026a3b9e63d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "5e2a649abf81",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Gain real-time reconciliation status visibility"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Automate and streamline reconciliation processes to improve accuracy, reduce risk, and accelerate financial close.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "e3cabc8dcfa3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "40b2ce3cd14f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Automation of high-volume reconciliations"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ada9678c1445",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "97ba33fc057c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with ERP and sub-ledger systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "348b36052958",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "bd4356269fda",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Compliance and audit-ready documentation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "b399a71a3988",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "46e7b24e29b8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ongoing reconciliation process optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Account Reconciliation"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "640435fd23eb",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "66dab382a6df",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve transparency and storytelling in reports"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "f729d3c972fe",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "89f9dcbf3734",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure compliance with regulatory requirements"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "612096fa86b5",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "fafae05caf3f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce manual report compilation effort"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "2d86b4dc2cbc",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "26f95366216f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhance accuracy with automated data pulls"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Combine financial data with narrative context for transparent, compliant, and insightful reporting.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "78ed6c271b31",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e391e2489d52",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Narrative reporting platform setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "6f01251c8b6a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c7511513ad5f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Regulatory reporting framework design"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "f5d0dd35b9d6",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "63f610e4be26",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Automated data collection and validation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "943a71254491",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "950e600d4c6e",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with multiple data sources"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3ba0711b05c7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "8764bb86c873",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Multi-user collaboration and workflow setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Narrative and Regulatory Reporting"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "2834efb029aa",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "868fafb1d317",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure consistency and accuracy of enterprise data"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "257fe16655ea",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "2b49675d4fbb",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce manual data entry and reconciliation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "056324567f0e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "42e455efa7ee",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve decision-making with trusted data"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d50d8af778e4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a0e64c1ee31a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Simplify integration between EPM and other systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "86646ed0404b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e8a8aa7fe726",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Strengthen governance over financial data"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Centralize, validate, and integrate financial and operational data to power accurate planning, reporting, and analytics.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "1bd170d55df1",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "4ea7683d4cbe",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enterprise data management strategy and design"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "8347d9f6bd9b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "db77653b7bab",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with ERP, CRM, and other systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d243a6216c58",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "598ef8fe4013",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Data validation and transformation rules"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ae6ee8dbd66c",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "060aa5fed923",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Automation of data loading processes"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "efdf2f13da78",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ba2cfe11f1b7",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ongoing data quality monitoring"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Data Management and Integration"
+          }
+        ],
+        "description": "From strategic planning to automated financial close, we deliver Oracle EPM solutions that help you align resources, manage performance, and report with confidence.",
+        "title": "Performance Management Solutions for the Modern Enterprise"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "oracle-epm-cpm"
+    },
+    "title": "Oracle EPM/CPM"
+  },
+  {
+    "image": null,
+    "overview": [
+      {
+        "_key": "a72e6b2ba449",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2b26e4e85c0b",
+            "_type": "span",
+            "marks": [],
+            "text": "Unlock the power of your data with Oracle Business Intelligence solutions that deliver actionable insights through advanced analytics, visualization, and reporting."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "content": [
+          {
+            "_key": "f7ba9dcf165b",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Oracle Business Intelligence (BI) is a suite of analytics and reporting tools designed to help organizations turn raw data into meaningful insights. It enables users to analyze trends, monitor performance, and make data-driven decisions using interactive dashboards, visualizations, and reports."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": null,
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-bi-draftsf553f3e1-0ec5-4014-b784-fb4349001a7c"
+        },
+        "title": "What is Oracle BI?",
+        "type": "text"
+      },
+      {
+        "content": [
+          {
+            "_key": "b5b29d4db8f8",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Gain actionable insights with real-time analytics"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "1b0cfdc605bd",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Improve decision-making with interactive dashboards and reports"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "07bd51933e3f",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Consolidate data from multiple sources into a single view"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "a5bb23446b23",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enhance collaboration with shared analytics and reporting"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "2caf7d4934b8",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Reduce reporting time through automation"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "e851db2e9aa7",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enable self-service analytics for business users"
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": "Transform data into a strategic asset with Oracle BI’s comprehensive analytics capabilities.",
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-bi-draftsf553f3e1-0ec5-4014-b784-fb4349001a7c"
+        },
+        "title": "Key Benefits",
+        "type": "list"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "benefits": [
+              {
+                "_key": "7bd65db3d0b7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ea5f81021f2b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Access powerful analytics from anywhere"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4c571f890ed9",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ba8f350e3b79",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Discover trends and patterns with advanced visualizations"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "485fd8e22327",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f4e808d2fdb8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve forecasting with predictive models"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4687c719b2f2",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "8c9cd49fe692",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce infrastructure costs with a cloud-based platform"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Leverage the power of Oracle’s cloud-based analytics platform for advanced data analysis and visualization.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "7a4be7b3fb41",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c97cc7270b42",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "OAC environment setup and configuration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "bc77fca0c555",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "10c14566b0d3",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Data integration from multiple sources"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "f706704f1fa8",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "83afb766e1e6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Custom dashboard and visualization development"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4fcbe3661b75",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c6e57649f352",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Machine learning and predictive analytics setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Oracle Analytics Cloud (OAC)"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "a05607dc2d47",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3d9fa2f2db04",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Generate accurate, high-quality reports quickly"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "48fb34f43255",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "cd98addeefc3",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce manual reporting efforts with automation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7d5f24f028af",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b742dacf051e",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ensure consistency across enterprise reporting"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "942228c0a160",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "324c4336ab5d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Deliver personalized reports to multiple stakeholders"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Design, deploy, and manage pixel-perfect reports and enterprise dashboards using BI Publisher and OBIEE.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "b656dd4b85b7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "745fa821f173",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Report and template design"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "2a5cded4e85e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "36f6c464d0d2",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Data model creation and optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "56ba3c7c1ab4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "7c99d0a2a2be",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with ERP and other systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "c395930faa15",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3da4ec5f2f11",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Automated report scheduling and distribution"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "BI Publisher and OBIEE Reports"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "e611faa4abac",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "625f65b621de",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enable faster decision-making with real-time visuals"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3ecdd06740d7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "66110d670ef6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Simplify complex data for better understanding"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "5db4d4397da4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "8ea148f97578",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Track performance against key metrics easily"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "23d1581714a5",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "45822d9c4b48",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve engagement with interactive dashboards"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Create interactive dashboards and visual analytics to make complex data easy to understand and act on.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "b1f7a3458e5f",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a67bb3f5cc74",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Dashboard design and customization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4a1ae7c5de2e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3e33286827dd",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Real-time data visualization setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "5f8ffd2f9bb0",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "643bc62b26d0",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "KPI tracking and performance monitoring"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "88213a729737",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "21404f602a09",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Mobile-friendly analytics dashboards"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Data Visualization and Dashboards"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "a5e38254bfaf",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "54fc733e668b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduce dependency on IT teams for analytics"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "aa7c25e2161b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "9f6b636bb9ce",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Increase agility in generating insights"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "b25138e51c25",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "df80f2d7ff7e",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improve data literacy across the organization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3ab08b0dcb9a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "0a4953b5685b",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enable faster response to business changes"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Empower business users to access, analyze, and visualize data without relying on IT.",
+            "image": null,
+            "offerings": [
+              {
+                "_key": "9c151508df20",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "96232d37f11c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Self-service BI environment setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "35bbe47a00f4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "5bebf70b575f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Training for business users"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "05d7e3b18b79",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "eebdfb15d278",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Role-based data access controls"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "1df846cf614f",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b2ca1fd175e1",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with multiple data sources"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Self-Service BI"
+          }
+        ],
+        "description": "From analytics cloud setup to interactive dashboards, we deliver Oracle BI solutions that help you see, understand, and act on your data.",
+        "title": "Data-Driven Insights for Smarter Decisions"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "oracle-bi"
+    },
+    "title": "Oracle BI"
+  }
+]

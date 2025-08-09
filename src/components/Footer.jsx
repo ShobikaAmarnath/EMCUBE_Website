@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { client, fetchServices } from '../sanityClient';
+import contact from '../data/contact.json';
+import servicesList from '../data/servicesList.json';
 
 const Footer = () => {
   const quickLinks = [
@@ -8,36 +9,7 @@ const Footer = () => {
     { name: 'Services', href: '/services' },
     { name: 'Products', href: '#products' },
     { name: 'Contact', href: '#contact' }
-  ];
-
-  const [contact, setContact] = useState(null);
-  const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    const fetchContactDetails = async () => {
-      try {
-        const query = `
-          *[_type == "contactDetails"][0]{
-            footerAbout,
-            emails,
-            phoneNumbers,
-            address
-          }
-        `;
-        const data = await client.fetch(query);
-        setContact(data);
-
-        const servicesData = await fetchServices();
-        setServices(servicesData);
-      } catch (err) {
-        console.error('Failed to fetch footer details:', err);
-      }
-    };
-
-    fetchContactDetails();
-  }, []);
-
-  if (!contact) return null;
+  ]; 
 
   const addressLines = contact.address?.split('\n') || [];
 
@@ -66,8 +38,8 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4 lg:text-center">Quick Links</h4>
-            <ul className="space-y-2 lg:text-center">
+            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a href={link.href} className="text-gray-300 hover:text-white transition-colors duration-200">
@@ -80,9 +52,9 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4 lg:text-center">Services</h4>
-            <ul className="space-y-2 lg:text-center">
-              {services.map((service, index) => (
+            <h4 className="text-lg font-semibold text-white mb-4">Services</h4>
+            <ul className="space-y-2">
+              {servicesList.map((service, index) => (
                 <li key={index}>
                   <a href={`/services/${service.slug.current}`} className="text-gray-300 hover:text-white transition-colors duration-200">
                     {service.title}

@@ -4,23 +4,20 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Contact from './Contact';
 import ServicesGrid from './ServicesGrid';
-import { fetchServices } from '../sanityClient';
+import servicesList from '../data/servicesList.json';
 
 const ServicesPage = () => {
-  const [activeCategory, setActiveCategory] = useState('jd-edwards');
+  const defaultCategory = 'oracle-jd-edwards' || 'all';
+  const [activeCategory, setActiveCategory] = useState(defaultCategory);  
   const [isVisible, setIsVisible] = useState({});
   const [isAtTop, setIsAtTop] = useState(true);
   const [services, setServices] = useState([]);
   const [flatServices, setFlatServices] = useState([]);
 
   useEffect(() => {
-    const getServices = async () => {
-      const data = await fetchServices();
-      setServices(data);
-      setFlatServices(flattenServices(data));
-    };
-    getServices();
-  }, []);
+  setServices(servicesList);
+  setFlatServices(flattenServices(servicesList));
+}, []);
 
   const flattenServices = (services) => {
     const allCards = [];

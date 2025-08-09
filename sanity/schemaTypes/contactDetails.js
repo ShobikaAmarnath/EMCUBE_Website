@@ -49,4 +49,18 @@ export default {
                 Rule.max(5).error('You can provide up to 5 social media links.'),
         }
     ],
+      preview: {
+    select: {
+      title: 'footerAbout',
+      email: 'emails.0',
+      phone: 'phoneNumbers.0',
+    },
+    prepare(selection) {
+      const { title, email, phone } = selection;
+      return {
+        title: title ? title.substring(0, 50) + (title.length > 50 ? '…' : '') : 'No description',
+        subtitle: `${email || 'No email'} | ${phone || 'No phone'}`,
+      };
+    }
+  }
 };

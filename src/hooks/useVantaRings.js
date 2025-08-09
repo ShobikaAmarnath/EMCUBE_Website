@@ -28,7 +28,7 @@ export const useVantaRings = () => {
           touchControls: true,
           gyroControls: false,
           color: 0x6366f1,
-          backgroundColor: [0x2E003E],
+          backgroundColor: 0x2E003E,
           backgroundAlpha: 1,
         });
       }

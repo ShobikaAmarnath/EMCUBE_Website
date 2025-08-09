@@ -5,7 +5,7 @@ import ListBlock from "./ListBlock";
 import { useVantaRings } from '../../hooks/useVantaRings';
 import React, { useEffect, useState } from 'react';
 import { useParams, useLocation } from "react-router-dom";
-import sanityClient from '../../sanityClient';
+import servicesData from '../../data/servicesDetails.json';
 import { motion } from 'framer-motion';
 import { BarChart3, Zap, ArrowRight, Shield, CheckCircle } from 'lucide-react';
 import { waveItem, fadeSlide, containerVariants, itemVariants, titleVariants, checkIconVariants, fadeInUpVariants } from "../../animations/variants";
@@ -26,48 +26,14 @@ const AllServices = () => {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 200); 
+      }, 200);
     }
   }, [location]);
 
   useEffect(() => {
     if (!slug) return;
-    const query = `
-      *[_type == "services" && slug.current == $slug][0]{
-        title,
-        slug,
-        overview,
-        image{ asset->{url} },
-        service[]{
-          title,
-          description,
-          cards[]{
-            title,
-            description,
-            image{ asset->{url} },
-            benefits,
-            offerings
-          }
-        },
-        sections[]{
-          title,
-          slug,
-          description,
-          type,
-          icon{ asset->{url} },
-          content[]{
-            ...,
-            _type == "block" => {
-              children[]{ text }
-            }
-          }
-        }
-      }
-    `;
-    sanityClient
-      .fetch(query, { slug })
-      .then((data) => setService(data))
-      .catch(console.error);
+    const foundService = servicesData.find(item => item.slug.current === slug);
+    setService(foundService || null);
   }, [slug]);
 
   if (!service) return <p className="text-center p-10"></p>;
@@ -86,7 +52,7 @@ const AllServices = () => {
                 <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-sm mr-4">
                   <BarChart3 className="w-16 h-16 text-indigo-300" />
                 </div>
-                <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white to-indigo-200 bg-clip-text text-transparent">
+                <h1 className="lg:text-5xl sm:text-5xl font-bold bg-gradient-to-r from-white to-indigo-200 bg-clip-text text-transparent">
                   {service.title}
                 </h1>
               </div>
@@ -114,7 +80,7 @@ const AllServices = () => {
                     ))
                   )}
                 </motion.div>
-                <div className="relative">
+                <div className="relative w-full h-full flex items-center justify-center overflow-hidden cursor-pointer">
                   {service.image?.asset?.url && (
                     <motion.img
                       variants={fadeSlide}
@@ -124,7 +90,7 @@ const AllServices = () => {
                       custom={20}
                       src={service.image.asset.url}
                       alt={service.title}
-                      className="mt-8 rounded-lg shadow-lg w-full h-auto"
+                      className="rounded-lg shadow-lg lg:max-w-[300px] lg:max-h-[300px] md:max-w-96 md:max-h-96 sm:max-w-80 sm:max-h-80 object-contain"
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.5 }}
                     />
@@ -206,7 +172,7 @@ const AllServices = () => {
           {service.service?.map((section, index) => (
             <React.Fragment key={index}>
               <motion.div className="text-center mb-16" {...time_div} variants={titleVariants}>
-                <motion.h2 className="text-4xl font-bold text-indigo-50 mb-4" {...time_h2}>
+                <motion.h2 className="lg:text-4xl sm:text-4xl font-bold text-indigo-50 mb-4" {...time_h2}>
                   {section.title}
                 </motion.h2>
                 <motion.p className="text-xl text-indigo-300 max-w-3xl mx-auto" {...time_p}>
@@ -297,7 +263,7 @@ const AllServices = () => {
           ))}
         </div>
       </div>
-      
+
       <div id="contact" className="scroll-mt-12">
         <ContactForm />
       </div>

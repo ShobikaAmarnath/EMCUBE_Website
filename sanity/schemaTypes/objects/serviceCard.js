@@ -13,7 +13,6 @@ export default {
       name: 'description',
       title: 'Card Description',
       type: 'text',
-      validation: Rule => Rule.required().min(10).max(200)
     },
     {
       name: 'image',

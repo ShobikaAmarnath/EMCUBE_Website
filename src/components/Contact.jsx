@@ -1,53 +1,25 @@
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import { client, fetchServices } from '../sanityClient';
+import contact from '../data/contact.json';
+import servicesList from '../data/servicesList.json';
 
 const Contact = () => {
-  const [contactInfo, setContactInfo] = useState(null);
-  const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    const fetchContactDetails = async () => {
-      const query = `*[_type == "contactDetails"][0]{
-        emails,
-        phoneNumbers,
-        address
-      }`;
-      try {
-        const data = await client.fetch(query);
-        if (data) {
-          const structuredInfo = [
-            {
-              icon: <Phone className="w-6 h-6" />,
-              title: 'Phone',
-              details: data.phoneNumbers,
-            },
-            {
-              icon: <Mail className="w-6 h-6" />,
-              title: 'Email',
-              details: data.emails,
-            },
-            {
-              icon: <MapPin className="w-6 h-6" />,
-              title: 'Address',
-              details: data.address.split('\n'), // split if multi-line string
-            },
-          ];
-          setContactInfo(structuredInfo);
-          const servicesData = await fetchServices();
-          setServices(servicesData);
-        }
-      } catch (error) {
-        console.error('Failed to fetch contact details from Sanity:', error);
-      }
-    };
-
-    fetchContactDetails();
-  }, []);
-
-  if (!contactInfo) {
-    return <p>Loading contact information...</p>;
-  }
+  const contactInfo = [
+    {
+      icon: <Phone className="w-6 h-6" />,
+      title: 'Phone',
+      details: contact.phoneNumbers,
+    },
+    {
+      icon: <Mail className="w-6 h-6" />,
+      title: 'Email',
+      details: contact.emails,
+    },
+    {
+      icon: <MapPin className="w-6 h-6" />,
+      title: 'Address',
+      details: contact.address.split('\n'),
+    },
+  ];
 
   return (
     <section id="contact" className="section-padding bg-gray-50 scroll-mt-16">
@@ -123,7 +95,7 @@ const Contact = () => {
                 </label>
                 <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent text-black">
                   <option>Select a service</option>
-                  {services.map((service, index) => (
+                  {servicesList.map((service, index) => (
                     <option key={index} value={service.slug.current}>
                       {service.title}
                     </option>

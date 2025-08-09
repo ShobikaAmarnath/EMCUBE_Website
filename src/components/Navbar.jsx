@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo 2.png';
-import { fetchServices } from '../sanityClient';
+import servicesList from '../data/servicesList.json';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,6 +15,10 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    setSanityServices(servicesList);
+  }, []);
+
+  useEffect(() => {
     const hash = location.hash;
     if (hash) {
       // Wait for DOM to render
@@ -23,7 +27,7 @@ const Navbar = () => {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 200); 
+      }, 200);
     }
   }, [location]);
 
@@ -43,18 +47,6 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  useEffect(() => {
-    const fetchSanityServices = async () => {
-      try {
-        const services = await fetchServices();
-        setSanityServices(services);
-      } catch (error) {
-        console.error('Failed to fetch services:', error);
-      }
-    };
-    fetchSanityServices();
-  })
 
   if (!sanityServices) return <p className="text-center p-10"></p>;
 
@@ -108,25 +100,28 @@ const Navbar = () => {
                 <div
                   className="mega-menu-desktop"
                   style={{
-                    position: 'absolute',
-                    top: '110%',
-                    // left: '-1000px',
+                    position: 'fixed', // ✅ fixed to viewport
+                    top: isScrolled ? '50px' : '80px', // matches navbar height
+                    left: 0,
+                    right: 0,
                     backgroundColor: 'white',
                     boxShadow: '0 8px 16px rgba(0,0,0,0.1)',
-                    borderRadius: '8px',
-                    padding: '30px',
+                    borderRadius: '0 0 8px 8px',
+                    padding: '30px 0',
                     zIndex: 1001,
-                    // width: '1500px',
-                    maxWidth: '90vw',
                     maxHeight: '80vh',
                     overflowY: 'auto',
-                    overflowX: 'hidden',
+                    maxWidth: '1400px',
+                    margin: '0 auto'
                   }}
                 >
                   <div
                     style={{
+                      maxWidth: '1400px',
+                      margin: '0 auto',
+                      padding: '0 30px',
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+                      gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
                       gap: '30px',
                     }}
                   >
@@ -144,7 +139,6 @@ const Navbar = () => {
                           {service.title}
                         </h3>
                         <ul>
-                          {/* What is / Key Benefits */}
                           {service.sections?.map(sec => (
                             <li key={sec.slug?.current || sec.title}>
                               <a
@@ -160,7 +154,6 @@ const Navbar = () => {
                               </a>
                             </li>
                           ))}
-                          {/* Sub services */}
                           {service.service?.flatMap(section =>
                             section.cards?.map(card => (
                               <li key={card.slug?.current || card.title}>
@@ -168,7 +161,9 @@ const Navbar = () => {
                                   className="block text-gray-700 mb-2 hover:text-indigo-600 transition-colors"
                                   href={
                                     service.slug?.current && card.title
-                                      ? `/services/${service.slug.current}#${card.title.toLowerCase().replace(/\s+/g, '-')}`
+                                      ? `/services/${service.slug.current}#${card.title
+                                        .toLowerCase()
+                                        .replace(/\s+/g, '-')}`
                                       : "#"
                                   }
                                   onClick={() => setIsMegaMenuOpen(false)}
@@ -184,6 +179,7 @@ const Navbar = () => {
                   </div>
                 </div>
               )}
+
             </div>
 
             <button onClick={() => handleAnchorClick('#products')} className="nav-link">
@@ -193,7 +189,7 @@ const Navbar = () => {
             <button onClick={() => handleAnchorClick('#contact')} className="nav-link">
               Contact
             </button>
-            
+
           </div>
 
           {/* Mobile menu button */}

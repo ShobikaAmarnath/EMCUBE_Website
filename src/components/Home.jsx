@@ -8,7 +8,7 @@ import ServicesGrid from './ServicesGrid';
 import { motion } from 'framer-motion';
 import { waveItem, titleVariants, fadeSlide } from '../animations/variants';
 import { time_div, time_h2, time_p } from '../animations/positions';
-import { fetchServices } from '../sanityClient';
+import servicesList from '../data/servicesList.json';
 
 const HomePage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -86,13 +86,9 @@ const HomePage = () => {
   };
 
   useEffect(() => {
-    const getServices = async () => {
-      const data = await fetchServices();
-      setServices(data);
-      setFlatServices(flattenServices(data));
-    };
-    getServices();
-  }, []);
+  setServices(servicesList);
+  setFlatServices(flattenServices(servicesList));
+}, []);
 
   const flattenServices = (services) => {
     const allCards = [];
@@ -351,7 +347,7 @@ const HomePage = () => {
 
 
       <section className="home-services-section text-center mb-16">
-        <div className="container px-10 mt-10">
+        <div className="sm:px-10 mt-10">
           <ServicesGrid
             services={flatServices}
             onCardClick={handleCardClick}
