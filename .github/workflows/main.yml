@@ -60,17 +60,24 @@ jobs:
       - name: Build project with fresh content
         run: |
           echo "🏗 Building project with updated content..."
-          npm run build
+          # Generate a unique build timestamp
+          export VITE_BUILD_TIME=$(date +%s)
+          echo "🔄 Build timestamp: $VITE_BUILD_TIME"
+          npm run build -- --force
           echo "✅ Build complete."
           
-      - name: Verify build output
+      - name: Debug build process
         run: |
-          echo "📂 Contents of dist folder:"
-          ls -lah ./dist || echo "⚠️ dist folder not found!"
-          echo "📊 Size of dist folder:"
-          du -sh ./dist || echo "⚠️ Cannot measure dist folder"
-          echo "🔍 Sample files in dist:"
-          find ./dist -type f -name "*.html" -o -name "*.js" -o -name "*.css" | head -10
+          echo "🔍 Checking if JSON data is being bundled correctly..."
+          echo "📄 Content of contact.json:"
+          head -3 src/data/contact.json
+          echo "📄 Content of built index.html:"
+          head -10 dist/index.html
+          echo "📄 Searching for data in JS bundle:"
+          grep -r "emcube" dist/assets/ || echo "No data found in bundle"
+          echo "🕐 File timestamps:"
+          stat src/data/*.json
+          stat dist/assets/*.js
           
       - name: Print FTP server info (for debug)
         run: |
@@ -89,6 +96,9 @@ jobs:
           protocol: ftp
           security: loose
           log-level: verbose
+          state-name: .ftp-deploy-sync-state.json
+          dry-run: false
+          dangerous-clean-slate: true
           
       - name: Log after FTP upload
         run: echo "🚀 Deployment complete. Check live site."
