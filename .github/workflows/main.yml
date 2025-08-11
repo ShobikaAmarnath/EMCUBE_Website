@@ -70,7 +70,7 @@ jobs:
         run: |
           echo "🔍 Checking if JSON data is being bundled correctly..."
           echo "📄 Content of contact.json:"
-          head -3 src/data/contact.json
+          head -6 src/data/contact.json
           echo "📄 Content of built index.html:"
           head -10 dist/index.html
           echo "📄 Searching for data in JS bundle:"
