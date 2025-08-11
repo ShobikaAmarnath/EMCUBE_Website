@@ -15,9 +15,7 @@ jobs:
         run: echo "🚀 Sanity update workflow triggered via webhook..."
         
       - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.AUTH_TOKEN }}
+        uses: actions/checkout@v3
           
       - name: Log after checkout
         run: echo "✅ Code checked out successfully."
