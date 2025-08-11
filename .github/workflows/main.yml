@@ -80,7 +80,7 @@ jobs:
           echo "👤 FTP username: ${{ secrets.FTP_USERNAME }}"
           
       - name: Upload to GoDaddy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
