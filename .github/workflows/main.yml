@@ -48,6 +48,7 @@ jobs:
           echo "📂 Files after export:"
           ls -R
           echo "🔍 Git status after export:"
+          git add .
           git status
 
       - name: Build project
