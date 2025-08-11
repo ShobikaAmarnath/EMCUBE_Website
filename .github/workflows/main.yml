@@ -43,11 +43,28 @@ jobs:
           npm run export:content
           echo "✅ Export script finished."
 
+      - name: List files after export
+        run: |
+          echo "📂 Files after export:"
+          ls -R
+          echo "🔍 Git status after export:"
+          git status
+
       - name: Build project
         run: |
           echo "🏗 Building project..."
           npm run build
           echo "✅ Build complete."
+
+      - name: Check dist folder before deploy
+        run: |
+          echo "📂 dist folder before deploy:"
+          ls -lah ./dist || echo "⚠️ dist folder not found!"
+
+      - name: Print FTP server info (for debug)
+        run: |
+          echo "🔑 FTP server: ${{ secrets.FTP_SERVER }}"
+          echo "👤 FTP username: ${{ secrets.FTP_USERNAME }}"
 
       - name: Upload to GoDaddy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -57,9 +74,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /public_html/
-          port: 21
-          protocol: ftp
-          security: loose
 
       - name: Log after FTP upload
         run: echo "🚀 Deployment complete. Check live site."
