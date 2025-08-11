@@ -1,8 +1,14 @@
 name: Export Sanity Content
 
 on:
+  workflow_call:
+  workflow_dispatch:
   repository_dispatch:
-    types: [sanity-update]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   export:
@@ -20,7 +26,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20.x
 
       - name: Log after Node setup
         run: echo "📦 Node.js 18 set up successfully."
