@@ -63,7 +63,7 @@ jobs:
           # Generate a unique build timestamp
           export VITE_BUILD_TIME=$(date +%s)
           echo "🔄 Build timestamp: $VITE_BUILD_TIME"
-          npm run build -- --force
+          npm run build --force
           echo "✅ Build complete."
           
       - name: Debug build process
