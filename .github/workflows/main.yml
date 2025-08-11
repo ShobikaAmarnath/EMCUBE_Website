@@ -1,0 +1,62 @@
+name: Export Sanity Content
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  repository_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log start of workflow
+        run: echo "🚀 Sanity update workflow triggered via webhook..."
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Log after checkout
+        run: echo "✅ Code checked out successfully."
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+
+      - name: Log after Node setup
+        run: echo "📦 Node.js 18 set up successfully."
+
+      - name: Install dependencies
+        run: |
+          echo "📥 Installing dependencies..."
+          npm install
+          echo "✅ Dependencies installed."
+
+      - name: Run export content
+        run: |
+          echo "📤 Running export:content..."
+          npm run export:content
+          echo "✅ Export script finished."
+
+      - name: Build project
+        run: |
+          echo "🏗 Building project..."
+          npm run build
+          echo "✅ Build complete."
+
+      - name: Upload to GoDaddy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist
+          server-dir: /public_html
+
+      - name: Log after FTP upload
+        run: echo "🚀 Deployment complete. Check live site."
