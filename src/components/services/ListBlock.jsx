@@ -1,4 +1,4 @@
-import "./Styles.css";
+import "./styles.css";
 import { motion } from 'framer-motion';
 import { PortableText } from '@portabletext/react';
 
