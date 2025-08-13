@@ -10,6 +10,7 @@ const Navbar = () => {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [sanityServices, setSanityServices] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200); // Added this line
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -46,6 +47,15 @@ const Navbar = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   if (!sanityServices) return <p className="text-center p-10"></p>;
@@ -97,89 +107,125 @@ const Navbar = () => {
               </Link>
 
               {isMegaMenuOpen && (
-                <div
-                  className="mega-menu-desktop"
-                  style={{
-                    position: 'fixed', // ✅ fixed to viewport
-                    top: isScrolled ? '50px' : '80px', // matches navbar height
-                    left: 0,
-                    right: 0,
-                    backgroundColor: 'white',
-                    boxShadow: '0 8px 16px rgba(0,0,0,0.1)',
-                    borderRadius: '0 0 8px 8px',
-                    padding: '30px 0',
-                    zIndex: 1001,
-                    maxHeight: '80vh',
-                    overflowY: 'auto',
-                    maxWidth: '1400px',
-                    margin: '0 auto'
-                  }}
-                >
+                <>
+                  {/* Invisible bridge to prevent gap issues */}
                   <div
+                    className="absolute top-full left-0 w-full h-4 bg-transparent"
+                    style={{ zIndex: 1000 }}
+                  />
+                  
+                  <div
+                    className="mega-menu-desktop"
                     style={{
-                      maxWidth: '1400px',
-                      margin: '0 auto',
-                      padding: '0 30px',
-                      display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-                      gap: '30px',
+                      position: 'fixed',
+                      top: windowWidth <= 768 ? '60px' : (isScrolled ? '50px' : '80px'),
+                      left: windowWidth <= 768 ? '10px' : 0,
+                      right: windowWidth <= 768 ? '10px' : 0,
+                      backgroundColor: 'white',
+                      boxShadow: '0 8px 16px rgba(0,0,0,0.1)',
+                      borderRadius: windowWidth <= 768 ? '8px' : '0 0 8px 8px',
+                      padding: windowWidth <= 768 ? '20px 0' : '30px 0',
+                      zIndex: 1001,
+                      maxHeight: windowWidth <= 768 ? '70vh' : '80vh',
+                      overflowY: 'auto',
+                      maxWidth: windowWidth <= 768 ? 'calc(100vw - 20px)' : '1400px',
+                      margin: '0 auto'
                     }}
                   >
-                    {sanityServices.map(service => (
-                      <div key={service.slug.current}>
-                        <h3
-                          className="text-indigo-800 font-bold text-md uppercase mb-3 cursor-pointer hover:text-indigo-600 transition-colors"
-                          onClick={() => {
-                            navigate(`/services/${service.slug.current}`);
-                            setIsMegaMenuOpen(false);
+                    <div
+                      style={{
+                        maxWidth: windowWidth <= 768 ? 'calc(100vw - 20px)' : '1400px',
+                        margin: '0 auto',
+                        padding: windowWidth <= 480 ? '0 10px' : windowWidth <= 768 ? '0 15px' : windowWidth <= 1200 ? '0 20px' : '0 30px',
+                        display: 'grid',
+                        gridTemplateColumns: windowWidth <= 768 ? '1fr' : windowWidth <= 1200 ? 'repeat(auto-fit, minmax(200px, 1fr))' : 'repeat(auto-fit, minmax(250px, 1fr))',
+                        gap: windowWidth <= 480 ? '15px' : windowWidth <= 1200 ? '20px' : '30px'
+                      }}
+                    >
+                      {sanityServices.map(service => (
+                        <div 
+                          key={service.slug.current} 
+                          style={{
+                            borderBottom: windowWidth <= 768 ? '1px solid #e5e7eb' : 'none',
+                            paddingBottom: windowWidth <= 768 ? '15px' : '0',
+                            marginBottom: windowWidth <= 768 ? '15px' : '0'
                           }}
-                          role="button"
-                          tabIndex={0}
                         >
-                          {service.title}
-                        </h3>
-                        <ul>
-                          {service.sections?.map(sec => (
-                            <li key={sec.slug?.current || sec.title}>
-                              <a
-                                className="block text-gray-700 mb-2 hover:text-indigo-600 transition-colors"
-                                href={
-                                  service.slug?.current && sec.slug?.current
-                                    ? `/services/${service.slug.current}#${sec.slug.current}`
-                                    : "#"
-                                }
-                                onClick={() => setIsMegaMenuOpen(false)}
-                              >
-                                {sec.title}
-                              </a>
-                            </li>
-                          ))}
-                          {service.service?.flatMap(section =>
-                            section.cards?.map(card => (
-                              <li key={card.slug?.current || card.title}>
+                          <h3
+                            className="cursor-pointer hover:text-indigo-600 transition-colors"
+                            style={{
+                              color: '#1e40af',
+                              fontWeight: 'bold',
+                              fontSize: windowWidth <= 768 ? '1rem' : '1rem',
+                              textTransform: 'uppercase',
+                              marginBottom: windowWidth <= 768 ? '12px' : '12px',
+                              padding: windowWidth <= 768 ? '8px 0' : '0'
+                            }}
+                            onClick={() => {
+                              navigate(`/services/${service.slug.current}`);
+                              setIsMegaMenuOpen(false);
+                            }}
+                            role="button"
+                            tabIndex={0}
+                          >
+                            {service.title}
+                          </h3>
+                          <ul>
+                            {service.sections?.map(sec => (
+                              <li key={sec.slug?.current || sec.title}>
                                 <a
-                                  className="block text-gray-700 mb-2 hover:text-indigo-600 transition-colors"
+                                  className="block hover:text-indigo-600 transition-colors"
+                                  style={{
+                                    color: '#374151',
+                                    marginBottom: '8px',
+                                    padding: windowWidth <= 768 ? '6px 0' : '0',
+                                    fontSize: windowWidth <= 768 ? '0.9rem' : '1rem',
+                                    lineHeight: windowWidth <= 768 ? '1.4' : 'normal'
+                                  }}
                                   href={
-                                    service.slug?.current && card.title
-                                      ? `/services/${service.slug.current}#${card.title
-                                        .toLowerCase()
-                                        .replace(/\s+/g, '-')}`
+                                    service.slug?.current && sec.slug?.current
+                                      ? `/services/${service.slug.current}#${sec.slug.current}`
                                       : "#"
                                   }
                                   onClick={() => setIsMegaMenuOpen(false)}
                                 >
-                                  {card.title}
+                                  {sec.title}
                                 </a>
                               </li>
-                            ))
-                          )}
-                        </ul>
-                      </div>
-                    ))}
+                            ))}
+                            {service.service?.flatMap(section =>
+                              section.cards?.map(card => (
+                                <li key={card.slug?.current || card.title}>
+                                  <a
+                                    className="block hover:text-indigo-600 transition-colors"
+                                    style={{
+                                      color: '#374151',
+                                      marginBottom: '8px',
+                                      padding: windowWidth <= 768 ? '6px 0' : '0',
+                                      fontSize: windowWidth <= 768 ? '0.9rem' : '1rem',
+                                      lineHeight: windowWidth <= 768 ? '1.4' : 'normal'
+                                    }}
+                                    href={
+                                      service.slug?.current && card.title
+                                        ? `/services/${service.slug.current}#${card.title
+                                          .toLowerCase()
+                                          .replace(/\s+/g, '-')}`
+                                        : "#"
+                                    }
+                                    onClick={() => setIsMegaMenuOpen(false)}
+                                  >
+                                    {card.title}
+                                  </a>
+                                </li>
+                              ))
+                            )}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                </>
               )}
-
             </div>
 
             <button onClick={() => handleAnchorClick('#products')} className="nav-link">

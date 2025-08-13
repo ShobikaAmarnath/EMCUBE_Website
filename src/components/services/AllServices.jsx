@@ -3,6 +3,11 @@ import Footer from "../Footer";
 import ContactForm from '../Contact';
 import ListBlock from "./ListBlock";
 import { useVantaRings } from '../../hooks/useVantaRings';
+import { useVantaNet } from "../../hooks/useVantaNet";
+import { useVantaClouds } from "../../hooks/useVantaClouds";
+import { useVantaGlobe } from "../../hooks/useVantaGlobe";
+import { useOracleBIAnimation } from "../../hooks/useOracleBiAnimation";
+import { useOracleDatabaseAnimation } from "../../hooks/useOracleDatabaseAnimation";
 import React, { useEffect, useState } from 'react';
 import { useParams, useLocation } from "react-router-dom";
 import servicesData from '../../data/servicesDetails.json';
@@ -14,9 +19,39 @@ import { time_div, time_h2, time_p } from "../../animations/positions";
 const AllServices = () => {
   const { slug } = useParams();
   const [service, setService] = useState(null);
-  const vantaRef = useVantaRings();
-  const location = useLocation();
+  
+  // Call all hooks unconditionally at the top level
+  const netRef = useVantaNet(slug);
+  const ringsRef = useVantaRings(slug);
+  const cloudsRef = useVantaClouds(slug);
+  const globeRef = useVantaGlobe(slug);
+  const biRef = useOracleBIAnimation(slug);
+  const oracleDb=useOracleDatabaseAnimation(slug);
+  
+  // Determine which ref to use based on slug
+  const getVantaRef = () => {
+    switch(slug) {
+      case 'netsuite':
+        return netRef;
+      case 'oracle-epm-cpm':
+        return ringsRef;
+      case 'cloud-infrastructure':
+        return cloudsRef;
+      case 'mobility-services':
+        return globeRef;
+      case 'oracle-bi':
+        return biRef;
+         case 'oracle-database':
+        return oracleDb;
+      default:
+        return ringsRef;
+    }
+  };
+  
+  const vantaRef = getVantaRef();
 
+  
+  const location = useLocation();
   useEffect(() => {
     const hash = location.hash;
     if (hash) {
@@ -36,10 +71,14 @@ const AllServices = () => {
     setService(foundService || null);
   }, [slug]);
 
-  if (!service) return <p className="text-center p-10"></p>;
-
-  return (
-    <>
+ if (!service) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p>Loading...</p>
+      </div>
+    );
+  }  return (
+    <div>
       <Navbar />
       <div className="mt-28 min-h-screen">
         {/* Hero Section */}
@@ -268,7 +307,7 @@ const AllServices = () => {
         <ContactForm />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
