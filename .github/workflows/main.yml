@@ -1,79 +1,105 @@
 name: Export Sanity Content
-
 on:
   workflow_call:
   workflow_dispatch:
   repository_dispatch:
-
+      types: [sanity-update]
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   export:
     runs-on: ubuntu-latest
     steps:
       - name: Log start of workflow
         run: echo "🚀 Sanity update workflow triggered via webhook..."
-
+        
       - name: Checkout code
         uses: actions/checkout@v3
-
+          
       - name: Log after checkout
         run: echo "✅ Code checked out successfully."
-
+        
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20.x
-
+          cache: 'npm'
+          
       - name: Log after Node setup
         run: echo "📦 Node.js 20 set up successfully."
-
+        
       - name: Install dependencies
         run: |
           echo "📥 Installing dependencies..."
-          npm install
+          npm ci
           echo "✅ Dependencies installed."
-
+          
       - name: Run export content
         run: |
           echo "📤 Running export:content..."
           npm run export:content
           echo "✅ Export script finished."
-
-      - name: List files after export
+          
+      - name: Check what files changed after export
         run: |
           echo "📂 Files after export:"
-          ls -R
+          ls -la
           echo "🔍 Git status after export:"
-          git status
-
-      - name: Build project
+          git status --porcelain
+          echo "📝 Git diff (if any):"
+          git diff --name-only || echo "No changes detected"
+          
+      - name: Clear any existing build artifacts
         run: |
-          echo "🏗 Building project..."
-          npm run build
+          echo "🧹 Clearing old build artifacts..."
+          rm -rf dist/
+          rm -rf node_modules/.vite/
+          echo "✅ Build cache cleared."
+          
+      - name: Build project with fresh content
+        run: |
+          echo "🏗 Building project with updated content..."
+          # Generate a unique build timestamp
+          export VITE_BUILD_TIME=$(date +%s)
+          echo "🔄 Build timestamp: $VITE_BUILD_TIME"
+          npm run build --force
           echo "✅ Build complete."
-
-      - name: Check dist folder before deploy
+          
+      - name: Debug build process
         run: |
-          echo "📂 dist folder before deploy:"
-          ls -lah ./dist || echo "⚠️ dist folder not found!"
-
+          echo "🔍 Checking if JSON data is being bundled correctly..."
+          echo "📄 Content of contact.json:"
+          head -6 src/data/contact.json
+          echo "📄 Content of built index.html:"
+          head -10 dist/index.html
+          echo "📄 Searching for data in JS bundle:"
+          grep -r "emcube" dist/assets/ || echo "No data found in bundle"
+          echo "🕐 File timestamps:"
+          stat src/data/*.json
+          stat dist/assets/*.js
+          
       - name: Print FTP server info (for debug)
         run: |
           echo "🔑 FTP server: ${{ secrets.FTP_SERVER }}"
           echo "👤 FTP username: ${{ secrets.FTP_USERNAME }}"
-
+          
       - name: Upload to GoDaddy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /public_html/
-
+          port: 21
+          protocol: ftp
+          security: loose
+          log-level: verbose
+          state-name: .ftp-deploy-sync-state.json
+          dry-run: false
+          dangerous-clean-slate: true
+          
       - name: Log after FTP upload
         run: echo "🚀 Deployment complete. Check live site."
