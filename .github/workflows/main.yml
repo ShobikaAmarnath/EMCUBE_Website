@@ -37,6 +37,8 @@ jobs:
           echo "✅ Dependencies installed."
           
       - name: Run export content
+        env:
+          SANITY_READ_TOKEN: ${{ secrets.SANITY_READ_TOKEN }}
         run: |
           echo "📤 Running export:content..."
           npm run export:content

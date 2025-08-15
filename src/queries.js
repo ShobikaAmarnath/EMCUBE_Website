@@ -5,7 +5,8 @@ const client = createClient({
   projectId: '47l4rrvd',
   dataset: 'production',
   apiVersion: '2023-01-01',
-  useCdn: true,
+  useCdn: false,
+  token: process.env.SANITY_READ_TOKEN
 });
 
 const builder = imageUrlBuilder(client);
