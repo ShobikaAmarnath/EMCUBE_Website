@@ -6,7 +6,7 @@ import { useVantaRings } from '../../hooks/useVantaRings';
 import { useVantaNet } from "../../hooks/useVantaNet";
 import { useVantaClouds } from "../../hooks/useVantaClouds";
 import { useVantaGlobe } from "../../hooks/useVantaGlobe";
-import { useOracleBIAnimation } from "../../hooks/useOracleBiAnimation";
+import { useOracleBIAnimation } from "../../hooks/useOracleBIAnimation";
 import { useOracleDatabaseAnimation } from "../../hooks/useOracleDatabaseAnimation";
 import React, { useEffect, useState } from 'react';
 import { useParams, useLocation } from "react-router-dom";
