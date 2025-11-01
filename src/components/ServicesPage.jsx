@@ -8,21 +8,19 @@ import servicesList from '../data/servicesList.json';
 
 const ServicesPage = () => {
   const defaultCategory = 'oracle-jd-edwards' || 'all';
-  const [activeCategory, setActiveCategory] = useState(defaultCategory);  
-  const [isVisible, setIsVisible] = useState({});
+  const [activeCategory, setActiveCategory] = useState(defaultCategory);
   const [isAtTop, setIsAtTop] = useState(true);
   const [services, setServices] = useState([]);
   const [flatServices, setFlatServices] = useState([]);
 
   useEffect(() => {
-  setServices(servicesList);
-  setFlatServices(flattenServices(servicesList));
-}, []);
+    setServices(servicesList);
+    setFlatServices(flattenServices(servicesList));
+  }, []);
 
   const flattenServices = (services) => {
     const allCards = [];
     services.forEach(service => {
-      // Main service card
       allCards.push({
         type: 'main',
         title: service.title,
@@ -31,7 +29,6 @@ const ServicesPage = () => {
         image: service.image,
         parent: null,
       });
-      // Sub topic cards
       service.service?.forEach(section => {
         section.cards?.forEach(card => {
           allCards.push({
@@ -56,7 +53,7 @@ const ServicesPage = () => {
   };
 
   const UpArrow = () => (
-    <svg width="24" height="24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-text-white">
       <path d="M18 15l-6-6-6 6" />
     </svg>
   );
@@ -70,24 +67,6 @@ const ServicesPage = () => {
       );
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setIsVisible(prev => ({
-            ...prev,
-            [entry.target.id]: true
-          }));
-        }
-      });
-    });
-
-    const elements = document.querySelectorAll('.service-card');
-    elements.forEach(el => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
     const handleScroll = () => {
       setIsAtTop(window.scrollY < 100);
     };
@@ -99,8 +78,6 @@ const ServicesPage = () => {
     <>
       <Navbar />
       <div className="services-page">
-
-        {/* Interactive Category Filter */}
         <div className="filter-section">
           <div className="container">
             <h2 className="filter-title">Explore Our Services</h2>
@@ -124,22 +101,20 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        {/* Services Grid */}
-        <ServicesGrid
+        <div className='mt-10 px-10 sm:px-10 lg:px-12'>
+          <ServicesGrid
           services={filteredServices}
           onCardClick={handleServiceClick}
         />
+        </div>
 
         <Contact />
         <Footer />
       </div>
 
-      {/* Scroll Arrow Indicator */}
-      {isAtTop ? (
-        ""
-      ) : (
+      {!isAtTop && (
         <button
-          className="fixed bottom-8 right-8 bg-indigo-600 p-3 rounded-full shadow-lg z-50 hover:scale-110 transition-transform animate-bounce"
+          className="fixed bottom-8 right-8 bg-accent-indigo-600 p-3 rounded-full shadow-lg z-50 hover:scale-110 transition-transform animate-bounce"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <UpArrow />

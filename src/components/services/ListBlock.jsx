@@ -15,11 +15,11 @@ const ListBlock = (props) => {
   const components = {
     marks: {
       strong: ({ children }) => <strong className="font-semibold">{children}</strong>,
-      em: ({ children }) => <em className="italic text-gray-600">{children}</em>,
+      em: ({ children }) => <em className="italic text-accent-purple-600">{children}</em>,
       link: ({ value, children }) => (
         <a
           href={value?.href}
-          className="text-indigo-600 underline"
+          className="text-accent-indigo-600 underline"
           target="_blank"
           rel="noopener noreferrer"
         >

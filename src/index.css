@@ -2,22 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* --- Brand Colors --- */
+  --color-brand-pink: #ff6b9d;                  /* Main brand pink */
+  --color-brand-orange: #f7971e;                /* Main brand orange */
+  --color-brand-orange-translucent: #f7951ec4; /* Translucent variant for buttons */
+  --color-brand-magenta: #e737ac;                /* Accent magenta for headings */
+  --color-brand-glow-rgb: 0, 255, 255;          /* RGB for decorative cyan/aqua glow */
+  --color-brand-matrix: #00ff00;                /* Decorative matrix green */
+
+  /* --- Accent Colors --- */
+  --color-accent-yellow: #fde047;                /* yellow-300 */
+  --color-accent-success: #4ade80;               /* green-400 */
+  --color-accent-success-dark: #48bb78;        /* green-500 */
+  --color-accent-purple-100: #f3e8ff;             /* purple-100 */
+  --color-accent-purple-300: #d8b4fe;             /* purple-300 */
+  --color-accent-purple-500: #a855f7;             /* purple-500 */
+  --color-accent-purple-600: #9333ea;             /* purple-600 */
+  --color-accent-indigo-50: #eef2ff;              /* indigo-50 */
+  --color-accent-indigo-100: #e0e7ff;             /* indigo-100 */
+  --color-accent-indigo-200: #c7d2fe;             /* indigo-200 */
+  --color-accent-indigo-300: #a5b4fc;             /* indigo-300 */
+  --color-accent-indigo-500: #6366f1;             /* indigo-500 */
+  --color-accent-indigo-600: #4f46e5;             /* indigo-600 */
+
+  /* --- Text Colors --- */
+  --color-text-main: #1f2937;                   /* gray-800, for primary text */
+  --color-text-heading: #333333;                /* Dark gray for general headings */
+  --color-text-heading-dark: #2d3748;        /* slate-800, for dark headings */
+  --color-text-body: #374151;                   /* gray-700, for body paragraphs */
+  --color-text-body-dark: #4a5568;           /* slate-600, for darker body text */
+  --color-text-muted: #4b5563;                  /* gray-600, for lighter descriptions */
+  --color-text-light: #e5e7eb;                  /* gray-200, for light text on dark backgrounds */
+  --color-text-icon: #9ca3af;                   /* gray-400, for icons */
+  --color-text-footer-link: #d1d5db;         /* gray-300, for footer links */
+  --color-text-footer: #cccccc;                 /* Light gray for footer text */
+  --color-text-white: #ffffff;                  /* Pure white */
+  --color-text-black: #000000;                  /* Pure black */
+
+  /* --- Background Colors --- */
+  --color-background-main: #ffffff;               /* Pure white background */
+  --color-background-light-gray: #f8fafc;      /* Off-white for sections */
+  --color-background-subtle: #f8fafc;             /* slate-50, very light gray */
+  --color-background-hover: #f3f4f6;              /* gray-100, for light hover states */
+  --color-background-hover-light: #edf2f7;    /* slate-100, another light hover */
+  --color-background-dark: #0d1a2d;               /* Very dark blue for hero sections */
+  --color-background-body-1: #1a0d1f;           /* Dark purple for body gradient */
+  --color-background-body-2: #2d1b3d;           /* Medium-dark purple for body gradient */
+  --color-background-body-3: #3d2447;           /* Lightest purple for body gradient */
+  --color-background-tab: #b7cfde;                /* Light blue/gray for filter tabs */
+
+  /* --- Border Colors --- */
+  --color-border: #e5e7eb;                     /* gray-200, default border color */
+  --color-border-dark: #1f2937;                 /* gray-800, for dark borders */
+  --color-border-form: #d1d5db;                 /* gray-300, for form inputs */
+  --color-border-tab: #e2e8f0;                  /* slate-200, for filter tabs */
+  --color-footer-border: #555555;               /* Dark gray for footer border */
+
+  /* --- UI & Hover Colors --- */
+  --color-ui-link: #667eea;                     /* indigo-400, for links */
+  --color-hover-indigo: #4f46e5;                 /* indigo-600, for indigo hover states */
+  
+  /* --- Gradient Colors --- */
+  --gradient-hero-start: #667eea;
+  --gradient-hero-end: #764ba2;
+  --gradient-accent-start: #ffd89b;
+  --gradient-accent-end: #19547b;
+  --gradient-tab-active-start: #687f99;
+  --gradient-tab-active-end: #a5c8f4;
+  --scrollbar-thumb-start: #667eea;
+  --scrollbar-thumb-end: #764ba2;
+  --scrollbar-thumb-hover-start: #5a67d8;
+  --scrollbar-thumb-hover-end: #6b46c1;
+  
+  /* --- Base Colors for Opacity --- */
+  --color-black-rgb: 0, 0, 0;
+  --color-white-rgb: 255, 255, 255;
+  --color-brand-pink-rgb: 255, 107, 157;
+  --color-brand-orange-rgb: 247, 151, 30;
+  --color-ui-link-rgb: 102, 126, 234;
+  --color-accent-indigo-600-rgb: 79, 70, 229;
+  --color-violet-500-rgb: 139, 92, 246;
+  --color-purple-500-rgb: 168, 85, 247;
+  --color-purple-400-rgb: 192, 132, 252;
+}
+
 @layer base {
   * {
     @apply border-border;
   }
 
-      body {
-    background: linear-gradient(135deg, #1a0d1f 0%, #2d1b3d 50%, #3d2447 100%);
-    @apply text-white;
+  body {
+    background: linear-gradient(135deg, var(--color-background-body-1) 0%, var(--color-background-body-2) 50%, var(--color-background-body-3) 100%);
+    color: var(--color-text-white);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
-}
+  }
 
-/* Animated Grid Overlay */
-body::before {
+  /* Animated Grid Overlay */
+  body::before {
     content: '';
     position: fixed;
     top: 0;
@@ -26,15 +111,15 @@ body::before {
     height: 100%;
     pointer-events: none;
     z-index: -1;
-    background-image: 
-        linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
+    background-image:
+      linear-gradient(rgba(var(--color-violet-500-rgb), 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(var(--color-violet-500-rgb), 0.1) 1px, transparent 1px);
     background-size: 50px 50px;
     animation: gridMove 20s linear infinite;
-}
+  }
 
-/* Subtle floating particles */
-body::after {
+  /* Subtle floating particles */
+  body::after {
     content: '';
     position: fixed;
     top: 0;
@@ -43,71 +128,69 @@ body::after {
     height: 100%;
     pointer-events: none;
     z-index: -1;
-    background-image: 
-        radial-gradient(circle at 20% 80%, rgba(168, 85, 247, 0.15) 1px, transparent 1px),
-        radial-gradient(circle at 80% 20%, rgba(192, 132, 252, 0.1) 1px, transparent 1px),
-        radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.08) 1px, transparent 1px);
+    background-image:
+      radial-gradient(circle at 20% 80%, rgba(var(--color-purple-500-rgb), 0.15) 1px, transparent 1px),
+      radial-gradient(circle at 80% 20%, rgba(var(--color-purple-400-rgb), 0.1) 1px, transparent 1px),
+      radial-gradient(circle at 40% 40%, rgba(var(--color-violet-500-rgb), 0.08) 1px, transparent 1px);
     background-size: 100px 100px, 150px 150px, 200px 200px;
     animation: particlesFloat 30s ease-in-out infinite;
-}
+  }
 
-@keyframes gridMove {
+  @keyframes gridMove {
     0% {
-        transform: translate(0, 0);
+      transform: translate(0, 0);
     }
     100% {
-        transform: translate(50px, 50px);
+      transform: translate(50px, 50px);
     }
-}
+  }
 
-@keyframes particlesFloat {
+  @keyframes particlesFloat {
     0%, 100% {
-        transform: translate(0, 0) rotate(0deg);
-        opacity: 0.8;
+      transform: translate(0, 0) rotate(0deg);
+      opacity: 0.8;
     }
     33% {
-        transform: translate(30px, -30px) rotate(120deg);
-        opacity: 0.4;
+      transform: translate(30px, -30px) rotate(120deg);
+      opacity: 0.4;
     }
     66% {
-        transform: translate(-20px, 20px) rotate(240deg);
-        opacity: 0.6;
+      transform: translate(-20px, 20px) rotate(240deg);
+      opacity: 0.6;
     }
-}
+  }
 
-/* Optional: Add a subtle vignette effect for more depth */
-body {
+  /* Optional: Add a subtle vignette effect for more depth */
+  body {
     box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.3);
-}
+  }
 
-/* Ensure content appears above the background */
-.content, main, section, div {
+  /* Ensure content appears above the background */
+  .content, main, section, div {
     position: relative;
     z-index: 1;
-}
-
+  }
 }
 
 @layer components {
   .nav-link {
-  @apply relative transition-colors duration-200;
-  color: transparent;
-  background: linear-gradient(90deg, #ff6b9d, #f7971e);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
+    @apply relative transition-colors duration-200;
+    color: transparent;
+    background: linear-gradient(90deg, var(--color-brand-pink), var(--color-brand-orange));
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
 
-.nav-link svg,
-.nav-link .arrow,
-.nav-link i {
-  color: #ff6b9d; /* Make arrows/icons visible with solid color */
-}
-
+  .nav-link svg,
+  .nav-link .arrow,
+  .nav-link i {
+    color: var(--color-brand-pink); /* Make arrows/icons visible with solid color */
+  }
 
   .nav-link::after {
-   @apply absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300;
-  content: '';
-  background: linear-gradient(90deg, #ff6b9d, #f7971e);
+    @apply absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300;
+    content: '';
+    background: linear-gradient(90deg, var(--color-brand-pink), var(--color-brand-orange));
   }
   
   .nav-link:hover::after {
@@ -134,18 +217,17 @@ body {
     @apply py-16 px-4 sm:px-6 lg:px-8;
   }
   
-.container-custom {
-  @apply max-w-7xl mx-auto;
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
 
-}
+  .animate-on-scroll {
+    @apply max-w-7xl mx-auto translate-y-8 transition-all duration-700;
+  }
 
-.animate-on-scroll {
-  @apply max-w-7xl mx-auto translate-y-8 transition-all duration-700;
-}
-
-.animate-on-scroll.visible {
-  @apply opacity-100 translate-y-0;
-}
+  .animate-on-scroll.visible {
+    @apply opacity-100 translate-y-0;
+  }
 }
 
 html {
@@ -153,13 +235,13 @@ html {
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--gradient-hero-start) 0%, var(--gradient-hero-end) 100%);
 }
 
 .services-gradient {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, var(--gradient-services-start) 0%, var(--gradient-services-end) 100%);
 }
 
 .stats-gradient {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, var(--gradient-stats-start) 0%, var(--gradient-stats-end) 100%);
 }

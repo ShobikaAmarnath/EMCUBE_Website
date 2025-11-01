@@ -19,45 +19,34 @@ import { time_div, time_h2, time_p } from "../../animations/positions";
 const AllServices = () => {
   const { slug } = useParams();
   const [service, setService] = useState(null);
-  
-  // Call all hooks unconditionally at the top level
+
+  // Hooks for Vanta.js animations
   const netRef = useVantaNet(slug);
   const ringsRef = useVantaRings(slug);
   const cloudsRef = useVantaClouds(slug);
   const globeRef = useVantaGlobe(slug);
   const biRef = useOracleBIAnimation(slug);
-  const oracleDb=useOracleDatabaseAnimation(slug);
-  
-  // Determine which ref to use based on slug
+  const oracleDb = useOracleDatabaseAnimation(slug);
+
   const getVantaRef = () => {
-    switch(slug) {
-      case 'netsuite':
-        return netRef;
-      case 'oracle-epm-cpm':
-        return ringsRef;
-      case 'cloud-infrastructure':
-        return cloudsRef;
-      case 'mobility-services':
-        return globeRef;
-      case 'oracle-bi':
-        return biRef;
-         case 'oracle-database':
-        return oracleDb;
-      default:
-        return ringsRef;
+    switch (slug) {
+      case 'netsuite': return netRef;
+      case 'oracle-epm-cpm': return ringsRef;
+      case 'cloud-infrastructure': return cloudsRef;
+      case 'mobility-services': return globeRef;
+      case 'oracle-bi': return biRef;
+      case 'oracle-database': return oracleDb;
+      default: return ringsRef;
     }
   };
-  
-  const vantaRef = getVantaRef();
 
-  
+  const vantaRef = getVantaRef();
   const location = useLocation();
+
   useEffect(() => {
-    const hash = location.hash;
-    if (hash) {
-      // Wait for DOM to render
+    if (location.hash) {
       setTimeout(() => {
-        const element = document.querySelector(hash);
+        const element = document.querySelector(location.hash);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
@@ -71,31 +60,33 @@ const AllServices = () => {
     setService(foundService || null);
   }, [slug]);
 
- if (!service) {
+  if (!service) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <p>Loading...</p>
       </div>
     );
-  }  return (
+  }
+
+  return (
     <div>
       <Navbar />
       <div className="mt-28 min-h-screen">
         {/* Hero Section */}
-        <div ref={vantaRef} className="relative text-white overflow-hidden h-[600px]">
-          <div className="absolute inset-0 bg-black/10"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-transparent"></div>
+        <div ref={vantaRef} className="relative text-text-white overflow-hidden h-[600px]">
+          <div className="absolute inset-0 bg-black/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-accent-purple-600/20 to-transparent"></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="flex flex-col items-start text-left mb-6 mt-8">
               <div className="flex items-center mb-6">
-                <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-sm mr-4">
-                  <BarChart3 className="w-16 h-16 text-indigo-300" />
+                <div className="p-4 bg-background-main/10 rounded-2xl backdrop-blur-sm mr-4">
+                  <BarChart3 className="w-16 h-16 text-accent-indigo-300" />
                 </div>
-                <h1 className="lg:text-5xl sm:text-5xl font-bold bg-gradient-to-r from-white to-indigo-200 bg-clip-text text-transparent">
+                <h1 className="lg:text-5xl sm:text-5xl font-bold bg-gradient-to-r from-background-main to-accent-indigo-200 bg-clip-text text-transparent">
                   {service.title}
                 </h1>
               </div>
-              <p className="text-xl md:text-2xl font-semibold text-indigo-50 leading-relaxed max-w-4xl">
+              <p className="text-xl md:text-2xl font-semibold text-accent-indigo-50 leading-relaxed max-w-4xl">
                 {service.overview && service.overview[0]?.children?.map(child => child.text).join(' ')}
               </p>
             </div>
@@ -108,12 +99,12 @@ const AllServices = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 my-10">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <motion.div {...time_div} variants={titleVariants}>
-                  <motion.h2 className="text-4xl font-bold text-indigo-100 mb-6" {...time_h2}>
+                  <motion.h2 className="text-4xl font-bold text-accent-indigo-100 mb-6" {...time_h2}>
                     {service.sections.find(sec => sec.title?.toLowerCase().startsWith('what is'))?.title}
                   </motion.h2>
                   {service.sections.find(sec => sec.title?.toLowerCase().startsWith('what is'))?.content?.map((block, i) =>
                     block.children?.map((child, j) => (
-                      <motion.p key={j} className="text-lg text-indigo-200 leading-relaxed mb-8" {...time_p}>
+                      <motion.p key={j} className="text-lg text-accent-indigo-200 leading-relaxed mb-8" {...time_p}>
                         {child.text}
                       </motion.p>
                     ))
@@ -122,16 +113,9 @@ const AllServices = () => {
                 <div className="relative w-full h-full flex items-center justify-center overflow-hidden cursor-pointer">
                   {service.image?.asset?.url && (
                     <motion.img
-                      variants={fadeSlide}
-                      initial="hidden"
-                      whileInView="visible"
-                      viewport={{ once: true, amount: 0.2 }}
-                      custom={20}
-                      src={service.image.asset.url}
-                      alt={service.title}
+                      variants={fadeSlide} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={20}
+                      src={service.image.asset.url} alt={service.title}
                       className="rounded-lg shadow-lg lg:max-w-[300px] lg:max-h-[300px] md:max-w-96 md:max-h-96 sm:max-w-80 sm:max-h-80 object-contain"
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 0.5 }}
                     />
                   )}
                 </div>
@@ -143,60 +127,33 @@ const AllServices = () => {
         {/* Key Benefits Section */}
         {service.sections?.find(sec => sec.title?.toLowerCase().includes('key benefits')) && (
           <div className="scroll-mt-24" id={service.sections.find(sec => sec.title?.toLowerCase().includes('key benefits'))?.slug?.current}>
-            <div className="bg-white py-20 overflow-hidden">
+            <div className="bg-background-main py-20 overflow-hidden">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div className="text-center mb-16" {...time_div} variants={titleVariants}>
-                  <motion.h2 className="text-4xl font-bold text-gray-900 mb-4" {...time_h2}>
+                  <motion.h2 className="text-4xl font-bold text-text-main mb-4" {...time_h2}>
                     {service.sections.find(sec => sec.title?.toLowerCase().includes('key benefits'))?.title}
                   </motion.h2>
-                  <motion.p className="text-xl text-gray-600 max-w-3xl mx-auto" {...time_p}>
-                    {service.sections.find(sec => sec.title?.toLowerCase().includes('key benefits'))?.description ||
-                      `Transform your ${service.title} processes with comprehensive capabilities...`}
+                  <motion.p className="text-xl text-text-muted max-w-3xl mx-auto" {...time_p}>
+                    {service.sections.find(sec => sec.title?.toLowerCase().includes('key benefits'))?.description || `Transform your ${service.title} processes with comprehensive capabilities...`}
                   </motion.p>
                 </motion.div>
-                <motion.div
-                  className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-                  variants={containerVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.1 }}
-                >
-                  {(service.sections.find(sec => sec.title?.toLowerCase().includes('key benefits'))?.content?.flatMap(block =>
-                    block.children?.map(child => child.text)
-                  ) || []).map((benefit, index) => (
+                <motion.div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }}>
+                  {(service.sections.find(sec => sec.title?.toLowerCase().includes('key benefits'))?.content?.flatMap(block => block.children?.map(child => child.text)) || []).map((benefit, index) => (
                     <motion.div
                       key={index}
-                      className="bg-gray-50 rounded-xl p-6 hover:bg-indigo-50 transition-all duration-300 hover:shadow-lg group"
+                      className="bg-background-subtle rounded-xl p-6 hover:bg-accent-indigo-50 transition-all duration-300 hover:shadow-lg group"
                       variants={itemVariants}
-                      whileHover={{
-                        scale: 1.03,
-                        boxShadow: "0 10px 25px -5px rgba(79, 70, 229, 0.1), 0 8px 10px -6px rgba(79, 70, 229, 0.1)"
-                      }}
+                      whileHover={{ scale: 1.03, boxShadow: "0 10px 25px -5px rgba(79, 70, 229, 0.1), 0 8px 10px -6px rgba(79, 70, 229, 0.1)" }}
                     >
                       <div className="flex items-start">
                         <div className="flex-shrink-0 mr-4">
-                          <motion.div
-                            className="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 transition-colors"
-                            variants={checkIconVariants}
-                            initial="initial"
-                            whileInView="animate"
-                            viewport={{ once: false }}
-                          >
-                            <motion.div
-                              initial={{ rotate: 0 }}
-                              whileHover={{ rotate: 360, transition: { duration: 0.5 } }}
-                            >
-                              <CheckCircle className="w-5 h-5 text-indigo-600" />
+                          <motion.div className="w-8 h-8 bg-accent-indigo-100 rounded-lg flex items-center justify-center group-hover:bg-accent-indigo-200 transition-colors" variants={checkIconVariants} initial="initial" whileInView="animate" viewport={{ once: false }}>
+                            <motion.div initial={{ rotate: 0 }} whileHover={{ rotate: 360, transition: { duration: 0.5 } }}>
+                              <CheckCircle className="w-5 h-5 text-accent-indigo-600" />
                             </motion.div>
                           </motion.div>
                         </div>
-                        <motion.p
-                          className="text-gray-700 leading-relaxed"
-                          initial={{ opacity: 0.8 }}
-                          whileHover={{ opacity: 1 }}
-                        >
-                          {benefit}
-                        </motion.p>
+                        <p className="text-text-body leading-relaxed">{benefit}</p>
                       </div>
                     </motion.div>
                   ))}
@@ -211,10 +168,10 @@ const AllServices = () => {
           {service.service?.map((section, index) => (
             <React.Fragment key={index}>
               <motion.div className="text-center mb-16" {...time_div} variants={titleVariants}>
-                <motion.h2 className="lg:text-4xl sm:text-4xl font-bold text-indigo-50 mb-4" {...time_h2}>
+                <motion.h2 className="lg:text-4xl sm:text-4xl font-bold text-accent-indigo-50 mb-4" {...time_h2}>
                   {section.title}
                 </motion.h2>
-                <motion.p className="text-xl text-indigo-300 max-w-3xl mx-auto" {...time_p}>
+                <motion.p className="text-xl text-accent-indigo-300 max-w-3xl mx-auto" {...time_p}>
                   {section.description}
                 </motion.p>
               </motion.div>
@@ -225,68 +182,48 @@ const AllServices = () => {
                   return (
                     <div id={card.title?.toLowerCase().replace(/\s+/g, '-')} key={idx} className="scroll-mt-24">
                       <motion.div
-                        variants={fadeSlide}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.2 }}
-                        custom={direction}
-                        className={`relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} flex flex-col lg:flex`}
+                        variants={fadeSlide} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} custom={direction}
+                        className={`relative bg-background-main rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} flex flex-col lg:flex`}
                       >
-                        {/* Card Image Section */}
                         <div className="lg:w-2/5 relative overflow-hidden">
-                          <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 opacity-50"></div>
+                          <div className="absolute inset-0 bg-gradient-to-br from-accent-indigo-500 to-accent-purple-600 opacity-50"></div>
                           {card.image?.asset?.url && (
                             <motion.img
-                              src={card.image.asset.url}
-                              alt={card.title}
-                              variants={fadeSlide}
-                              initial="hidden"
-                              whileInView="visible"
-                              viewport={{ amount: 0.8 }}
-                              custom={direction}
+                              src={card.image.asset.url} alt={card.title}
+                              variants={fadeSlide} initial="hidden" whileInView="visible" viewport={{ amount: 0.8 }} custom={direction}
                               className="absolute inset-0 w-full h-full object-cover"
                             />
                           )}
                           <div className="relative z-10 p-8 lg:p-12 h-full bg-gradient-to-br from-black/50 to-black/20 flex flex-col justify-center">
-                            <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
-                              {card.title?.split(' ').map((word, i) => (
-                                <span key={i} className="block">{word}</span>
-                              ))}
+                            <h3 className="text-4xl lg:text-5xl font-bold text-text-white leading-tight">
+                              {card.title?.split(' ').map((word, i) => (<span key={i} className="block">{word}</span>))}
                             </h3>
-                            <div className="mt-6 h-1 w-24 bg-white/50 rounded-full"></div>
+                            <div className="mt-6 h-1 w-24 bg-background-main/50 rounded-full"></div>
                           </div>
                         </div>
-                        {/* Card Content Section */}
                         <div className="lg:w-3/5 p-8 lg:p-12 flex flex-col justify-between">
                           <div>
                             {card.benefits && card.benefits.length > 0 && (
                               <>
-                                <h4 className="text-xl font-bold text-indigo-600 mb-4 flex items-center">
-                                  <Shield className="w-5 h-5 mr-2" />
-                                  Key Benefits
+                                <h4 className="text-xl font-bold text-accent-indigo-600 mb-4 flex items-center">
+                                  <Shield className="w-5 h-5 mr-2" /> Key Benefits
                                 </h4>
                                 <ListBlock items={card.benefits} direction={direction} />
                               </>
                             )}
                             {card.offerings && card.offerings.length > 0 && (
                               <>
-                                <h4 className="text-xl font-bold text-indigo-600 mb-4 flex items-center">
-                                  <Zap className="w-5 h-5 mr-2" />
-                                  Offerings
+                                <h4 className="text-xl font-bold text-accent-indigo-600 mb-4 flex items-center">
+                                  <Zap className="w-5 h-5 mr-2" /> Offerings
                                 </h4>
                                 <ListBlock items={card.offerings} direction={direction} />
                               </>
                             )}
                           </div>
-                          <div className="mt-8 pt-6 border-t border-gray-200">
+                          <div className="mt-8 pt-6 border-t border-border">
                             <button
-                              onClick={() => {
-                                const contactSection = document.getElementById('contact');
-                                if (contactSection) {
-                                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                                }
-                              }}
-                              className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center"
+                              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                              className="bg-gradient-to-r from-accent-indigo-500 to-accent-purple-600 text-text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center"
                             >
                               Learn More About {card.title}
                               <ArrowRight className="w-4 h-4 ml-2" />

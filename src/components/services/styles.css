@@ -7,7 +7,7 @@
 .list-block-item {
     margin-bottom: 20px;
     font-size: 18px;
-    color: black;
+    color: var(--color-text-black);
 }
 
 .list-block-content {
