@@ -1,13 +1,17 @@
 [
   {
-    "image": null,
+    "image": {
+      "asset": {
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/d78f9651c478ad2582c4df9cbad9310ba4b194b0-2816x1536.png"
+      }
+    },
     "overview": [
       {
-        "_key": "58dcf7797ec8",
+        "_key": "1506ae18e0f4",
         "_type": "block",
         "children": [
           {
-            "_key": "7214195367c3",
+            "_key": "690029e5f96c",
             "_type": "span",
             "marks": [],
             "text": "Comprehensive JD Edwards solutions from implementation to innovation. Unlock your ERP’s full potential with our expert consulting, integration, and support services."
@@ -21,14 +25,14 @@
       {
         "slug": {
           "_type": "slug",
-          "current": "jd-edwards-824621a3-a47a-4156-81b0-40a05ad98217"
+          "current": "oracle-jd-edwards-draftsd97ffc1a-1cca-41d1-99a0-a40c1246fc23"
         },
-        "title": "What is JD Edwards"
+        "title": "What is JD Edwards?"
       },
       {
         "slug": {
           "_type": "slug",
-          "current": "jd-edwards-drafts824621a3-a47a-4156-81b0-40a05ad98217"
+          "current": "oracle-jd-edwards-draftsd97ffc1a-1cca-41d1-99a0-a40c1246fc23"
         },
         "title": "Key Benefits"
       }
@@ -40,44 +44,72 @@
             "description": "Expert guidance to align JD Edwards with your business strategy. We help you assess, plan, and optimize your ERP environment to ensure it supports your operational goals and future growth.",
             "image": {
               "asset": {
-                "url": "https://cdn.sanity.io/images/47l4rrvd/production/599ce5ec1aa4f25211e658fb3ab838064a03e86b-1046x550.png"
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/07c965e98826dbddb8179f88db78f78bec723149-2816x1536.png"
               }
             },
             "title": "JD Edwards Consulting"
           },
           {
-            "description": "End-to-end operational management of your JD Edwards environment. Our proactive approach keeps your systems secure, stable, and performing at their best—24/7.",
-            "image": null,
+            "description": "End-to-end operational management of your JD Edwards environment. Our proactive approach keeps your systems secure, stable, and performing at their best - 24/7.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/45f622a18d70ded591641b5d0da6adb4f66fc61f-1024x1024.jpg"
+              }
+            },
             "title": "JD Edwards Managed Services"
           },
           {
             "description": "Stay ahead with the latest JD Edwards features, performance improvements, and security updates. We make the upgrade process smooth, predictable, and disruption-free.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/3d3f2aed78f04d44fe715afad47fa5ff3d2650cf-2816x1536.png"
+              }
+            },
             "title": "JD Edwards Upgrade"
           },
           {
             "description": "Seamless deployment of JD Edwards tailored to your industry and processes. We manage the entire project from requirements gathering to post-go-live support.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/567b3cbcf27204066ec6d8802ac7ebe55fc915a9-2816x1536.png"
+              }
+            },
             "title": "JD Edwards Implementation"
           },
           {
             "description": "Migrate your JD Edwards environment to the cloud with minimal risk. We help you plan, execute, and manage the transition to Oracle Cloud Infrastructure or hybrid models.",
-            "image": null,
-            "title": "Lift, Shift and Manage"
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/062bb38a1eb2eaaf1f3f378947c7833e5f63625d-2816x1536.png"
+              }
+            },
+            "title": "Lift, Shift & Manage"
           },
           {
             "description": "Automate and integrate business processes using JD Edwards Orchestrator. From routine tasks to complex workflows, we help you build smart, data-driven automations.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/9f466cd2dadef0eaa3e28d4ae59a54ee90f925b4-1024x1024.jpg"
+              }
+            },
             "title": "JD Edwards Orchestrator"
           },
           {
             "description": "Connect JD Edwards with other enterprise applications for seamless operations. We design and deploy integrations that eliminate silos and improve collaboration.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/a363a61a823521544ff2805e754b6d0f2a2d55d5-1024x1024.jpg"
+              }
+            },
             "title": "JD Edwards Integrations"
           },
           {
             "description": "Flexible, on-demand JD Edwards support when you need it. From quick fixes to process improvements, our experts are just a call away.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/871ab97711f014035005f89351b50be77cee7123-1024x1024.jpg"
+              }
+            },
             "title": "Smart Help"
           }
         ],
@@ -94,7 +126,7 @@
   {
     "image": {
       "asset": {
-        "url": "https://cdn.sanity.io/images/47l4rrvd/production/caf20c26d81e243a93482a93c5bff7bf8c62b1cd-947x863.png"
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/d73c31db57797c2195075a1ee28bcedb0aa5c313-1024x1024.jpg"
       }
     },
     "overview": [
@@ -136,29 +168,45 @@
             "description": "Design, implement, and optimize Oracle Planning & Budgeting solutions for more accurate forecasts and agile resource allocation.",
             "image": {
               "asset": {
-                "url": "https://cdn.sanity.io/images/47l4rrvd/production/4815b313e29754cf2d3db3ad8b2a165f569d4ec8-1143x743.png"
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/e657a90654610c6457aa190cc368eefe720118cd-1024x1024.jpg"
               }
             },
             "title": "Planning and Budgeting"
           },
           {
             "description": "Streamline your period-end close process and deliver timely, accurate consolidated financial statements with Oracle’s Financial Close solutions.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/0840793113a111f8d093f533e6389d0c9dd62c47-1024x1024.jpg"
+              }
+            },
             "title": "Financial Close and Consolidation"
           },
           {
             "description": "Automate and streamline reconciliation processes to improve accuracy, reduce risk, and accelerate financial close.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/8d2b994f2ee1ce97e786b8f10207f5cd3d5cfc37-1024x1024.jpg"
+              }
+            },
             "title": "Account Reconciliation"
           },
           {
             "description": "Combine financial data with narrative context for transparent, compliant, and insightful reporting.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/deff054476a6c61a00bb55a99b8cd35d0af52f47-1024x1024.jpg"
+              }
+            },
             "title": "Narrative and Regulatory Reporting"
           },
           {
             "description": "Centralize, validate, and integrate financial and operational data to power accurate planning, reporting, and analytics.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/63eecf536466b9b941689939c362fb1c21203d52-1024x1024.jpg"
+              }
+            },
             "title": "Data Management and Integration"
           }
         ],
@@ -175,7 +223,7 @@
   {
     "image": {
       "asset": {
-        "url": "https://cdn.sanity.io/images/47l4rrvd/production/c0701338c783fb63b33e1a2d418486b5b0c39f64-1590x932.png"
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/46d3be5011006bb3d4d75bee29e789a81b4affae-1024x1024.jpg"
       }
     },
     "overview": [
@@ -217,29 +265,45 @@
             "description": "End-to-end NetSuite deployment services to ensure your ERP is implemented on time, within budget, and aligned with your business goals.",
             "image": {
               "asset": {
-                "url": "https://cdn.sanity.io/images/47l4rrvd/production/4c28c4ed1f8936364c0aba2f3bc9ce210701747b-493x466.png"
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/072506b85b94de124f22891cb5d5ee54180be6cf-1024x1024.jpg"
               }
             },
             "title": "NetSuite Implementation"
           },
           {
             "description": "Ongoing NetSuite support and tailored customization to meet your evolving business needs.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/ff0d6cb28a13cec552a19676e31b2a4fb311dba6-1024x1024.jpg"
+              }
+            },
             "title": "Support and Customization"
           },
           {
             "description": "Custom-built NetSuite solutions designed to address the unique challenges of your industry.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/5c75d5068641cc278427013efa62da57dbdeef94-1024x1024.jpg"
+              }
+            },
             "title": "Industry-Specific Solutions"
           },
           {
             "description": "Enable your team to manage business processes and access critical data from any device, anywhere.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/add1c85dfe94840022242ebc5d3c88b16971f7a8-1024x1024.jpg"
+              }
+            },
             "title": "NetSuite Mobile Access"
           },
           {
             "description": "Enhance financial planning accuracy and streamline reconciliation processes with NetSuite’s integrated tools.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/3c466bb95929ba34fa181b3989f8d7f3033f3594-1024x1024.jpg"
+              }
+            },
             "title": "Planning and Reconciliation"
           }
         ],
@@ -298,7 +362,7 @@
           {
             "description": "Seamless, secure migration of workloads, applications, and data to Oracle Cloud Infrastructure with minimal disruption.",
             "image": null,
-            "title": "Migration to Oracle Cloud (OCI)"
+            "title": "Migration to Oracle Cloud - OCI"
           },
           {
             "description": "Proactive management and optimization of your on-premise, hybrid, or cloud infrastructure to ensure peak performance.",
@@ -507,7 +571,7 @@
           {
             "description": "Leverage the power of Oracle’s cloud-based analytics platform for advanced data analysis and visualization.",
             "image": null,
-            "title": "Oracle Analytics Cloud (OAC)"
+            "title": "Oracle Analytics Cloud - OAC"
           },
           {
             "description": "Design, deploy, and manage pixel-perfect reports and enterprise dashboards using BI Publisher and OBIEE.",

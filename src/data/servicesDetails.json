@@ -1362,1088 +1362,6 @@
     "image": null,
     "overview": [
       {
-        "_key": "58dcf7797ec8",
-        "_type": "block",
-        "children": [
-          {
-            "_key": "7214195367c3",
-            "_type": "span",
-            "marks": [],
-            "text": "Comprehensive JD Edwards solutions from implementation to innovation. Unlock your ERP’s full potential with our expert consulting, integration, and support services."
-          }
-        ],
-        "markDefs": [],
-        "style": "normal"
-      }
-    ],
-    "sections": [
-      {
-        "content": [
-          {
-            "_key": "04459d90ac08",
-            "_type": "block",
-            "children": [
-              {
-                "text": "Oracle JD Edwards is a robust Enterprise Resource Planning (ERP) suite designed to streamline and automate core business functions—from finance and supply chain to manufacturing and asset management. It empowers organizations with flexible, scalable solutions that adapt to diverse industries and operational needs."
-              }
-            ],
-            "markDefs": [],
-            "style": "normal"
-          }
-        ],
-        "description": null,
-        "icon": null,
-        "slug": {
-          "_type": "slug",
-          "current": "jd-edwards-824621a3-a47a-4156-81b0-40a05ad98217"
-        },
-        "title": "What is JD Edwards",
-        "type": "text"
-      },
-      {
-        "content": [
-          {
-            "_key": "aeb1d26fbc31",
-            "_type": "block",
-            "children": [
-              {
-                "text": "Drive operational excellence with integrated, real-time business processes."
-              }
-            ],
-            "markDefs": [],
-            "style": "normal"
-          },
-          {
-            "_key": "03120dba3762",
-            "_type": "block",
-            "children": [
-              {
-                "text": "Transform financial processes with comprehensive performance management capabilities."
-              }
-            ],
-            "markDefs": [],
-            "style": "normal"
-          },
-          {
-            "_key": "5def85b2588d",
-            "_type": "block",
-            "children": [
-              {
-                "text": "Improve productivity through automated workflows and simplified user experiences."
-              }
-            ],
-            "markDefs": [],
-            "style": "normal"
-          },
-          {
-            "_key": "885451d025b2",
-            "_type": "block",
-            "children": [
-              {
-                "text": "Enable scalability to meet evolving business demands."
-              }
-            ],
-            "markDefs": [],
-            "style": "normal"
-          },
-          {
-            "_key": "6f66fba423ea",
-            "_type": "block",
-            "children": [
-              {
-                "text": "Enhance decision-making with accurate, timely insights."
-              }
-            ],
-            "markDefs": [],
-            "style": "normal"
-          }
-        ],
-        "description": "Transform your financial processes with comprehensive performance management capabilities",
-        "icon": null,
-        "slug": {
-          "_type": "slug",
-          "current": "jd-edwards-drafts824621a3-a47a-4156-81b0-40a05ad98217"
-        },
-        "title": "Key Benefits",
-        "type": "list"
-      }
-    ],
-    "service": [
-      {
-        "cards": [
-          {
-            "benefits": [
-              {
-                "_key": "bd47c8660794",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "26dfc00932bf",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Reduced risk and cost during implementation or upgrades"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "1cbaded640da",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "35cae5054e21",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Enhanced ERP usability and adoption"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "6bfaab26d064",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "464b30f7c3bf",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Optimized performance of existing JD Edwards systems"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "description": "Expert guidance to align JD Edwards with your business strategy. We help you assess, plan, and optimize your ERP environment to ensure it supports your operational goals and future growth.",
-            "image": {
-              "asset": {
-                "url": "https://cdn.sanity.io/images/47l4rrvd/production/599ce5ec1aa4f25211e658fb3ab838064a03e86b-1046x550.png"
-              }
-            },
-            "offerings": [
-              {
-                "_key": "44a48c9dcfdd",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "664025605a07",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "ERP strategy planning & advisory"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "cab2c123074a",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "adf0bec42439",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Business process alignment"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "12be9c710f12",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "034ab9d0b1f8",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Technical & functional gap analysis"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "dd41432a3b0c",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "b98ed09b1e62",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Roadmapping for upgrades & enhancements"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "4a3e6455b44d",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "e8d59f07a916",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Module-specific consulting (Finance, Distribution, Manufacturing, etc.)"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "title": "JD Edwards Consulting"
-          },
-          {
-            "benefits": [
-              {
-                "_key": "39e513d9bd8a",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "b39c1c4755c7",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Minimized downtime with proactive issue resolution"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "dd1380c0c342",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "bb0e15ded51f",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Reduced total cost of ERP ownership"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "05177aa6c440",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "66d5e34b0bad",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Improved system reliability and performance"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "description": "End-to-end operational management of your JD Edwards environment. Our proactive approach keeps your systems secure, stable, and performing at their best—24/7.",
-            "image": null,
-            "offerings": [
-              {
-                "_key": "86d844ee5dc5",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "e40a42f39d2c",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Proactive system monitoring & administration"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "1e9f7644a2b0",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "7851489dda0a",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Performance optimization and tuning"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "c81298b49dc8",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "c6e3b4ac9899",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Security management & compliance support"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "1a371d9a317e",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "1bdeb768d7ba",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Continuous improvements and patch updates"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "d656174a15b0",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "35d379fde85a",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "24/7 functional & technical support"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "title": "JD Edwards Managed Services"
-          },
-          {
-            "benefits": [
-              {
-                "_key": "0ffff611716b",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "fb758d12e976",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Access to latest JD Edwards features and enhancements"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "04f767197945",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "fd8d661b4ee1",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Improved system security and compliance"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "2f44fabd1560",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "29ee17ed797f",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Streamlined performance with modernized architecture"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "description": "Stay ahead with the latest JD Edwards features, performance improvements, and security updates. We make the upgrade process smooth, predictable, and disruption-free.",
-            "image": null,
-            "offerings": [
-              {
-                "_key": "b0cfcd7f6326",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "0c6feea039a3",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Upgrade assessments & readiness checks"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "b4c48abf8425",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "f48a45053a98",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Data migration planning & execution"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "20b0124361e1",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "485b417753c1",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Environment modernization & platform updates"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "fcba95b4d648",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "01c03b40c379",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Upgrade testing & validation"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "b47f408f805d",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "5f6b37c56f74",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "End-user training & change management"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "title": "JD Edwards Upgrade"
-          },
-          {
-            "benefits": [
-              {
-                "_key": "4c8be2580ff6",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "fee1db6b0d1d",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Faster time-to-value with structured implementation methodology"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "ec7287fb99ee",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "73891ac0c743",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Systems aligned with specific business needs"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "5fedd82d253f",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "99019c32a2a3",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Improved user adoption and process efficiency"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "description": "Seamless deployment of JD Edwards tailored to your industry and processes. We manage the entire project from requirements gathering to post-go-live support.",
-            "image": null,
-            "offerings": [
-              {
-                "_key": "6690ef3ef01b",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "403e55d2e932",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "End-to-end implementation planning"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "e90835b343ed",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "c0172a407dcb",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Business process mapping & configuration"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "60e84272afb9",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "6847a8c5f42b",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Customization & extensions development"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "7d1f65a968f4",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "c976fd8d5cc3",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Data migration and validation"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "e35c0071bd36",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "e97a19a7cff3",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "User training & go-live support"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "title": "JD Edwards Implementation"
-          },
-          {
-            "benefits": [
-              {
-                "_key": "787fa2f1f00e",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "f4737ab7fd71",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Lower infrastructure and maintenance costs"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "0b92acf1cb7a",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "9f49425ff17e",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Enhanced scalability and flexibility"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "507f410b1bd4",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "2ba5f03ac839",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Seamless transition with minimal disruption"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "description": "Migrate your JD Edwards environment to the cloud with minimal risk. We help you plan, execute, and manage the transition to Oracle Cloud Infrastructure or hybrid models.",
-            "image": null,
-            "offerings": [
-              {
-                "_key": "04655b4454ec",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "80d9b909552c",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Cloud migration assessment & planning"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "66f801fa9495",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "a6e8464d66e2",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "On-premise to Oracle Cloud Infrastructure (OCI) transition"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "243f126d991b",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "7d973301e573",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Hybrid ERP environment setup"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "a116c65e5807",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "ca2612c8620f",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Post-migration optimization"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "2efa147fdf56",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "3a530369baed",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Managed cloud ERP services"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "title": "Lift, Shift and Manage"
-          },
-          {
-            "benefits": [
-              {
-                "_key": "d810232353f1",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "4005a50ccaad",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Reduced manual effort through automation"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "b367a26daa1a",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "448d5c8f59c8",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Improved data accuracy and real-time visibility"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "62fef8b2d158",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "e1590d19e84c",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Enhanced operational efficiency"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "description": "Automate and integrate business processes using JD Edwards Orchestrator. From routine tasks to complex workflows, we help you build smart, data-driven automations.",
-            "image": null,
-            "offerings": [
-              {
-                "_key": "7358786855b0",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "1618ff309a75",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Orchestration design & development"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "198c3391aa77",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "b5b8be8f6958",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Automation of routine processes"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "f91cbd79872c",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "336196631131",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Integration with external systems & APIs"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "54c32dbea500",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "cbb756b54461",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Real-time data processing & alerts"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "d3e1206b2564",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "66b4f65e78ef",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Orchestration performance monitoring"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "title": "JD Edwards Orchestrator"
-          },
-          {
-            "benefits": [
-              {
-                "_key": "6deb18142644",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "9ec99c532610",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Unified, seamless business processes across systems"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "8dc25749b2a1",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "3ef853dd72c9",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Reduced data silos and duplication"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "f8db014d69d9",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "f84366f7302d",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Improved cross-department collaboration"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "description": "Connect JD Edwards with other enterprise applications for seamless operations. We design and deploy integrations that eliminate silos and improve collaboration.",
-            "image": null,
-            "offerings": [
-              {
-                "_key": "90373efb5df1",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "c3ca5687e3f5",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Integration strategy & design"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "c39c578d3166",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "b3d4102722f6",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "API development & middleware configuration"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "ecc9314428e7",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "cfbc48b3c87f",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Third-party system connectivity (CRM, SCM, HR, etc.)"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "cda10f40faa3",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "31be4961589d",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Real-time and batch data integration"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "aacf3f7c2243",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "3004b17ec307",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Ongoing integration monitoring & optimization"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "title": "JD Edwards Integrations"
-          },
-          {
-            "benefits": [
-              {
-                "_key": "22692de20946",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "262d29d7a4ba",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Faster resolution of ERP issues"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "eebe5f7b12c3",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "df5e7dfe1061",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Flexible support tailored to your needs"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "553a184a64a6",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "f2961e1ccb7e",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Improved system knowledge and self-sufficiency"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "description": "Flexible, on-demand JD Edwards support when you need it. From quick fixes to process improvements, our experts are just a call away.",
-            "image": null,
-            "offerings": [
-              {
-                "_key": "65270fa8cabc",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "2fb9d11a38ed",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "On-demand functional & technical assistance"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "13feae81f968",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "84bb7ae1f4ec",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Issue diagnosis and troubleshooting"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "7de728c04be1",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "9447f957c943",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Small enhancements and quick fixes"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              },
-              {
-                "_key": "d9e913d872f8",
-                "_type": "block",
-                "children": [
-                  {
-                    "_key": "b1cda644bf5d",
-                    "_type": "span",
-                    "marks": [],
-                    "text": "Performance optimization tipsKnowledge transfer and mentoring"
-                  }
-                ],
-                "markDefs": [],
-                "style": "normal"
-              }
-            ],
-            "title": "Smart Help"
-          }
-        ],
-        "description": "End-to-end JD Edwards services from strategy and implementation to upgrades, integrations, and automation—maximizing value and minimizing risk at every stage of your ERP journey.",
-        "title": "Complete JD Edwards Solution Partner"
-      }
-    ],
-    "slug": {
-      "_type": "slug",
-      "current": "oracle-jd-edwards"
-    },
-    "title": "Oracle JD Edwards"
-  },
-  {
-    "image": null,
-    "overview": [
-      {
         "_key": "2fba93b41455",
         "_type": "block",
         "children": [
@@ -2818,7 +1736,7 @@
                 "style": "normal"
               }
             ],
-            "title": "Migration to Oracle Cloud (OCI)"
+            "title": "Migration to Oracle Cloud - OCI"
           },
           {
             "benefits": [
@@ -3211,7 +2129,7 @@
   {
     "image": {
       "asset": {
-        "url": "https://cdn.sanity.io/images/47l4rrvd/production/c0701338c783fb63b33e1a2d418486b5b0c39f64-1590x932.png"
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/46d3be5011006bb3d4d75bee29e789a81b4affae-1024x1024.jpg"
       }
     },
     "overview": [
@@ -3398,7 +2316,7 @@
             "description": "End-to-end NetSuite deployment services to ensure your ERP is implemented on time, within budget, and aligned with your business goals.",
             "image": {
               "asset": {
-                "url": "https://cdn.sanity.io/images/47l4rrvd/production/4c28c4ed1f8936364c0aba2f3bc9ce210701747b-493x466.png"
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/072506b85b94de124f22891cb5d5ee54180be6cf-1024x1024.jpg"
               }
             },
             "offerings": [
@@ -3521,7 +2439,11 @@
               }
             ],
             "description": "Ongoing NetSuite support and tailored customization to meet your evolving business needs.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/ff0d6cb28a13cec552a19676e31b2a4fb311dba6-1024x1024.jpg"
+              }
+            },
             "offerings": [
               {
                 "_key": "6892e84a1f99",
@@ -3684,7 +2606,11 @@
               }
             ],
             "description": "Custom-built NetSuite solutions designed to address the unique challenges of your industry.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/5c75d5068641cc278427013efa62da57dbdeef94-1024x1024.jpg"
+              }
+            },
             "offerings": [
               {
                 "_key": "292c7ca61e90",
@@ -3819,7 +2745,11 @@
               }
             ],
             "description": "Enable your team to manage business processes and access critical data from any device, anywhere.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/add1c85dfe94840022242ebc5d3c88b16971f7a8-1024x1024.jpg"
+              }
+            },
             "offerings": [
               {
                 "_key": "56888054a6c3",
@@ -3954,7 +2884,11 @@
               }
             ],
             "description": "Enhance financial planning accuracy and streamline reconciliation processes with NetSuite’s integrated tools.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/3c466bb95929ba34fa181b3989f8d7f3033f3594-1024x1024.jpg"
+              }
+            },
             "offerings": [
               {
                 "_key": "1840adc6d2f9",
@@ -4015,7 +2949,7 @@
   {
     "image": {
       "asset": {
-        "url": "https://cdn.sanity.io/images/47l4rrvd/production/caf20c26d81e243a93482a93c5bff7bf8c62b1cd-947x863.png"
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/d73c31db57797c2195075a1ee28bcedb0aa5c313-1024x1024.jpg"
       }
     },
     "overview": [
@@ -4202,7 +3136,7 @@
             "description": "Design, implement, and optimize Oracle Planning & Budgeting solutions for more accurate forecasts and agile resource allocation.",
             "image": {
               "asset": {
-                "url": "https://cdn.sanity.io/images/47l4rrvd/production/4815b313e29754cf2d3db3ad8b2a165f569d4ec8-1143x743.png"
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/e657a90654610c6457aa190cc368eefe720118cd-1024x1024.jpg"
               }
             },
             "offerings": [
@@ -4339,7 +3273,11 @@
               }
             ],
             "description": "Streamline your period-end close process and deliver timely, accurate consolidated financial statements with Oracle’s Financial Close solutions.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/0840793113a111f8d093f533e6389d0c9dd62c47-1024x1024.jpg"
+              }
+            },
             "offerings": [
               {
                 "_key": "94a3a96a3269",
@@ -4474,7 +3412,11 @@
               }
             ],
             "description": "Automate and streamline reconciliation processes to improve accuracy, reduce risk, and accelerate financial close.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/8d2b994f2ee1ce97e786b8f10207f5cd3d5cfc37-1024x1024.jpg"
+              }
+            },
             "offerings": [
               {
                 "_key": "e3cabc8dcfa3",
@@ -4595,7 +3537,11 @@
               }
             ],
             "description": "Combine financial data with narrative context for transparent, compliant, and insightful reporting.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/deff054476a6c61a00bb55a99b8cd35d0af52f47-1024x1024.jpg"
+              }
+            },
             "offerings": [
               {
                 "_key": "78ed6c271b31",
@@ -4744,7 +3690,11 @@
               }
             ],
             "description": "Centralize, validate, and integrate financial and operational data to power accurate planning, reporting, and analytics.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/63eecf536466b9b941689939c362fb1c21203d52-1024x1024.jpg"
+              }
+            },
             "offerings": [
               {
                 "_key": "1bd170d55df1",
@@ -4829,6 +3779,1148 @@
       "current": "oracle-epm-cpm"
     },
     "title": "Oracle EPM/CPM"
+  },
+  {
+    "image": {
+      "asset": {
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/d78f9651c478ad2582c4df9cbad9310ba4b194b0-2816x1536.png"
+      }
+    },
+    "overview": [
+      {
+        "_key": "1506ae18e0f4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "690029e5f96c",
+            "_type": "span",
+            "marks": [],
+            "text": "Comprehensive JD Edwards solutions from implementation to innovation. Unlock your ERP’s full potential with our expert consulting, integration, and support services."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "sections": [
+      {
+        "content": [
+          {
+            "_key": "994a546185a2",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Oracle JD Edwards is a robust Enterprise Resource Planning (ERP) suite designed to streamline and automate core business functions—from finance and supply chain to manufacturing and asset management. It empowers organizations with flexible, scalable solutions that adapt to diverse industries and operational needs."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": null,
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-jd-edwards-draftsd97ffc1a-1cca-41d1-99a0-a40c1246fc23"
+        },
+        "title": "What is JD Edwards?",
+        "type": "text"
+      },
+      {
+        "content": [
+          {
+            "_key": "388e0d98fb6d",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Drive operational excellence with integrated, real-time business processes."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "fd7d5e9adea1",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Transform financial processes with comprehensive performance management capabilities."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "fa21b927fd54",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Improve productivity through automated workflows and simplified user experiences."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "d273567fdd1e",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enable scalability to meet evolving business demands."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          },
+          {
+            "_key": "41d4733ddd4b",
+            "_type": "block",
+            "children": [
+              {
+                "text": "Enhance decision-making with accurate, timely insights."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "description": "Transform your financial processes with comprehensive performance management capabilities",
+        "icon": null,
+        "slug": {
+          "_type": "slug",
+          "current": "oracle-jd-edwards-draftsd97ffc1a-1cca-41d1-99a0-a40c1246fc23"
+        },
+        "title": "Key Benefits",
+        "type": "list"
+      }
+    ],
+    "service": [
+      {
+        "cards": [
+          {
+            "benefits": [
+              {
+                "_key": "e668396ea553",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "95ad6717add4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduced risk and cost during implementation or upgrades"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d0ecc383b7a4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "3fa6359d1e62",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhanced ERP usability and adoption"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "9dac902c26fd",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "be3c867383d7",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Optimized performance of existing JD Edwards systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "a30fb7439176",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "21accb8ee788",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "\n"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Expert guidance to align JD Edwards with your business strategy. We help you assess, plan, and optimize your ERP environment to ensure it supports your operational goals and future growth.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/07c965e98826dbddb8179f88db78f78bec723149-2816x1536.png"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "7a7c55cdd9a3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ad57b39c5f0f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "ERP strategy planning & advisory"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "b9e6dffa8f38",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "febf2a36e17a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Business process alignment"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "431ebd1675cf",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "19f84daa65e9",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Technical & functional gap analysis"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "e656defb41db",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "5abf9fe4d473",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Roadmapping for upgrades & enhancements"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "9af0db730e42",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "cef04cd7399f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Module-specific consulting (Finance, Distribution, Manufacturing, etc.)"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Consulting"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "0cbfcab5127c",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f55d2e5c2569",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Minimized downtime with proactive issue resolution"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "5f3ef6f8e0fd",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b2f8888323d6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduced total cost of ERP ownership"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "f2e4b6511d59",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ab9f80887ccf",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved system reliability and performance"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "End-to-end operational management of your JD Edwards environment. Our proactive approach keeps your systems secure, stable, and performing at their best - 24/7.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/45f622a18d70ded591641b5d0da6adb4f66fc61f-1024x1024.jpg"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "90389ae76751",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d9e26f31b7d4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Proactive system monitoring & administration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "a40686e5503e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c63afba5a41f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Performance optimization and tuning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ffdc01443a9e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "cd275b2c4f47",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Security management & compliance support"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3bd2a454a71e",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e5be3492cc17",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Continuous improvements and patch updates"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "0ff9ae246947",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e0d9b18ff406",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "24/7 functional & technical support"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Managed Services"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "d0c95991794d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "eda51c00a038",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Access to latest JD Edwards features and enhancements"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "01e8e0137f5b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "8213c4befb02",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved system security and compliance"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "3d5fc623aa95",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "11f5de86ab65",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Streamlined performance with modernized architecture"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Stay ahead with the latest JD Edwards features, performance improvements, and security updates. We make the upgrade process smooth, predictable, and disruption-free.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/3d3f2aed78f04d44fe715afad47fa5ff3d2650cf-2816x1536.png"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "6f6c47fa7911",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "538cbf60c2e7",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Upgrade assessments & readiness checks"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "9f014bbb33e5",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d1ec8d91e79d",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Data migration planning & execution"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d41cf27a6760",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "819d662103b8",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Environment modernization & platform updates"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d4af2b5db2a6",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "26b2c1e218c6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Upgrade testing & validation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "217fc4a8fe1d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6b766b925cee",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "End-user training & change management"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Upgrade"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "e01d87acb151",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "cbe086b09bc4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Faster time-to-value with structured implementation methodology"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "1ed63cfb6544",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6b0d18411dd3",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Systems aligned with specific business needs"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "e87c671809e8",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f89056692ca6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved user adoption and process efficiency"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Seamless deployment of JD Edwards tailored to your industry and processes. We manage the entire project from requirements gathering to post-go-live support.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/567b3cbcf27204066ec6d8802ac7ebe55fc915a9-2816x1536.png"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "a46cfb3043dc",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ef584314827f",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "End-to-end implementation planning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "bf6d0bab8858",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1ec3b699a0d0",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Business process mapping & configuration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7d24a2c78776",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1219242b5dee",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Customization & extensions development"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "57d1f94e6f9c",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "7b1061e1b025",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Data migration and validation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ffa79112f47b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d6f8587624ca",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "User training & go-live support"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Implementation"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "8a81812c4915",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c096555f1c37",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Lower infrastructure and maintenance costs"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "1fccd53a0daa",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "af6414fb9544",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhanced scalability and flexibility"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "707c9edf353b",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e28f5dab6234",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Seamless transition with minimal disruption"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Migrate your JD Edwards environment to the cloud with minimal risk. We help you plan, execute, and manage the transition to Oracle Cloud Infrastructure or hybrid models.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/062bb38a1eb2eaaf1f3f378947c7833e5f63625d-2816x1536.png"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "70155b2c8996",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6de12a8f6cca",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Cloud migration assessment & planning"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "d0e510b06088",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d8b7f4e35491",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "On-premise to Oracle Cloud Infrastructure (OCI) transition"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4e2c90885003",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "0beb16f21646",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Hybrid ERP environment setup"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4cbb0d1bdfdd",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1678512585cc",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Post-migration optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "222a9bcbf9a8",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "17f6449fd719",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Managed cloud ERP services"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Lift, Shift & Manage"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "fb6846b5b75a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d88abf1ec8bc",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduced manual effort through automation"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "518a11dcf7fb",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "84ef224299ef",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved data accuracy and real-time visibility"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "31272ec12121",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "933a9615ee33",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Enhanced operational efficiency"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Automate and integrate business processes using JD Edwards Orchestrator. From routine tasks to complex workflows, we help you build smart, data-driven automations.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/9f466cd2dadef0eaa3e28d4ae59a54ee90f925b4-1024x1024.jpg"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "865c81cb6f8a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "d5e2def54727",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Orchestration design & development"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "b4fbb29073e9",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "6976b4322258",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Automation of routine processes"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "8d52002d3af4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "0dcd98e92afc",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration with external systems & APIs"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "6d69c8796034",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f53fc1785649",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Real-time data processing & alerts"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "91b861d8cbbf",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c80358d74af6",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Orchestration performance monitoring"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Orchestrator"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "1819cc1902e7",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "eaa78fe341a1",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Unified, seamless business processes across systems"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "c45a136a5e8a",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "c70b53cdc370",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Reduced data silos and duplication"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "4774e8e7e04d",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "05c656559a00",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved cross-department collaboration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Connect JD Edwards with other enterprise applications for seamless operations. We design and deploy integrations that eliminate silos and improve collaboration.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/a363a61a823521544ff2805e754b6d0f2a2d55d5-1024x1024.jpg"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "c4a55b294425",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "1bcfea2ef025",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Integration strategy & design"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "ef7e059835d4",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "ada2c6f2d6e5",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "API development & middleware configuration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "56cd19931838",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "a25ac7467032",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Third-party system connectivity (CRM, SCM, HR, etc.)"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "94d3c4622037",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "87f57512c9d5",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Real-time and batch data integration"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "06d8f7816fa1",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "e81f24f8876c",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Ongoing integration monitoring & optimization"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "JD Edwards Integrations"
+          },
+          {
+            "benefits": [
+              {
+                "_key": "60d67800ff78",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "8e1b59b4f26e",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Faster resolution of ERP issues"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "5bcd58faf9fb",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "f23e746e97c4",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Flexible support tailored to your needs"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "bebd26761776",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "391640bdcffd",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Improved system knowledge and self-sufficiency"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "description": "Flexible, on-demand JD Edwards support when you need it. From quick fixes to process improvements, our experts are just a call away.",
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/871ab97711f014035005f89351b50be77cee7123-1024x1024.jpg"
+              }
+            },
+            "offerings": [
+              {
+                "_key": "8179431f5e00",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "b9046e2fbd3a",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "On-demand functional & technical assistance"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "7507598ba066",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "37013823f712",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Issue diagnosis and troubleshooting"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "5a3a23eee0a0",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "31562a248363",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Small enhancements and quick fixes"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "1170515f6af3",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "99d256a9e425",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Performance optimization tips"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              },
+              {
+                "_key": "8c6c24264d08",
+                "_type": "block",
+                "children": [
+                  {
+                    "_key": "8def6b347e06",
+                    "_type": "span",
+                    "marks": [],
+                    "text": "Knowledge transfer and mentoring"
+                  }
+                ],
+                "markDefs": [],
+                "style": "normal"
+              }
+            ],
+            "title": "Smart Help"
+          }
+        ],
+        "description": "End-to-end JD Edwards services from strategy and implementation to upgrades, integrations, and automation—maximizing value and minimizing risk at every stage of your ERP journey.",
+        "title": "Complete JD Edwards Solution Partner"
+      }
+    ],
+    "slug": {
+      "_type": "slug",
+      "current": "oracle-jd-edwards"
+    },
+    "title": "Oracle JD Edwards"
   },
   {
     "image": null,
@@ -5073,7 +5165,7 @@
                 "style": "normal"
               }
             ],
-            "title": "Oracle Analytics Cloud (OAC)"
+            "title": "Oracle Analytics Cloud - OAC"
           },
           {
             "benefits": [
