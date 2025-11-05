@@ -318,7 +318,11 @@
     "title": "NetSuite"
   },
   {
-    "image": null,
+    "image": {
+      "asset": {
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/66499b3e0aec34d7e4c0d2a1bff16d57cf39efb7-1024x1024.jpg"
+      }
+    },
     "overview": [
       {
         "_key": "2fba93b41455",
@@ -356,27 +360,47 @@
         "cards": [
           {
             "description": "Expert guidance to design the right cloud roadmap tailored to your business requirements and long-term growth plans.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/d8b5793bc25e834b57909ce335de751f796a0634-1024x1024.jpg"
+              }
+            },
             "title": "Cloud Consulting and Strategy"
           },
           {
             "description": "Seamless, secure migration of workloads, applications, and data to Oracle Cloud Infrastructure with minimal disruption.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/a5e33f4d63c13b4a7d5fd604d12afed1817d7e01-1024x1024.jpg"
+              }
+            },
             "title": "Migration to Oracle Cloud - OCI"
           },
           {
             "description": "Proactive management and optimization of your on-premise, hybrid, or cloud infrastructure to ensure peak performance.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/430c489f02c1e4b15160c8d195a6c505889423c4-1024x1024.jpg"
+              }
+            },
             "title": "Infrastructure Management"
           },
           {
             "description": "Accelerate application delivery and improve operational efficiency through modern DevOps practices and automation tools.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/ec50331b1f845bea049ae6aee69db88880919b15-289x174.jpg"
+              }
+            },
             "title": "DevOps and Automation"
           },
           {
             "description": "Design, implement, and manage multi-cloud strategies for flexibility, resilience, and vendor independence.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/a9f6fad44a7348538094176ce4b7f75fd0cffc9a-1024x569.jpg"
+              }
+            },
             "title": "Multi-Cloud Environments"
           }
         ],
@@ -391,7 +415,11 @@
     "title": "Cloud / Infrastructure"
   },
   {
-    "image": null,
+    "image": {
+      "asset": {
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/cef947786e22384aa76956475478d1dbea30a87f-1024x1024.jpg"
+      }
+    },
     "overview": [
       {
         "_key": "3fa536adaaf7",
@@ -429,27 +457,47 @@
         "cards": [
           {
             "description": "End-to-end Oracle Database installation and ongoing technical support to ensure smooth operations.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/63c834e136b2633973472f36533c68059cf9463c-1024x1024.jpg"
+              }
+            },
             "title": "Installation and Support"
           },
           {
             "description": "Optimize database performance with tuning and fine-tuning techniques for queries, indexes, and configurations.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/1ea9d68ba84af0bb94eb02ca5a057d4eea8cf5bb-1024x1024.jpg"
+              }
+            },
             "title": "Database Tuning"
           },
           {
             "description": "Reliable backup and disaster recovery solutions to protect your critical data and ensure business continuity.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/1022082d7fca566a4c4766414b8fae52f85d35db-1024x1024.jpg"
+              }
+            },
             "title": "Backup and Recovery"
           },
           {
             "description": "Deploy Oracle’s self-driving, self-securing, and self-repairing Autonomous Database for reduced administration effort and enhanced performance.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/1e5bfe682ac72d617d02377ea35d073409a6f7b2-1024x1024.jpg"
+              }
+            },
             "title": "Oracle Autonomous DB"
           },
           {
             "description": "Comprehensive database health checks to identify and fix performance, security, and stability issues.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/eeb290e3acec7a7653986c222080944c70870c4d-1024x1024.jpg"
+              }
+            },
             "title": "Health Check and Optimization"
           }
         ],
@@ -464,7 +512,11 @@
     "title": "Oracle Database"
   },
   {
-    "image": null,
+    "image": {
+      "asset": {
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/b56ff9e51b33ad856abfe3b55dc875808c7a66f0-1024x1024.jpg"
+      }
+    },
     "overview": [
       {
         "_key": "19df1ad72b7c",
@@ -502,22 +554,38 @@
         "cards": [
           {
             "description": "Custom mobile applications designed to meet your unique business needs and deliver seamless user experiences.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/61a530913684c15351a0fc37a6b7753def02e47f-1024x1024.jpg"
+              }
+            },
             "title": "Mobile App Development"
           },
           {
             "description": "Extend ERP capabilities to mobile devices for on-the-go access to JD Edwards and NetSuite functions.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/fa73a3b92e103f0c42608e0ad28bd6d04a889ff6-1024x1024.jpg"
+              }
+            },
             "title": "JD Edwards and NetSuite Mobile Apps"
           },
           {
             "description": "Empower field teams with mobile tools for service delivery, work order management, and real-time updates.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/4206f4cec067713b2179e15b861eb17325aa9e4f-1261x520.gif"
+              }
+            },
             "title": "Field Service Mobility"
           },
           {
             "description": "Upgrade and integrate legacy mobile applications with modern technologies and business systems.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/b9ba8a37ca3077b42b11420b68079ab96b270ac4-1024x1024.jpg"
+              }
+            },
             "title": "App Modernization and Integration"
           }
         ],
@@ -532,7 +600,11 @@
     "title": "Mobility Services"
   },
   {
-    "image": null,
+    "image": {
+      "asset": {
+        "url": "https://cdn.sanity.io/images/47l4rrvd/production/a481674309254864666cc6c940092a6f54970830-1024x1024.jpg"
+      }
+    },
     "overview": [
       {
         "_key": "a72e6b2ba449",
@@ -570,22 +642,38 @@
         "cards": [
           {
             "description": "Leverage the power of Oracle’s cloud-based analytics platform for advanced data analysis and visualization.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/6d0a4515096090961c80786909922384ce3d7dbf-1024x1024.jpg"
+              }
+            },
             "title": "Oracle Analytics Cloud - OAC"
           },
           {
             "description": "Design, deploy, and manage pixel-perfect reports and enterprise dashboards using BI Publisher and OBIEE.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/a6d84206f1e33d0812116cc44d88d9704f641874-1024x1024.jpg"
+              }
+            },
             "title": "BI Publisher and OBIEE Reports"
           },
           {
             "description": "Create interactive dashboards and visual analytics to make complex data easy to understand and act on.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/1122f84be90d03cfb7da2585e95eed8299f2192b-1024x1024.jpg"
+              }
+            },
             "title": "Data Visualization and Dashboards"
           },
           {
             "description": "Empower business users to access, analyze, and visualize data without relying on IT.",
-            "image": null,
+            "image": {
+              "asset": {
+                "url": "https://cdn.sanity.io/images/47l4rrvd/production/c7e4b3a0a53c30a9908ba624d352d6474da3c316-1024x1024.jpg"
+              }
+            },
             "title": "Self-Service BI"
           }
         ],
