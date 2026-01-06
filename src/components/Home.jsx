@@ -213,8 +213,8 @@ const HomePage = () => {
       <section id="about" className="about section-padding relative scroll-mt-16">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-background-subtle via-background-main to-background-accent"></div>
-        <div className="absolute top-0 right-0 w-100 h-96 bg-gradient-to-br from-brand-pink/10 to-brand-orange/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-brand-orange/10 to-brand-pink/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-100 h-96 bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-brand-secondary/10 to-brand-primary/10 rounded-full blur-3xl"></div>
 
         <div className=" relative z-10 px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
@@ -222,18 +222,18 @@ const HomePage = () => {
             <motion.div
               {...time_div}
               variants={titleVariants}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-pink to-brand-orange bg-clip-text text-transparent font-semibold text-sm uppercase tracking-wider mb-4"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent font-semibold text-sm uppercase tracking-wider mb-4"
             >
-              <div className="w-8 h-px bg-gradient-to-r from-brand-pink to-brand-orange"></div>
+              <div className="w-8 h-px bg-gradient-to-r from-brand-primary to-brand-secondary"></div>
               About EMCube
-              <div className="w-8 h-px bg-gradient-to-r from-brand-pink to-brand-orange"></div>
+              <div className="w-8 h-px bg-gradient-to-r from-brand-primary to-brand-secondary"></div>
             </motion.div>
             <motion.h2
               className='text-4xl md:text-5xl font-bold text-text-main mb-6 leading-tight'
               {...time_h2}
             >
               Building the Future of
-              <span className="bg-gradient-to-r from-brand-pink to-brand-orange bg-clip-text text-transparent"> Enterprise Software</span>
+              <span className="bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent"> Enterprise Software</span>
             </motion.h2>
           </div>
 
@@ -284,7 +284,7 @@ const HomePage = () => {
                   >
                     <div className="bg-background-main/80 backdrop-blur-sm p-6 rounded-2xl border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                       <div className="text-3xl mb-3">{item.icon}</div>
-                      <h3 className='text-2xl font-bold bg-gradient-to-r from-brand-pink to-brand-orange bg-clip-text text-transparent mb-2'>
+                      <h3 className='text-2xl font-bold bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent mb-2'>
                         {item.title}
                       </h3>
                       <p className='text-text-muted font-medium'>{item.description}</p>
@@ -297,8 +297,8 @@ const HomePage = () => {
             {/* Image Side */}
             <div className="relative">
               {/* Decorative Elements */}
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-brand-pink/20 to-brand-orange/20 rounded-2xl rotate-12"></div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-tr from-brand-orange/20 to-brand-pink/20 rounded-3xl -rotate-12"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-2xl rotate-12"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-tr from-brand-secondary/20 to-brand-primary/20 rounded-3xl -rotate-12"></div>
 
               {/* Main Image Container */}
               <motion.div
@@ -324,7 +324,7 @@ const HomePage = () => {
               <div className="absolute -right-8 top-1/2 transform -translate-y-1/2 hidden xl:block">
                 <div className="bg-background-main/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-border/50">
                   <div className="text-center">
-                    <div className="text-2xl font-bold bg-gradient-to-r from-brand-pink to-brand-orange bg-clip-text text-transparent">
+                    <div className="text-2xl font-bold bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent">
                       2019
                     </div>
                     <div className="text-sm text-text-muted font-medium">Founded</div>
@@ -337,9 +337,9 @@ const HomePage = () => {
           {/* Bottom Decorative Element */}
           <div className=" text-center">
             <div className="inline-flex items-center gap-4">
-              <div className="h-px w-16 bg-gradient-to-r from-transparent to-brand-pink"></div>
-              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-brand-pink to-brand-orange"></div>
-              <div className="h-px w-16 bg-gradient-to-l from-transparent to-brand-orange"></div>
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-brand-primary"></div>
+              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-brand-primary to-brand-secondary"></div>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-brand-secondary"></div>
             </div>
           </div>
         </div>

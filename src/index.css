@@ -3,85 +3,87 @@
 @tailwind utilities;
 
 :root {
-  /* --- Brand Colors --- */
-  --color-brand-pink: #ff6b9d;                  /* Main brand pink */
-  --color-brand-orange: #f7971e;                /* Main brand orange */
-  --color-brand-orange-translucent: #f7951ec4; /* Translucent variant for buttons */
-  --color-brand-magenta: #e737ac;                /* Accent magenta for headings */
-  --color-brand-glow-rgb: 0, 255, 255;          /* RGB for decorative cyan/aqua glow */
-  --color-brand-matrix: #00ff00;                /* Decorative matrix green */
+  /* --- Brand Colors (New Professional Cobalt/Indigo Theme) --- */
+  --color-brand-primary: #0047FF;               /* Cobalt Blue from logo core */
+  --color-brand-secondary: #4D00FF;             /* Electric Indigo from logo accents */
+  --color-brand-accent: #00D1FF;                /* Electric Cyan for tech highlights */
+  --color-brand-slate: #2D3447;                 /* Professional Slate from logo circuits */
+  --color-brand-glow-rgb: 0, 209, 255;          /* RGB Cyan for decorative glows */
+  --color-brand-matrix: #00D1FF;                /* Tech-focused Cyan matrix effect */
 
   /* --- Accent Colors --- */
-  --color-accent-yellow: #fde047;                /* yellow-300 */
-  --color-accent-success: #4ade80;               /* green-400 */
-  --color-accent-success-dark: #48bb78;        /* green-500 */
-  --color-accent-purple-100: #f3e8ff;             /* purple-100 */
-  --color-accent-purple-300: #d8b4fe;             /* purple-300 */
-  --color-accent-purple-500: #a855f7;             /* purple-500 */
-  --color-accent-purple-600: #9333ea;             /* purple-600 */
-  --color-accent-indigo-50: #eef2ff;              /* indigo-50 */
-  --color-accent-indigo-100: #e0e7ff;             /* indigo-100 */
-  --color-accent-indigo-200: #c7d2fe;             /* indigo-200 */
-  --color-accent-indigo-300: #a5b4fc;             /* indigo-300 */
-  --color-accent-indigo-500: #6366f1;             /* indigo-500 */
-  --color-accent-indigo-600: #4f46e5;             /* indigo-600 */
+  --color-accent-silver: #E2E8F0;               /* Metallic Silver accent */
+  --color-accent-success: #10B981;              /* Professional Emerald Green */
+  --color-accent-success-dark: #059669;         /* Darker Green */
+  --color-accent-purple-100: #f5f0ff;           /* Very light Indigo tint */
+  --color-accent-purple-300: #d8b4fe;           /* Soft Purple */
+  --color-accent-purple-500: #8B5CF6;           /* Core Purple */
+  --color-accent-purple-600: #7C3AED;           /* Deep Purple */
+  --color-accent-indigo-50: #f0f5ff;            /* Very light Blue tint */
+  --color-accent-indigo-100: #e0eaff;           /* Soft Blue */
+  --color-accent-indigo-200: #c7d2fe;           /* Muted Blue */
+  --color-accent-indigo-300: #a5b4fc;           /* Sky Blue */
+  --color-accent-indigo-500: #6366f1;           /* Indigo */
+  --color-accent-indigo-600: #4f46e5;           /* Deep Indigo */
+  --color-accent-indigo-600-rgb: 79, 70, 229;   /* RGB for Indigo shadows */
 
   /* --- Text Colors --- */
-  --color-text-main: #1f2937;                   /* gray-800, for primary text */
-  --color-text-heading: #333333;                /* Dark gray for general headings */
-  --color-text-heading-dark: #2d3748;        /* slate-800, for dark headings */
-  --color-text-body: #374151;                   /* gray-700, for body paragraphs */
-  --color-text-body-dark: #4a5568;           /* slate-600, for darker body text */
-  --color-text-muted: #4b5563;                  /* gray-600, for lighter descriptions */
-  --color-text-light: #e5e7eb;                  /* gray-200, for light text on dark backgrounds */
-  --color-text-icon: #9ca3af;                   /* gray-400, for icons */
-  --color-text-footer-link: #d1d5db;         /* gray-300, for footer links */
-  --color-text-footer: #cccccc;                 /* Light gray for footer text */
-  --color-text-white: #ffffff;                  /* Pure white */
-  --color-text-black: #000000;                  /* Pure black */
+  --color-text-main: #1A202C;                   /* Deep Slate for main readability */
+  --color-text-heading: #171923;                /* Near-Black for titles */
+  --color-text-heading-dark: #CBD5E0;           /* Light Gray for text on dark backgrounds */
+  --color-text-body: #2D3748;                   /* Dark Gray for paragraphs */
+  --color-text-body-dark: #A0AEC0;              /* Muted Gray for descriptions */
+  --color-text-muted: #718096;                  /* Medium Gray */
+  --color-text-light: #EDF2F7;                  /* Near-White for dark modes */
+  --color-text-icon: #4A5568;                   /* Medium Slate for icons */
+  --color-text-footer-link: #E2E8F0;            /* Light Silver for footer links */
+  --color-text-footer: #A0AEC0;                 /* Muted Silver for footer text */
+  --color-text-white: #ffffff;                  /* Pure White */
 
-  /* --- Background Colors --- */
-  --color-background-main: #ffffff;               /* Pure white background */
-  --color-background-light-gray: #f8fafc;      /* Off-white for sections */
-  --color-background-subtle: #f8fafc;             /* slate-50, very light gray */
-  --color-background-hover: #f3f4f6;              /* gray-100, for light hover states */
-  --color-background-hover-light: #edf2f7;    /* slate-100, another light hover */
-  --color-background-dark: #0d1a2d;               /* Very dark blue for hero sections */
-  --color-background-body-1: #1a0d1f;           /* Dark purple for body gradient */
-  --color-background-body-2: #2d1b3d;           /* Medium-dark purple for body gradient */
-  --color-background-body-3: #3d2447;           /* Lightest purple for body gradient */
-  --color-background-tab: #b7cfde;                /* Light blue/gray for filter tabs */
+  /* --- Background Colors (Matching New Logo Tones) --- */
+  --color-background-main: #ffffff;             /* Pure White */
+  --color-background-nav: #1f2143;            /* Deep Navy for Navbar */
+  --color-background-light-gray: #F7FAFC;       /* Clean Slate-tinted off-white */
+  --color-background-subtle: #EDF2F7;           /* Light Slate */
+  --color-background-hover: #E2E8F0;            /* Hover Silver */
+  --color-background-hover-light: #F1F5F9;      /* Lighter Hover */
+  --color-background-dark: #0A1128;             /* Deep Midnight Navy for Hero */
+  --color-background-body-1: #050A18;           /* Deepest Navy for body gradients */
+  --color-background-body-2: #0A1128;           /* Midnight Navy */
+  --color-background-body-3: #1C2541;           /* Slate Navy */
+  --color-background-tab: #CBD5E0;              /* Gray for filter tabs */
 
   /* --- Border Colors --- */
-  --color-border: #e5e7eb;                     /* gray-200, default border color */
-  --color-border-dark: #1f2937;                 /* gray-800, for dark borders */
-  --color-border-form: #d1d5db;                 /* gray-300, for form inputs */
-  --color-border-tab: #e2e8f0;                  /* slate-200, for filter tabs */
-  --color-footer-border: #555555;               /* Dark gray for footer border */
+  --color-border: #E2E8F0;                      /* Default Light Border */
+  --color-border-dark: #2D3447;                 /* Dark Slate Border */
+  --color-border-form: #CBD5E0;                 /* Form Input Border */
+  --color-border-tab: #EDF2F7;                  /* Tab Border */
+  --color-footer-border: #1C2541;               /* Dark Navy Footer Border */
 
-  /* --- UI & Hover Colors --- */
-  --color-ui-link: #667eea;                     /* indigo-400, for links */
-  --color-hover-indigo: #4f46e5;                 /* indigo-600, for indigo hover states */
+  /* --- UI & Gradient Settings --- */
+  --color-ui-link: #0047FF;                     /* Cobalt for links */
+  --color-ui-link-rgb: 0, 71, 255;              /* RGB for link glows */
+  --color-hover-indigo: #4D00FF;                /* Indigo for hover states */
   
-  /* --- Gradient Colors --- */
-  --gradient-hero-start: #667eea;
-  --gradient-hero-end: #764ba2;
-  --gradient-accent-start: #ffd89b;
-  --gradient-accent-end: #19547b;
-  --gradient-tab-active-start: #687f99;
-  --gradient-tab-active-end: #a5c8f4;
-  --scrollbar-thumb-start: #667eea;
-  --scrollbar-thumb-end: #764ba2;
-  --scrollbar-thumb-hover-start: #5a67d8;
-  --scrollbar-thumb-hover-end: #6b46c1;
+  --gradient-hero-start: #0047FF;               /* Cobalt Blue */
+  --gradient-hero-end: #4D00FF;                 /* Electric Indigo */
+  --gradient-services-start: #00D1FF;           /* Electric Cyan */
+  --gradient-services-end: #0047FF;             /* Cobalt Blue */
+  --gradient-stats-start: #0047FF;
+  --gradient-stats-end: #00D1FF;
+  --gradient-tab-active-start: #0047FF;
+  --gradient-tab-active-end: #4D00FF;
+
+  --scrollbar-thumb-start: #0047FF;
+  --scrollbar-thumb-end: #4D00FF;
+  --scrollbar-thumb-hover-start: #0036D1;
+  --scrollbar-thumb-hover-end: #3C00C7;
   
-  /* --- Base Colors for Opacity --- */
+  /* --- Shared RGB Values --- */
   --color-black-rgb: 0, 0, 0;
   --color-white-rgb: 255, 255, 255;
-  --color-brand-pink-rgb: 255, 107, 157;
-  --color-brand-orange-rgb: 247, 151, 30;
-  --color-ui-link-rgb: 102, 126, 234;
-  --color-accent-indigo-600-rgb: 79, 70, 229;
+  --color-brand-primary-rgb: 0, 71, 255;
+  --color-brand-secondary-rgb: 77, 0, 255;
   --color-violet-500-rgb: 139, 92, 246;
   --color-purple-500-rgb: 168, 85, 247;
   --color-purple-400-rgb: 192, 132, 252;
@@ -101,7 +103,7 @@
     overflow-x: hidden;
   }
 
-  /* Animated Grid Overlay */
+  /* Animated Grid Overlay (Tech Circuit Style) */
   body::before {
     content: '';
     position: fixed;
@@ -112,13 +114,13 @@
     pointer-events: none;
     z-index: -1;
     background-image:
-      linear-gradient(rgba(var(--color-violet-500-rgb), 0.1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(var(--color-violet-500-rgb), 0.1) 1px, transparent 1px);
+      linear-gradient(rgba(var(--color-brand-glow-rgb), 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(var(--color-brand-glow-rgb), 0.05) 1px, transparent 1px);
     background-size: 50px 50px;
     animation: gridMove 20s linear infinite;
   }
 
-  /* Subtle floating particles */
+  /* Subtle floating tech particles */
   body::after {
     content: '';
     position: fixed;
@@ -129,43 +131,28 @@
     pointer-events: none;
     z-index: -1;
     background-image:
-      radial-gradient(circle at 20% 80%, rgba(var(--color-purple-500-rgb), 0.15) 1px, transparent 1px),
-      radial-gradient(circle at 80% 20%, rgba(var(--color-purple-400-rgb), 0.1) 1px, transparent 1px),
-      radial-gradient(circle at 40% 40%, rgba(var(--color-violet-500-rgb), 0.08) 1px, transparent 1px);
+      radial-gradient(circle at 20% 80%, rgba(var(--color-brand-primary-rgb), 0.1) 1px, transparent 1px),
+      radial-gradient(circle at 80% 20%, rgba(var(--color-brand-accent), 0.08) 1px, transparent 1px),
+      radial-gradient(circle at 40% 40%, rgba(var(--color-brand-secondary-rgb), 0.08) 1px, transparent 1px);
     background-size: 100px 100px, 150px 150px, 200px 200px;
     animation: particlesFloat 30s ease-in-out infinite;
   }
 
   @keyframes gridMove {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(50px, 50px);
-    }
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
   }
 
   @keyframes particlesFloat {
-    0%, 100% {
-      transform: translate(0, 0) rotate(0deg);
-      opacity: 0.8;
-    }
-    33% {
-      transform: translate(30px, -30px) rotate(120deg);
-      opacity: 0.4;
-    }
-    66% {
-      transform: translate(-20px, 20px) rotate(240deg);
-      opacity: 0.6;
-    }
+    0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.8; }
+    33% { transform: translate(30px, -30px) rotate(120deg); opacity: 0.4; }
+    66% { transform: translate(-20px, 20px) rotate(240deg); opacity: 0.6; }
   }
 
-  /* Optional: Add a subtle vignette effect for more depth */
   body {
     box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.3);
   }
 
-  /* Ensure content appears above the background */
   .content, main, section, div {
     position: relative;
     z-index: 1;
@@ -173,10 +160,11 @@
 }
 
 @layer components {
+  /* Updated Navigation Link with Professional Cobalt-Indigo Gradient */
   .nav-link {
     @apply relative transition-colors duration-200;
     color: transparent;
-    background: linear-gradient(90deg, var(--color-brand-pink), var(--color-brand-orange));
+    background: linear-gradient(90deg, var(--color-brand-primary), var(--color-brand-secondary));
     background-clip: text;
     -webkit-background-clip: text;
   }
@@ -184,13 +172,13 @@
   .nav-link svg,
   .nav-link .arrow,
   .nav-link i {
-    color: var(--color-brand-pink); /* Make arrows/icons visible with solid color */
+    color: var(--color-brand-primary);
   }
 
   .nav-link::after {
     @apply absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300;
     content: '';
-    background: linear-gradient(90deg, var(--color-brand-pink), var(--color-brand-orange));
+    background: linear-gradient(90deg, var(--color-brand-primary), var(--color-brand-secondary));
   }
   
   .nav-link:hover::after {
@@ -205,10 +193,13 @@
     @apply opacity-100 visible translate-y-0;
   }
   
+  /* Primary Button (Cobalt Theme) */
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:shadow-lg;
+    @apply bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:shadow-lg;
+    background: linear-gradient(135deg, var(--color-brand-primary) 0%, var(--color-brand-secondary) 100%);
   }
   
+  /* Secondary Button (Indigo/Slate Theme) */
   .btn-secondary {
     @apply bg-white hover:bg-gray-50 text-primary-600 border border-primary-600 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:shadow-lg;
   }
@@ -234,6 +225,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Updated Section Gradients */
 .hero-gradient {
   background: linear-gradient(135deg, var(--gradient-hero-start) 0%, var(--gradient-hero-end) 100%);
 }
@@ -244,4 +236,22 @@ html {
 
 .stats-gradient {
   background: linear-gradient(135deg, var(--gradient-stats-start) 0%, var(--gradient-stats-end) 100%);
+}
+
+/* Custom Tech Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A1128;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--scrollbar-thumb-start) 0%, var(--scrollbar-thumb-end) 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--scrollbar-thumb-hover-start) 0%, var(--scrollbar-thumb-hover-end) 100%);
 }

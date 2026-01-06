@@ -152,11 +152,9 @@ body {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 15px;
-  color: var(--color-text-heading-dark);
 }
 
 .benefit-card p {
-  color: var(--color-text-body-dark);
   line-height: 1.6;
 }
 

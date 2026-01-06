@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1.5fr_2fr] gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-text-white mb-4">EMcube Cloud</h3>
+            <h3 className="text-2xl font-bold text-text-white mb-4">EMCUBE Cloud</h3>
             <p className="text-text-footer-link mb-6 leading-relaxed">
               {contact.footerAbout}
             </p>
@@ -98,7 +98,7 @@ const Footer = () => {
 
         <div className="border-t border-border-dark mt-12 pt-8">
           <p className="text-text-icon text-sm text-center">
-            © 2019 EMcube Cloud Private Limited. All rights reserved.
+            © 2019 EMCUBE Cloud Private Limited. All rights reserved.
           </p>
         </div>
       </div>

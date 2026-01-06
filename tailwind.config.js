@@ -9,91 +9,92 @@ export default {
       colors: {
         // Brand Colors
         brand: {
-          pink: '#ff6b9d',                // Main brand pink
-          orange: '#f7971e',              // Main brand orange
-          'orange-translucent': '#f7951ec4', // Translucent variant for buttons
-          magenta: '#e737ac',              // Accent magenta for headings
-          glow: '#00ffff',                 // Decorative cyan/aqua glow
-          matrix: '#00ff00',               // Decorative matrix green
+          primary: '#0047FF',           // Core Cobalt Blue from logo
+          secondary: '#4D00FF',         // Deep Indigo/Purple from logo accents
+          accent: '#00D1FF',            // Electric Cyan for "Glow" effects
+          'primary-translucent': 'rgba(0, 71, 255, 0.2)', // For button overlays
+          slate: '#2D3447',             // Professional Slate from logo circuit lines
+          glow: '#00FFFF',              // Keeping cyan/aqua as it fits the tech vibe
+          matrix: '#00D1FF',            // Changed from green to cyan for tech consistency
         },
         // Primary Palette (Blues)
         primary: {
-          50: '#eff6ff',                  // blue-50
-          100: '#dbeafe',                 // blue-100
-          500: '#3b82f6',                 // blue-500
-          600: '#2563eb',                 // blue-600
-          700: '#1d4ed8',                 // blue-700
-          800: '#1e40af',                 // blue-800
+          50: '#f0f5ff',
+          100: '#e0eaff',
+          500: '#0047FF',               // Main Cobalt
+          600: '#0036D1',               // Darker Cobalt
+          700: '#0026A3',
+          800: '#001A75',               // Deep Navy
         },
         // Secondary Palette (Teals)
         secondary: {
-          50: '#f0fdfa',                  // teal-50
-          100: '#ccfbf1',                 // teal-100
-          500: '#14b8a6',                 // teal-500
-          600: '#0d9488',                 // teal-600
-          700: '#0f766e',                 // teal-700
+          50: '#f5f0ff',
+          100: '#ece0ff',
+          500: '#4D00FF',               // Main Indigo
+          600: '#3C00C7',
+          700: '#2C0094',
         },
         // Accent Colors
         accent: {
-          yellow: '#fde047',              // yellow-300
-          success: '#4ade80',             // green-400
-          'success-dark': '#48bb78',      // green-500
+          silver: '#E2E8F0',            // New Silver accent for "Tech" feel
+          success: '#10B981',           // Standard professional emerald green
+          'success-dark': '#059669',
           purple: {
-            100: '#f3e8ff',               // purple-100
-            300: '#d8b4fe',               // purple-300
-            500: '#a855f7',               // purple-500
-            600: '#9333ea',               // purple-600
+            100: '#f3e8ff',
+            300: '#d8b4fe',
+            500: '#8B5CF6',
+            600: '#7C3AED',
           },
           indigo: {
-            50: '#eef2ff',                 // indigo-50
-            100: '#e0e7ff',               // indigo-100
-            200: '#c7d2fe',               // indigo-200
-            300: '#a5b4fc',               // indigo-300
-            500: '#6366f1',               // indigo-500
-            600: '#4f46e5',               // indigo-600
+            50: '#eef2ff',
+            100: '#e0e7ff',
+            200: '#c7d2fe',
+            300: '#a5b4fc',
+            500: '#6366f1',
+            600: '#4f46e5',
           },
         },
         // Text Colors
         text: {
-          main: '#1f2937',                 // gray-800, for primary text
-          heading: '#333333',              // Dark gray for general headings
-          'heading-dark': '#2d3748',      // slate-800, for dark headings
-          body: '#374151',                 // gray-700, for body paragraphs
-          'body-dark': '#4a5568',         // slate-600, for darker body text
-          muted: '#4b5563',                // gray-600, for lighter descriptions
-          light: '#e5e7eb',                // gray-200, for light text on dark backgrounds
-          icon: '#9ca3af',                 // gray-400, for icons
-          'footer-link': '#d1d5db',       // gray-300, for footer links
-          footer: '#cccccc',               // Light gray for footer text
-          white: '#ffffff',                // Pure white
+          main: '#1A202C',              // Deepest Slate
+          heading: '#171923',
+          'heading-dark': '#CBD5E0',    // Light gray for dark backgrounds
+          body: '#2D3748',
+          'body-dark': '#A0AEC0',       // Muted gray for dark backgrounds
+          muted: '#718096',
+          light: '#EDF2F7',
+          icon: '#4A5568',
+          'footer-link': '#E2E8F0',
+          footer: '#A0AEC0',
+          white: '#ffffff',
         },
         // Background Colors
         background: {
-          main: '#ffffff',                 // Pure white background
-          'light-gray': '#f8f9fa',        // Off-white for sections
-          subtle: '#f8fafc',               // slate-50, very light gray
-          hover: '#f3f4f6',                // gray-100, for light hover states
-          'hover-light': '#edf2f7',      // slate-100, another light hover
-          accent: '#faf5ff',               // purple-50, for subtle accent backgrounds
-          dark: '#0d1a2d',                 // Very dark blue for hero sections
-          'body-1': '#1a0d1f',             // Dark purple for body gradient
-          'body-2': '#2d1b3d',             // Medium-dark purple for body gradient
-          'body-3': '#3d2447',             // Lightest purple for body gradient
-          tab: '#b7cfde',                  // Light blue/gray for filter tabs
+          main: '#ffffff',
+          'light-gray': '#F7FAFC',      // Clean slate-tinted off-white
+          subtle: '#EDF2F7',
+          hover: '#E2E8F0',
+          'hover-light': '#F1F5F9',
+          accent: '#EBF8FF',            // Subtle blue tint instead of purple
+          dark: '#0A1128',              // Deep Midnight Navy (Replaced hero dark)
+          'body-1': '#050A18',          // Deepest Navy for gradients
+          'body-2': '#0A1128',          // Core Navy
+          'body-3': '#1C2541',          // Lighter Navy/Slate
+          tab: '#CBD5E0',
         },
         // Border Colors
         border: {
-          DEFAULT: '#e5e7eb',              // gray-200, default border color
-          dark: '#1f2937',                 // gray-800, for dark borders
-          form: '#d1d5db',                 // gray-300, for form inputs
-          tab: '#e2e8f0',                  // slate-200, for filter tabs
+          DEFAULT: '#E2E8F0',
+          dark: '#2D3748',
+          form: '#CBD5E0',
+          tab: '#EDF2F7',
         },
-        // UI & Hover Specific Colors
+        // UI Specific Colors
         ui: {
-          link: '#667eea',                 // indigo-400, for links
+          link: '#0047FF',
         },
         hover: {
-          indigo: '#4f46e5',               // indigo-600, for indigo hover states
+          indigo: '#4D00FF',
         }
       },
       animation: {

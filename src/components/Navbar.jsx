@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import logo from '../assets/logo 2.png';
+import logo from '../assets/emcube img.png';
 import servicesList from '../data/servicesList.json';
 
 const Navbar = () => {
@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background-main shadow-lg' : 'bg-transparent backdrop-blur-sm'
+        isScrolled ? 'bg-background-body-2 shadow-lg' : 'bg-transparent backdrop-blur-sm'
       }`}
     >
       {/* THIS IS THE CORRECTED LINE */}
